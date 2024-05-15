@@ -37,7 +37,8 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(../../images/hero-section-img.png);
+    background-image: url(../../images/hero-section-img.png), linear-gradient(to bottom, var(--silver), var(--white));
+    background-size: cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

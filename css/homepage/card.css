@@ -1,10 +1,12 @@
 .info-blocks {
-    margin: 0 500px -500px;
+    margin: -100px 500px 0 500px;
     display: flex;
     align-items: center;
     justify-content:center;
     padding: 20px;
-    background: #ffffff; /* Or any other color as per your design */
+    background: var(--blue-light); /* Or any other color as per your design */
+    z-index: 10;
+    border-radius: 25px;
 }
 
 .info-block {
@@ -25,5 +27,9 @@
 
 .info-block p {
     font-size: 1rem; /* Standard font size for the paragraph */
-    color: #555; /* A darker color for text for better readability */
+    color: var(--white); /* A darker color for text for better readability */
+}
+
+.info-blocks, .info-blocks * {
+    position: relative; /* This makes z-index effective */
 }
