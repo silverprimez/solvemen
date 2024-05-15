@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--silver);
+}
+
+:root {
+    --black:#000000;
+    --blue-light: #066AE5;
+    --orange: #F27100;
+    --white: #fff;
+    --silver: #dbdada;
+    --blue-dark: #001B36;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none; /*To remove the bullet points */
+}

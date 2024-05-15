@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solvemen | Trading</title>
+    <link rel="stylesheet" href="/css/main-body.css">
+    <link rel="stylesheet" href="/css/homepage/header.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/homepage/hero-section.css">
+    <link rel="stylesheet" href="/css/homepage/card.css">
+</head>
+
+<body>
+    <!-- HEADER BEGINS HERE-->
+    <header class="top-header">
+        <nav>
+            <img src="/images/SLV-logo (Black).png" href="/index.html" alt="Solvemen Logo" class="logo">
+            <ul class="header-mode">
+                <li><a href="#language" title="language"><span class="material-symbols-outlined">language</span></a></li>
+                <!--<li><a href="#Mode" title="Mode">Mode</a></li>-->
+            </ul>
+            <ul class="header-menu">
+                <li><a href="#about" title="About Us">About</a></li>
+                <li><a href="#team" title="Our Team">Team</a></li>
+                <li><a href="#blog" title="Blog">Blog</a></li>
+            </ul>
+            <button href="#contact" class="button"><span class="material-symbols-outlined">support_agent</span>Contact</button>
+            <div class="toggle_button">
+                <span class="material-symbols-outlined">menu</span>
+            </div>            
+            <div class="dropdown_menu">
+               <!-- <li><a href="#language" title="language">Language</a></li>
+                <li><a href="#Mode" title="Mode">Mode</a></li> -->
+                <li><a href="#about" title="About Us">About</a></li>
+                <li><a href="#team" title="Our Team">Team</a></li>
+                <li><a href="#blog" title="Blog">Blog</a></li>
+                <li><a href="#contact" class="button"><span class="material-symbols-outlined">support_agent</span>Contact</a></li>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER ENDS HERE-->
+
+    <!-- HERO SECTION BEGINS HERE-->
+    <section class="hero">
+        <!--<div class="hero-background">
+            <img src="/images/hero-section-img.png" alt="Hero Background">
+        </div>-->
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-phrase">Screen · Connect · Deliver</p>
+                <h1>Your Trusted Partner </br> For Import & Export </br> Goods And Commodities.</h1>
+                <p class="hero-subtitle">Where both ends meet.</p>
+            </div>
+        </div>
+    </section>
+    <!-- HERO SECTION ENDS HERE-->
+
+    <!-- CARD SECTION BEGINS HERE-->
+    <section class="info-blocks">
+        <div class="info-block">
+            <span class="emoji" role="img" aria-label="Expansion">📈</span>
+            <h3>Corporate Expansion</h3>
+            <p>Ensuring seamless scalability, tapping into new markets and opportunities.</p>
+        </div>
+        <div class="info-block">
+            <span class="emoji" role="img" aria-label="Innovation">💡</span>
+            <h3>Innovative Solutions</h3>
+            <p>We adapt and refine strategies to perfectly align with your business needs.</p>
+        </div>
+        <div class="info-block">
+            <span class="emoji" role="img" aria-label="Problem Solving">🛠️</span>
+            <h3>Problem Resolution</h3>
+            <p>Addressing challenges, transforming Obstacles into opportunities for growth.</p>
+        </div>
+    </section>
+    <!-- CARD SECTION ENDS HERE-->
+</body>
+<script>
+    const toggleButton = document.querySelector('.toggle_button');
+    const toggleButtonIcon = toggleButton.querySelector('span');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleButton.addEventListener('click', function() {
+        dropDownMenu.classList.toggle('open');
+        // Check if the dropdown menu is open and change the icon accordingly
+        if (dropDownMenu.classList.contains('open')) {
+            toggleButtonIcon.textContent = 'close'; // Sets the text to 'close' icon
+        } else {
+            toggleButtonIcon.textContent = 'menu'; // Sets the text back to 'menu' icon
+        }
+    });
+</script>
+
+</body>
+</html>
+
+</html>

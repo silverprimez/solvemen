@@ -1,0 +1,29 @@
+.info-blocks {
+    margin: 0 500px -500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 20px;
+    background: #ffffff; /* Or any other color as per your design */
+}
+
+.info-block {
+    flex: 1; /* Each block will take equal space */
+    margin: 0 10px; /* Add some space between the blocks */
+    text-align: center; /* Align text to the center */
+}
+
+.info-block .emoji {
+    font-size: 2rem; /* Large size for the emoji */
+    display: block; /* Emoji will be on its own line */
+}
+
+.info-block h3 {
+    font-size: 1.25rem; /* Slightly larger font for the title */
+    margin: 10px 0; /* Add space above and below the title */
+}
+
+.info-block p {
+    font-size: 1rem; /* Standard font size for the paragraph */
+    color: #555; /* A darker color for text for better readability */
+}
