@@ -1,7 +1,7 @@
 .hero {
     display: flex;
     align-items: center;
-    
+    z-index: 3;
 }
 
 .hero-text {

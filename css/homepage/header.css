@@ -61,23 +61,23 @@ header {
 }
 
 .top-header button:hover {
-    background: var(--orange);
+    background: var(--gold);
     color: var(--white);
     scale: 1.05;
 }
 
 .dropdown_menu .button:hover {
-    background: var(--orange);
+    background: var(--gold);
     color: var(--white);
     scale: 1.05;
 }
 
 .top-header nav a:hover {
-    color: var(--orange);
+    color: var(--gold);
 }
 
 .top-header .toggle_button {
-    color: var(--orange);
+    color: var(--gold);
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
