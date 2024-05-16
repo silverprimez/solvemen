@@ -4,32 +4,95 @@
     align-items: center;
     justify-content:center;
     padding: 20px;
-    background: var(--blue-light); /* Or any other color as per your design */
-    z-index: 10;
-    border-radius: 25px;
+    /*background: var(--blue-light); */
+    
+    
 }
 
-.info-block {
-    flex: 1; /* Each block will take equal space */
-    margin: 0 10px; /* Add some space between the blocks */
-    text-align: center; /* Align text to the center */
+.info-block1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    margin: 0 25px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: var(--blue-light);
+    /*border-right-style: solid;*/
+    border-radius: 30px;
 }
 
-.info-block .emoji {
-    font-size: 2rem; /* Large size for the emoji */
-    display: block; /* Emoji will be on its own line */
+.info-block2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    margin: 0 25px; 
+    padding: 20px 10px;
+    text-align: center;
+    background-color: var(--blue-light);
+    /*border-right-style: solid;*/
+    border-radius: 30px;
 }
 
-.info-block h3 {
-    font-size: 1.25rem; /* Slightly larger font for the title */
-    margin: 10px 0; /* Add space above and below the title */
+.info-block3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    margin: 0 25px; 
+    padding: 20px 10px;
+    text-align: center; 
+    background-color: var(--blue-light);
+    /*border-right-style: solid;*/
+    border-radius: 30px;
 }
 
-.info-block p {
-    font-size: 1rem; /* Standard font size for the paragraph */
-    color: var(--white); /* A darker color for text for better readability */
+.info-block1 .emoji {
+    font-size: 2rem;
+    display: block; 
+}
+
+.info-block2 .emoji {
+    font-size: 2rem;
+    display: block; 
+}
+
+.info-block3 .emoji {
+    font-size: 2rem; 
+    display: block;
+}
+
+.info-block1 h3 {
+    font-size: 1.25rem; 
+    margin: 10px 0; 
+    color: var(--white);
+}
+
+.info-block2 h3 {
+    font-size: 1.25rem; 
+    margin: 10px 0; 
+    color: var(--white);
+}
+
+.info-block3 h3 {
+    font-size: 1.25rem; 
+    margin: 10px 0; 
+    color: var(--white); 
+}
+
+.info-block1 p {
+    font-size: 1rem;
+    color: var(--white); 
+}
+
+.info-block2 p {
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.info-block3 p {
+    font-size: 1rem;
+    color: var(--white);
 }
 
 .info-blocks, .info-blocks * {
-    position: relative; /* This makes z-index effective */
+    position: relative;
 }
