@@ -17,7 +17,7 @@
     border-radius: 25px;
     margin: 50px 50px;
     font-weight: bold;
-    font-size: clamp(0.34rem, 0.68vw, 16px); /*1vw*/
+    font-size: 1.5vw; /*clamp(0.34rem, 0.68vw, 16px)*/
     word-spacing: 5px;
 }
 
