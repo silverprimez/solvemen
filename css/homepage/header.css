@@ -62,7 +62,7 @@ header {
 
 .top-header button:hover {
     background: var(--gold);
-    color: var(--white);
+    color: var(--black);
     scale: 1.05;
 }
 

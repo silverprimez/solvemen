@@ -8,7 +8,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: var(--silver);
+    background-color: var(--white);
     overflow-x: hidden;
 }
 
@@ -16,6 +16,7 @@ html, body {
     --black:#000000;
     --blue-light: #066AE5;
     --gold: gold;
+    --green: green;
     --white: #fff;
     --silver: #dbdada;
     --blue-dark: #001B36;

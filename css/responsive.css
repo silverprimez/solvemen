@@ -1,3 +1,9 @@
+@media (max-width: 2160px) {
+    .info-block1, .info-block2, .info-block3 {
+        font-size: smaller;
+    }
+}
+
 @media (max-width: 1200px) {
     .about-us-image::before {
         display: none;
