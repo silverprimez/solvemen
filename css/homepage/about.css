@@ -11,12 +11,13 @@
 .about-us::before {
     content: ""; /* Needed to generate the pseudo-element */
     display: block;
-    height: 200px; /* Match the height of the negative margin */
+    height: 230px; /* Match the height of the negative margin */
     background-color: var(--black); /* Your choice of color */
     position: absolute;
     width: 100%; /* Ensure it spans the full width */
-    top: -200px; /* Position it above the section */
+    top: -225px; /* Position it above the section */
     left: 0;
+    z-index: 0; /* Ensure this is lower than the z-index of the card section */
 }
 
 .about-us-container {
@@ -67,7 +68,6 @@
 .values {
     display: flex;
     justify-content: space-around;
-
 }
 
 .value-item img {
@@ -83,8 +83,15 @@
     color: var(--gold);
 }
 
-
 /* Responsive adjustments */
+@media (max-width: 1799px) {
+    .about-us::before {
+        display: block;
+        top: -200px; /* Position it above the section */
+        left: 0;
+        }
+    }
+
 @media (max-width: 768px) {
     .about-us-container {
         flex-direction: column;
@@ -96,5 +103,11 @@
 
     .about-us-content {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-us::before {
+        display: none;
     }
 }

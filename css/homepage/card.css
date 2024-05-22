@@ -1,62 +1,89 @@
-.info-blocks {
-    margin: -100px 500px 0 500px;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    padding-bottom: 100px;
-    z-index: 2;
-    /*background: var(--blue-light); */
+:root {
+    --blue-light: #007BFF; /* Example blue color */
+    --gold: #FFD700; /* Example gold color */
+    --black: #000000;
+    --white: #FFFFFF;
 }
 
-.info-block1, .info-block2, .info-block3 {
+.info-blocks {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+    margin: -200px 0 0 0;
+    padding-bottom: 100px;
+    z-index: 2; /* Ensure this is higher than the ::before pseudo-element of about-us */
+    position: relative; /* Ensure it respects z-index */
+}
+
+.info-block {
     display: flex;
     flex-direction: column;
-    flex: 1; 
-    margin: 0 25px;
+    align-items: center; /* Center items vertically */
+    flex: 1 1 300px; /* Allow shrinking but start with a base of 300px */
+    margin: 20px; /* Add some space between items */
     padding: 20px 10px;
     text-align: center;
+    max-width: 500px; /* Max width for each block */
     background-color: var(--blue-light);
-    /*border-right-style: solid;*/
     border-radius: 30px;
-    
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
-.info-block1 .emoji {
+.info-block .emoji {
     font-size: 2rem;
-    display: block; 
+    margin-bottom: 10px;
 }
 
-.info-block2 .emoji {
-    font-size: 2rem;
-    display: block; 
-}
-
-.info-block3 .emoji {
-    font-size: 2rem; 
-    display: block;
-}
-
-.info-block1 h3, .info-block2 h3, .info-block3 h3 {
+.info-block h3 {
     font-size: 1.25rem; 
     margin: 10px 0; 
     color: var(--white);
 }
 
-.info-block1 p, .info-block2 p, .info-block3 p {
+.info-block p {
     font-size: 1rem;
     color: var(--white); 
 }
 
-.info-blocks, .info-blocks * {
-    position: relative;
-}
-
-.info-block1:hover, .info-block2:hover, .info-block3:hover {
+.info-block:hover {
     background-color: var(--gold);
-    scale: 1.05;
+    transform: scale(1.05);
 }
 
-.info-block1:hover h3, .info-block2:hover h3, .info-block3:hover h3, 
-.info-block1:hover p, .info-block2:hover p, .info-block3:hover p {
+.info-block:hover h3, 
+.info-block:hover p {
     color: var(--black);
+}
+
+@media (max-width: 1799px) {
+    .info-block {
+        flex: 1 1 45%; /* Allow items to take up 45% of the container width */
+        margin: 20px; /* Reduce the margin to provide more space */
+    }
+
+    .info-block .emoji {
+        font-size: 1.5rem;
+    }
+
+    .info-block h3 {
+        font-size: 1.1rem; 
+    }
+
+    .info-block p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1620px) {
+    .info-block {
+        flex: 1 1 45%; /* Allow items to take up 45% of the container width */
+        margin: 10px; /* Reduce the margin to provide more space */
+    }
+}
+
+@media (max-width: 992px) {
+    .info-block {
+        flex: 1 1 100%; /* Stack items vertically on small screens */
+        margin: 10px;
+    }
 }
