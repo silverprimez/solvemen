@@ -8,17 +8,19 @@
     margin-bottom: 100px;
 }
 
+
 .about-us::before {
-    content: ""; /* Needed to generate the pseudo-element */
+    content: ""; 
     display: block;
-    height: 230px; /* Match the height of the negative margin */
-    background-color: var(--black); /* Your choice of color */
+    height: 230px; 
+    background-color: var(--black); 
     position: absolute;
-    width: 100%; /* Ensure it spans the full width */
-    top: -225px; /* Position it above the section */
+    width: 100%; 
+    top: -225px; 
     left: 0;
-    z-index: 0; /* Ensure this is lower than the z-index of the card section */
-}
+    z-index: 0; 
+} 
+
 
 .about-us-container {
     display: flex;
