@@ -77,10 +77,14 @@ header {
 }
 
 .top-header .toggle_button {
-    color: var(--gold);
+    color: var(--black);
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+}
+
+.top-header .toggle_button:hover {
+    color: var(--gold);
 }
 
 .top-header button:active {
