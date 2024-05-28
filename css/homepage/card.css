@@ -121,3 +121,16 @@
         width: 100%;
     }
 }
+
+@media (max-width: 439px) {
+    .card-section .card-icons {
+        font-size: 30px;
+    }
+    
+    ..card-section h3 {
+        font-size: 20px;
+    }
+    
+    .card-section p {
+        font-size: 12px;} 
+}

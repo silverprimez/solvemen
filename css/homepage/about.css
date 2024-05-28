@@ -64,7 +64,7 @@
 }
 
 .about-us-title {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 .values {
@@ -94,7 +94,7 @@
         }
     }
 
-@media (max-width: 768px) {
+@media (max-width: 799px) {
     .about-us-container {
         flex-direction: column;
     }
@@ -106,10 +106,21 @@
     .about-us-content {
         margin-left: 0;
     }
+
+    .about-us-content {
+        text-align: center;
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 992px) {
     .about-us::before {
         display: none;
+    }
+}
+
+@media (max-width: 1163px) {
+    .about-us-title {
+        padding-bottom: calc(140px - ((1163px - 100vw) / 10 * 10));
     }
 }

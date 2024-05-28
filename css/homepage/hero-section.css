@@ -60,4 +60,7 @@
     .hero-content {
         background-image: url(../../images/hero-section-img2.png), linear-gradient(to bottom, var(--silver), var(--white));
     }
+
+    .hero {
+        height: 75vh;
 }
