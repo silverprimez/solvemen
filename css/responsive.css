@@ -8,7 +8,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1019px) {
     .top-header .header-menu,
     .top-header button {
         display: none;

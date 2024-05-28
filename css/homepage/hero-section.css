@@ -43,3 +43,21 @@
     background-repeat: no-repeat;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+.hero-phrase {
+    font-size: 13px;
+    }
+
+.hero-text h1 {
+    font-size: 40px;
+    }
+
+.hero-subtitle {
+    font-size: 20px;
+    }
+
+    .hero-content {
+        background-image: url(../../images/hero-section-img2.png), linear-gradient(to bottom, var(--silver), var(--white));
+    }
+}

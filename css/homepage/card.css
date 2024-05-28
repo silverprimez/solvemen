@@ -101,7 +101,7 @@
     color: var(--white);
 }
 
-@media (max-width: 1179px) {
+@media (max-width: 1519px) {
     .card-blocks {
         display: flex;
         flex-wrap: wrap;
@@ -111,4 +111,13 @@
         display: none;
     }
 
+    .card-section {
+        width: 45%;
+    }
+}
+
+@media (max-width: 799px) {
+    .card-section {
+        width: 100%;
+    }
 }
