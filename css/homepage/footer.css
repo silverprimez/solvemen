@@ -2,12 +2,22 @@ footer {
     position: relative;
     width: 100%;
     background: var(--blue-light);
-    min-height: 100px;
+    min-height: 150px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 200px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
 }
 
 footer .social-icons, .footer-menu {
@@ -16,10 +26,6 @@ footer .social-icons, .footer-menu {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-}
-
-footer .social-icons li, .footer-menu li {
-    list-style: none;
 }
 
 footer .social-icons li a {
@@ -91,6 +97,7 @@ footer .wave#wave4 {
     bottom: 20px;
     animation: animateWave_02 3s linear infinite;
 }
+
 @keyframes animateWave {
     0% {
         background-position-x: 1000px;
@@ -106,5 +113,11 @@ footer .wave#wave4 {
     }
     100% {
         background-position-x: 1000px;
+    }
+}
+
+@media (max-width: 432px) {
+    .footer-menu {
+        display: none;
     }
 }

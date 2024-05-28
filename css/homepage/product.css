@@ -304,8 +304,15 @@
     }
 }
 
-@media (max-width: 437px) {
+@media (max-width: 1407px) {
     .slider-title {
+        width: 422.1px;
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 464px) {
+    .slider-title {
+        width: 80%;
     }
 }

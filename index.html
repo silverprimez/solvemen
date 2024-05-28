@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/homepage/team.css">
     <link rel="stylesheet" href="css/homepage/product.css">
     <link rel="stylesheet" href="css/homepage/footer.css">
+    <link rel="stylesheet" href="css/homepage/branch.css">
+    <link rel="stylesheet" href="css/homepage/contact.css">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
@@ -278,7 +280,7 @@
                         Cocoa powder is obtained from cocoa beans, and it has many applications: in baking and cooking, in preparation of drinks, as well as wide applications in confectionery industry, and even in manufacturing of cosmetics.
                     </div>
                     <div class="button">
-                        <button>SEE MORE</button>
+                        <!--<button>SEE MORE</button>-->
                     </div>
                 </div>
             </div>
@@ -291,7 +293,7 @@
                         Made from grated and dried coconut meat, it enhances flavor and texture in baking, cooking, and confectionery. It’s also used in cereals, granola, and cosmetics like soaps and scrubs.
                     </div>
                     <div class="button">
-                        <button>SEE MORE</button>
+                        <!--<button>SEE MORE</button>-->
                     </div>
                 </div>
             </div>
@@ -304,7 +306,7 @@
                         Coconut water, the clear liquid inside coconuts, is refreshing and hydrating. Often consumed as a beverage, it's also used in smoothies and cocktails. Rich in electrolytes, it offers a low-calorie, nutrient-rich profile.
                     </div>
                     <div class="button">
-                        <button>SEE MORE</button>
+                        <!--<button>SEE MORE</button>-->
                     </div>
                 </div>
             </div>
@@ -317,7 +319,7 @@
                         Made by removing most of the water from cow's milk, it becomes sweet and creamy. It enhances desserts and beverages like coffee and tea with rich flavor. Its versatility makes it a staple for various culinary uses.
                     </div>
                     <div class="button">
-                        <button>SEE MORE</button>
+                        <!--<button>SEE MORE</button>-->
                     </div>
                 </div>
             </div>
@@ -342,9 +344,31 @@
         </div>
     </section>
     <!-- PRODUCT SECTION ENDS HERE -->
-    <section>
-        <br>
+
+    <!-- BRANCH SECTION BEGINS HERE-->
+    <section class="branch" id="branch">
+        <div class="branch-title">
+            <h5>Our branch</h5>
+            <h2>MEET OUR BOTH ENDS</h2>
+        </div>
+        <div class="world-map">
+            <img src="images/world-map.png" alt="map">
+            <div class="pin sea">
+                <span>South East Asia</span>
+            </div>
+            <div class="pin africa">
+                <span>African Continent</span>
+            </div>
+            <div class="pin europe">
+                <span>Europe</span>
+            </div>
+            <div class="pin middle-east">
+                <span>Middle East</span>
+            </div>
+        </div>
     </section>
+    <!-- BRANCH SECTION ENDS HERE-->
+
     <!-- FOOTER BEGINS HERE-->
     <footer>
         <div class="waves">
@@ -353,20 +377,26 @@
             <div class="wave" id="wave3"></div>
             <div class="wave" id="wave4"></div>
         </div>
-        <ul class="social-icons">
+        <div class="footer-logo">
+            <img src="images/bww-logo.png" alt="Company Logo">
+        </div>
+        <!--<ul class="social-icons">
             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        </ul>
+        </ul>-->
         <ul class="footer-menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <p>© since 2020 Solvemen Asia. All right reserved.</p>
+        <p>© since 2020 Solvemen Trading. All right reserved.</p>
     </footer>
+    
      <!-- FOOTER ENDS HERE-->
+
 </body>
 
 <!-- HEADER SCRIPT BEGINS HERE-->
@@ -433,7 +463,7 @@ function moveSlider(direction) {
         }
     }, {once: true}) // Remove the event listener after it's triggered once
 }
-</script>"
+</script>
 
 
 </html>

@@ -1,0 +1,144 @@
+.world-map {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative; /* Ensure this is set */
+}
+
+.world-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.branch-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    font-size: auto;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+.branch-title h5 {
+    color: var(--blue-light);
+}
+
+.branch-title h2 {
+    color: var(--black);
+}
+
+.pin {
+    position: absolute;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    background: var(--gold);
+}
+
+.pin::before {
+    content: "";
+    background: var(--gold);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: pulse 1.3s ease-in-out infinite;    
+}
+
+.pin span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green);
+    border-radius: 3em;
+    padding: 0.3em 0.6em;
+    font-size: 0.9em;
+    color: var(--white);
+}
+
+.sea {
+    top: 63%;
+    left: 78%;
+}
+
+.africa {
+    top: 60%;
+    left: 55%;
+}
+
+.europe {
+    top: 40%;
+    left: 48%;
+}
+
+.middle-east {
+    top: 51%;
+    left: 59%;
+}
+
+@keyframes pulse {
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%) scale(2.5);
+    }
+}
+
+@media (max-width: 681px) {
+    .pin span {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 605px) {
+    .pin span {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 535px) {
+    .branch-title {
+        width: 350px;
+        text-align: center;
+    }
+
+    .pin span {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 465px) {
+    .branch-title {
+        width: 300px;
+    }
+
+    .branch-title h2 {
+        font-size: 1.28em;
+    }
+
+    .branch-title h5 {
+        font-size: 0.707em;
+    }
+
+    .pin span {
+        font-size: 0.5em;
+    }
+}
