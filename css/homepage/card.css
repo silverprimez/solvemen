@@ -124,13 +124,52 @@
 
 @media (max-width: 439px) {
     .card-section .card-icons {
-        font-size: 30px;
+        font-size: 33.25px;
     }
     
     ..card-section h3 {
-        font-size: 20px;
+        font-size: 23.75px;
     }
     
     .card-section p {
-        font-size: 12px;} 
+        font-size: 13.3px;} 
+}
+
+@media (max-width: 420px) {
+    .card-section .card-icons {
+        font-size: 31.5px;
+    }
+    
+    ..card-section h3 {
+        font-size: 22.5px;
+    }
+    
+    .card-section p {
+        font-size: 12.6px;} 
+}
+
+@media (max-width: 402px) {
+    .card-section .card-icons {
+        font-size: 29.75px;
+    }
+    
+    ..card-section h3 {
+        font-size: 21.25px;
+    }
+    
+    .card-section p {
+        font-size: 11.9px;} 
+}
+
+@media (max-width: 383px) {
+    .card-section .card-icons {
+        font-size: 26.25px;
+    }
+    
+    ..card-section h3 {
+        font-size: 18.75px;
+    }
+    
+    .card-section p {
+        font-size: 10.5px;} 
 }
