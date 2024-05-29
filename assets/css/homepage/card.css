@@ -1,0 +1,175 @@
+.card-blocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensure the cards wrap if they overflow */
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.card-section {
+    position: relative;
+    width: 30%;
+    height: 200px;
+    background: var(--blue-light);
+    box-sizing: border-box;
+    padding: 15px;
+    transition: .5s;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    z-index: 1;
+}
+
+.card-section p {
+    color: var(--white);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card-section h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.card-section::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    border-top: 5px solid var(--gold);
+    border-left: 5px solid var(--gold);
+    opacity: 0;
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+.card-section::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0;
+    border-bottom: 5px solid var(--gold);
+    border-right: 5px solid var(--gold);
+    opacity: 0;
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+.card-section:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition-delay: .3s;
+}
+
+.card-section:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition-delay: .3s;
+}
+
+.card-section:hover {
+    box-shadow: 0 30px 35px rgba(0,0,0,0.7);
+}
+
+.card-section span {
+    position: absolute;
+    top: 0;
+    left: -110%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: .5s;
+    transform: skewX(10deg);
+}
+
+.card-section:hover span {
+    left: 110%;
+}
+
+.card-section .card-icons {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+@media (max-width: 1519px) {
+    .card-blocks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-us::before {
+        display: none;
+    }
+
+    .card-section {
+        width: 45%;
+    }
+}
+
+@media (max-width: 799px) {
+    .card-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 439px) {
+    .card-section .card-icons {
+        font-size: 33.25px;
+    }
+    
+    .card-section h3 {
+        font-size: 23.75px;
+    }
+    
+    .card-section p {
+        font-size: 13.3px;} 
+}
+
+@media (max-width: 420px) {
+    .card-section .card-icons {
+        font-size: 31.5px;
+    }
+    
+    .card-section h3 {
+        font-size: 22.5px;
+    }
+    
+    .card-section p {
+        font-size: 12.6px;} 
+}
+
+@media (max-width: 402px) {
+    .card-section .card-icons {
+        font-size: 29.75px;
+    }
+    
+    .card-section h3 {
+        font-size: 21.25px;
+    }
+    
+    .card-section p {
+        font-size: 11.9px;} 
+}
+
+@media (max-width: 383px) {
+    .card-section .card-icons {
+        font-size: 26.25px;
+    }
+    
+    .card-section h3 {
+        font-size: 18.75px;
+    }
+    
+    .card-section p {
+        font-size: 10.5px;} 
+}

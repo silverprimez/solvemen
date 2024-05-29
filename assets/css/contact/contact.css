@@ -1,0 +1,233 @@
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+header .contact-header {
+    max-width: 82rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 65px;
+    display: flex;
+    align-items: flex-end;
+}
+
+header ul {
+    display: flex;
+    /*list-style: none;*/
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.logo .images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.logo img {
+    height: 35px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 0.8rem;
+}
+
+.logo img.logo-forDark {
+    opacity: 0;
+}
+
+/*.logo h2 {
+    color: var(--text-color);
+    font-size: 1.55rem;
+    margin-top: 2px;
+}
+
+.logo h2 span {
+    color: var(--main-color);*/
+
+.nav-link {
+    margin-left: 5.5rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--black);
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--gold);
+}
+
+.nav-link.theme-toggle {
+    cursor: pointer;
+    font-size: 1.15rem;
+}
+
+.theme-toggle .fa-moon {
+    display: none;
+}
+
+.theme-toggle .fa-sun {
+    display: inline;
+}
+
+.contact {
+    width: 100%;
+    overflow: hidden;
+    /*backgound-color: var(--bg-color);*/
+}
+
+.contact .contact-form {
+    height: 100vh;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.contact .contact-form > div {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.left {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 65px 1.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.contact-heading h1 {
+    font-weight: 600;
+    color: var(--black);
+    font-size: 3.5rem;
+    line-height: 0.9;
+    white-space: nowrap;
+    margin-bottom: 1.2rem;
+}
+
+.contact-heading h1 span {
+    color: var(--blue-light);
+}
+
+.text {
+    color: var(--green);
+    line-height: 1.1;
+    font-size: 1rem;
+}
+
+.text a {
+    color: var(--blue-light);
+    transition: 0.3s;
+}
+
+.text a:hover {
+    color: var(--gold);
+}
+
+.forms-wrapper {
+    max-width: 32rem;
+}
+
+.contact-forms {
+    display: grid;
+    margin-top: 2.55rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-wrap.w-100 {
+    grid-column: span 2;
+}
+
+.contact-input {
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-radius: 20px;
+    color: var(--blue-dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 0px hsla(var(--green), 92%, 54%, 0.169);
+    transition: .3s;
+
+}
+
+.contact-input:hover {
+    background-color: var(--gold);
+}
+
+.input-wrap label {
+    position: absolute;
+    top: 50%;
+    left: calc(1.35rem + 2px);
+    transform: translateY(-50%);
+    color: var(--green);
+    pointer-events: none;
+    transition: .25s;
+}
+
+.input-wrap .icon {
+    position: absolute;
+    right: calc(1.35rem + 2px);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--green);
+    font-size: 1.25rem;
+    transition: .3s;
+}
+
+textarea.contact-input {
+    resize: none;
+    width: 100%;
+    min-height: 150px;
+}
+
+textarea.contact-input ~ label {
+    top: 1.2rem;
+    transform: none;
+}
+
+textarea.contact-input ~ .icon {
+    top: 1.3rem;
+    transform: none;
+}
+
+.input-wrap.focus .contact-input {
+    background-color: var(--white);
+    border: 2px solid pink;
+    box-shadow: 0 0 0 5px hsla(var(--green), 91%, 55%, 0.11);
+}
+
+.input-wrap.focus .icon {
+    color: aquamarine;
+}
+
+.input-wrap.not-empty label {
+    font-size: 0.66rem;
+    top: 0.75rem;
+    transform: translateY(0);
+}

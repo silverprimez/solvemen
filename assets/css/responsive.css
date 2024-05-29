@@ -1,0 +1,48 @@
+@media (max-width: 2160px) {
+    
+}
+
+@media (max-width: 1200px) {
+    .about-us-image::before {
+        display: none;
+    }
+}
+
+@media (max-width: 1019px) {
+    .top-header .header-menu,
+    .top-header button {
+        display: none;
+    }
+
+    .top-header .toggle_button {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 595px) {
+    .header-mode {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .toggle_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        display: flex;
+        align-items: flex-start;
+    }
+}
