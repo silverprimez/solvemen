@@ -101,9 +101,7 @@
     color: var(--black);
     font-size: 3.5rem;
     line-height: 0.9;
-    white
-
--space: nowrap;
+    white-space: nowrap; 
     margin-bottom: 1.2rem;
 }
 
