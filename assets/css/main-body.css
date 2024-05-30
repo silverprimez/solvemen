@@ -20,6 +20,7 @@ html, body {
     --white: #fff;
     --silver: #dbdada;
     --blue-dark: #001B36;
+    --z-modal: 1000;
 }
 
 a {
