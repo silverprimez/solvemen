@@ -115,9 +115,3 @@ footer .wave#wave4 {
         background-position-x: 1000px;
     }
 }
-
-@media (max-width: 432px) {
-    .footer-menu {
-        display: none;
-    }
-}

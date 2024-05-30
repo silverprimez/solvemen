@@ -125,24 +125,3 @@
 .dropdown_menu li a {
     color: var(--black);
 }
-
-@media (max-width: 1019px) {
-    .top-header .header-menu,
-    .top-header  .button {
-        display: none;
-    }
-
-    .top-header .toggle_button {
-        display: block;
-    }
-
-    .dropdown_menu {
-        display: block;
-    }
-}
-
-@media (max-width: 768px) {
-    .top-header img {
-        width: 200px;
-    }
-}

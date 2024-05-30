@@ -289,32 +289,3 @@
         opacity: 0;
     }
 }
-
-
-@media (max-width: 1407px) {
-    .slider-title {
-        width: 422.1px;
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 678px) {
-    .slider .list .item .content{
-        padding-right: 0;
-    }
-    .slider .list .item .content .titles{
-        font-size: 50px;
-    }
-}
-
-@media (max-width: 464px) {
-    .slider-title {
-        width: 80%;
-    }
-}
-
-@media (max-width: 432px) {
-    .slider .list .item .content .type {
-        font-size: 1.1em;
-    }
-}
