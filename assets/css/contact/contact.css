@@ -1,12 +1,9 @@
-.dark {
+.contact-header {
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 4;
-}
-
-.dark .contact-header {
     max-width: 82rem;
     margin: 0 auto;
     padding: 0 1rem;
@@ -15,9 +12,8 @@
     align-items: flex-end;
 }
 
-.dark ul {
+.contact-header ul {
     display: flex;
-    /*list-style: none;*/
     align-items: center;
 }
 
@@ -34,7 +30,7 @@
 }
 
 .logo img {
-    height: 35px;
+    height: 55px;
     grid-column: 1/2;
     grid-row: 1/2;
     margin-right: 0.8rem;
@@ -43,15 +39,6 @@
 .logo img.logo-forDark {
     opacity: 0;
 }
-
-/*.logo h2 {
-    color: var(--text-color);
-    font-size: 1.55rem;
-    margin-top: 2px;
-}
-
-.logo h2 span {
-    color: var(--main-color);*/
 
 .nav-link {
     margin-left: 5.5rem;
@@ -82,7 +69,6 @@
 .contact {
     width: 100%;
     overflow: hidden;
-    /*backgound-color: var(--bg-color);*/
 }
 
 .contact .contact-form {
@@ -115,7 +101,9 @@
     color: var(--black);
     font-size: 3.5rem;
     line-height: 0.9;
-    white-space: nowrap;
+    white
+
+-space: nowrap;
     margin-bottom: 1.2rem;
 }
 
@@ -124,7 +112,7 @@
 }
 
 .text {
-    color: var(--black);
+    color: var(--green);
     line-height: 1.1;
     font-size: 1rem;
 }
@@ -172,11 +160,10 @@
     border: 2px solid transparent;
     box-shadow: 0 0 0 0px hsla(var(--green), 92%, 54%, 0.169);
     transition: .3s;
-
 }
 
 .contact-input:hover {
-    background-color: hsla(208, 50%, 50%, 14%);
+    background-color: var(--gold);
 }
 
 .input-wrap label {
@@ -184,7 +171,7 @@
     top: 50%;
     left: calc(1.35rem + 2px);
     transform: translateY(-50%);
-    color: #9ca7b6;
+    color: var(--green);
     pointer-events: none;
     transition: .25s;
 }
@@ -195,7 +182,7 @@
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
-    color: #9ca7b6;
+    color: var(--green);
     font-size: 1.25rem;
     transition: .3s;
 }
@@ -218,17 +205,16 @@ textarea.contact-input ~ .icon {
 
 .input-wrap.focus .contact-input {
     background-color: var(--white);
-    border: 2px solid var(--blue-light);
-    box-shadow: 0 0 0 5px hsla(var(--blue-light), 91%, 55%, 0.11);
+    border: 2px solid pink;
+    box-shadow: 0 0 0 5px hsla(var(--green), 91%, 55%, 0.11);
 }
 
 .input-wrap.focus label {
-    color: var(--black);
-
+    color: brown;
 }
 
 .input-wrap.focus .icon {
-    color: var(--green);
+    color: aquamarine;
 }
 
 .input-wrap.not-empty label {
@@ -267,7 +253,7 @@ textarea.contact-input ~ .icon {
 
 .btn.upload {
     position: relative;
-    background-color: hsla(208, 50%, 50%, 6.5%);    ;
+    background-color: hsla(208, 50%, 50%, 6.5%);
 }
 
 .btn.upload span {
@@ -275,7 +261,7 @@ textarea.contact-input ~ .icon {
 }
 
 .btn.upload:hover {
-    background-color: hsla(208, 50%, 50%, 14%);;
+    background-color: hsla(208, 50%, 50%, 14%);
     color: var(--black);
 }
 
@@ -305,6 +291,7 @@ textarea.contact-input ~ .icon {
 .image-wrapper .img {
     position: absolute;
     height: 130%;
+    width: auto;
     left: 60%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -349,13 +336,14 @@ textarea.contact-input ~ .icon {
     opacity: 0.8;
 }
 
-  @media (max-width: 1101px) {
+@media (max-width: 1101px) {
     .logo {
         margin-right: 1rem;
     }
 
     .logo img {
-        height: 30px;
+        height: 50px;
+        width: 100%;
         margin-right: 0.7rem;
     }
 
@@ -448,9 +436,9 @@ textarea.contact-input ~ .icon {
     }
 }
 
-@media (max-width: 650px) {
-    .dark .container {
-        height: 50px;
+@media (max-width: 861px) {
+    .contact-header {
+        height: 70px;
     }
 
     .left {
@@ -464,7 +452,7 @@ textarea.contact-input ~ .icon {
         padding: 1rem 0;
     }
 
-    .dark ul {
+    .contact-header ul {
         justify-content: space-between;
         width: 100%;
     }
@@ -479,6 +467,10 @@ textarea.contact-input ~ .icon {
 
     .right {
         display: none;
+    }
+
+    .left {
+        background-color: var(--white);
     }
 }
 
@@ -498,7 +490,7 @@ textarea.contact-input ~ .icon {
     }
 
     .logo img {
-        height: 25px;
+        height: 45px;
         margin-right: 0.7rem;
     }
 }

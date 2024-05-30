@@ -12,6 +12,13 @@ html, body {
     overflow-x: hidden;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
 :root {
     --black:#000000;
     --blue-light: #066AE5;
@@ -21,6 +28,8 @@ html, body {
     --silver: #dbdada;
     --blue-dark: #001B36;
     --z-modal: 1000;
+    --z-index: 999;
+
 }
 
 a {

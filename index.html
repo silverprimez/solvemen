@@ -19,32 +19,20 @@
     <link rel="stylesheet" href="assets/css/homepage/branch.css">
     <link rel="stylesheet" href="assets/css/contact/contact.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/homepage/modal-box.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -61,22 +49,98 @@
             <a href="index.html">
                 <img src="assets/images/SLV-Tr-Black.png" alt="Solvemen Logo" class="logo">
             </a>
-            <ul class="header-mode">
-                <li><a href="#language" title="language"><span class="material-symbols-outlined">language</span></a></li>
-                <!--<li><a href="#Mode" title="Mode">Mode</a></li>-->
-            </ul>
             <ul class="header-menu">
                 <li><a href="#about" title="About Us">About</a></li>
                 <li><a href="#team" title="Our Team">Team</a></li>
                 <li><a href="#product" title="Product">Product</a></li>
+                <li><a href="#branch" title="Branch">Branch</a></li>
             </ul>
-            <a href="contact.html" class="button"><span class="material-symbols-outlined">support_agent</span>Contact</a>
+            <a href="#" class="button" id="contact-button"><span class="material-symbols-outlined">support_agent</span>Contact</a>
+            
+            <div class="modal__container" id="modal-container">
+                <section class="contact">
+                    <div class="contact-header">
+                        <ul>
+                            <li>
+                                <a href="#" class="logo">
+                                    <div class="images">
+                                        <img src="assets/images/SLV-Tr-Black.png" class="logo-forLight" alt="Company Logo">
+                                    </div>
+                                </a>
+                            </li>
+                            <!--<li>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li> -->
+                            <li>
+                                <span class="nav-link theme-toggle close-modal">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-form">
+                        <div class="left">
+                            <div class="form-wrapper">
+                                <div class="contact-heading">
+                                    <h1>Let's Work Together<span>.</span></h1>
+                                    <p class="text">Or Reach us Via : <a href="mailto:admin@solvemen.com">admin@solvemen.com</a></p>
+                                </div>
+                                <form action="contact.html" method="post" class="contact-forms">
+                                    <div class="input-wrap">
+                                        <input class="contact-input" autocomplete="off" name="First Name" type="text" required>
+                                        <label>First name</label>
+                                        <i class="icon fa-solid fa-address-card"></i>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>
+                                        <label>Last name</label>
+                                        <i class="icon fa-solid fa-address-card"></i>
+                                    </div>
+                                    <div class="input-wrap w-100">
+                                        <input class="contact-input" autocomplete="off" name="Email" type="text" required>
+                                        <label>Email</label>
+                                        <i class="icon fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="input-wrap textarea w-100">
+                                        <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
+                                        <label>Message</label>
+                                        <i class="icon fa-solid fa-inbox"></i>
+                                    </div>
+                                    <div class="contact-buttons">
+                                        <button class="btn upload">
+                                            <span>
+                                                <i class="fa-solid fa-paperclip"></i> Add attachment
+                                            </span>
+                                            <input type="file" name="attachment">
+                                        </button>
+                                        <input type="submit" value="Send Message" class="btn">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="image-wrapper">
+                                <img src="assets/images/contact-wp.png" class="img">
+                                <div class="wave-wrap">
+                                    <svg class="wave" viewBox="0 0 783 1536" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path id="wave"
+                                        d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1 1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z" />
+                                    </svg>
+                                </div>
+                                <svg class="dashed-wave" viewBox="0 0 345 877" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="dashed-wave" 
+                                    d="M0.5 876C25.6667 836.167 73.2 739.8 62 673C48 589.5 35.5 499.5 125.5 462C215.5 424.5 150 365 87 333.5C24 302 44 237.5 125.5 213.5C207 189.5 307 138.5 246 87C185 35.5 297 1 344.5 1"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
             <div class="toggle_button">
                 <span class="material-symbols-outlined">menu</span>
-            </div>            
+            </div>
             <div class="dropdown_menu">
-                <!-- <li><a href="#language" title="language">Language</a></li>
-                <li><a href="#Mode" title="Mode">Mode</a></li> -->
                 <li><a href="#about" title="About Us">About</a></li>
                 <li><a href="#team" title="Our Team">Team</a></li>
                 <li><a href="#product" title="Product">Product</a></li>
@@ -84,6 +148,7 @@
             </div>
         </nav>
     </header>
+    
     
     <!-- HEADER ENDS HERE-->
 
@@ -414,6 +479,9 @@
 
 <!-- CONTACT FORM SCRIPT-->
 <script src="assets/js/contact-form.js?v=1"></script>
+
+<!-- MODAL BOX SCRIPT-->
+<script src="assets/js/modal-box.js?v=1"></script>
 
 
 </html>

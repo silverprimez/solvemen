@@ -1,11 +1,11 @@
 .top-header {
     background-color: var(--white);
-    position: fixed; /* Changed from relative to fixed */
-    top: 0; /* Added top positioning */
-    width: 100%; /* Ensure the header spans the width */
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 0 2rem;
-    transition: top 0.3s ease-in-out; /* Added transition for smooth movement */
-    z-index: 1000; /* Ensure the header is above other content */
+    transition: top 0.3s ease-in-out;
+    z-index: var(--z-index);
 }
 
 .top-header img {
@@ -32,7 +32,7 @@
 }
 
 .top-header nav ul li a {
-    color: var(--Black);
+    color: var(--black);
 }
 
 .top-header .button, .dropdown-button {
@@ -128,7 +128,7 @@
 
 @media (max-width: 1019px) {
     .top-header .header-menu,
-    .top-header .button {
+    .top-header  .button {
         display: none;
     }
 
