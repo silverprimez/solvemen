@@ -124,7 +124,7 @@
 }
 
 .text {
-    color: var(--green);
+    color: var(--black);
     line-height: 1.1;
     font-size: 1rem;
 }
@@ -176,7 +176,7 @@
 }
 
 .contact-input:hover {
-    background-color: var(--gold);
+    background-color: hsla(208, 50%, 50%, 14%);
 }
 
 .input-wrap label {
@@ -184,7 +184,7 @@
     top: 50%;
     left: calc(1.35rem + 2px);
     transform: translateY(-50%);
-    color: var(--green);
+    color: #9ca7b6;
     pointer-events: none;
     transition: .25s;
 }
@@ -195,7 +195,7 @@
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
-    color: var(--green);
+    color: #9ca7b6;
     font-size: 1.25rem;
     transition: .3s;
 }
@@ -218,17 +218,17 @@ textarea.contact-input ~ .icon {
 
 .input-wrap.focus .contact-input {
     background-color: var(--white);
-    border: 2px solid pink;
-    box-shadow: 0 0 0 5px hsla(var(--green), 91%, 55%, 0.11);
+    border: 2px solid var(--blue-light);
+    box-shadow: 0 0 0 5px hsla(var(--blue-light), 91%, 55%, 0.11);
 }
 
 .input-wrap.focus label {
-    color: brown;
+    color: var(--black);
 
 }
 
 .input-wrap.focus .icon {
-    color: aquamarine;
+    color: var(--green);
 }
 
 .input-wrap.not-empty label {

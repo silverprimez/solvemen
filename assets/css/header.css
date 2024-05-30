@@ -1,7 +1,11 @@
 .top-header {
     background-color: var(--white);
-    position: relative;
+    position: fixed; /* Changed from relative to fixed */
+    top: 0; /* Added top positioning */
+    width: 100%; /* Ensure the header spans the width */
     padding: 0 2rem;
+    transition: top 0.3s ease-in-out; /* Added transition for smooth movement */
+    z-index: 1000; /* Ensure the header is above other content */
 }
 
 .top-header img {
@@ -53,7 +57,6 @@
 .dropdown_menu li .dropdown-button:hover {
     color: var(--black);
 }
-
 
 .top-header .header-mode {
     display: flex;
@@ -123,11 +126,9 @@
     color: var(--black);
 }
 
-
-
 @media (max-width: 1019px) {
     .top-header .header-menu,
-    .top-header  .button {
+    .top-header .button {
         display: none;
     }
 
