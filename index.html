@@ -39,11 +39,7 @@
 </head>
 
 <body>
-    <!--MODAL BOX BEGINS HERE-->
-
-    <!--MODAL BOX ENDS HERE-->
-
-    <!-- HEADER BEGINS HERE-->
+<!-- HEADER BEGINS HERE-->
     <header class="top-header">
         <nav>
             <a href="index.html">
@@ -55,89 +51,7 @@
                 <li><a href="#product" title="Product">Product</a></li>
                 <li><a href="#branch" title="Branch">Branch</a></li>
             </ul>
-            <a href="#" class="button" id="contact-button"><span class="material-symbols-outlined">support_agent</span>Contact</a>
-            
-            <div class="modal__container" id="modal-container">
-                <section class="contact">
-                    <div class="contact-header">
-                        <ul>
-                            <li>
-                                <a href="#" class="logo">
-                                    <div class="images">
-                                        <img src="assets/images/SLV-Tr-Black.png" class="logo-forLight" alt="Company Logo">
-                                    </div>
-                                </a>
-                            </li>
-                            <!--<li>
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li> -->
-                            <li>
-                                <span class="nav-link theme-toggle close-modal">
-                                    <i class="fa-solid fa-right-from-bracket"></i>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="contact-form">
-                        <div class="left">
-                            <div class="form-wrapper">
-                                <div class="contact-heading">
-                                    <h1>Let's Work Together<span>.</span></h1>
-                                    <p class="text">Or Reach us Via : <a href="https://t.me/timoteukselle" target="_blank"><i class="fa-brands fa-telegram"></i> </a></p>
-                                    
-                                </div>
-                                <form action="email.php" method="post" class="contact-forms">
-                                    <div class="input-wrap">
-                                        <input class="contact-input" autocomplete="off" name="First_Name" type="text" required>
-                                        <label>First name</label>
-                                        <i class="icon fa-solid fa-address-card"></i>
-                                    </div>
-                                    <div class="input-wrap">
-                                        <input class="contact-input" autocomplete="off" name="Last_Name" type="text" required>
-                                        <label>Last name</label>
-                                        <i class="icon fa-solid fa-address-card"></i>
-                                    </div>
-                                    <div class="input-wrap w-100">
-                                        <input class="contact-input" autocomplete="off" name="Email" type="text" required>
-                                        <label>Email</label>
-                                        <i class="icon fa-solid fa-envelope"></i>
-                                    </div>
-                                    <div class="input-wrap textarea w-100">
-                                        <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
-                                        <label>Message</label>
-                                        <i class="icon fa-solid fa-inbox"></i>
-                                    </div>
-                                    <div class="contact-buttons">
-                                        <!--<button class="btn upload">
-                                            <span>
-                                                <i class="fa-solid fa-paperclip"></i> Add attachment
-                                            </span>
-                                            <input type="file" name="attachment">
-                                        </button>-->
-                                        <input type="submit" value="Send Message" class="btn">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="image-wrapper">
-                                <img src="assets/images/contact-wp.png" class="img">
-                                <div class="wave-wrap">
-                                    <svg class="wave" viewBox="0 0 783 1536" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path id="wave"
-                                        d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1 1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z" />
-                                    </svg>
-                                </div>
-                                <svg class="dashed-wave" viewBox="0 0 345 877" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path id="dashed-wave" 
-                                    d="M0.5 876C25.6667 836.167 73.2 739.8 62 673C48 589.5 35.5 499.5 125.5 462C215.5 424.5 150 365 87 333.5C24 302 44 237.5 125.5 213.5C207 189.5 307 138.5 246 87C185 35.5 297 1 344.5 1"/>
-                                    </svg>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-    
+            <a href="#" class="button" id="contact-button"><span class="material-symbols-outlined">support_agent</span>Contact</a>    
             <div class="toggle_button">
                 <span class="material-symbols-outlined">menu</span>
             </div>
@@ -145,7 +59,7 @@
                 <li><a href="#about" title="About Us">About</a></li>
                 <li><a href="#team" title="Our Team">Team</a></li>
                 <li><a href="#product" title="Product">Product</a></li>
-                <li><a href="#" class="dropdown-button"><span class="material-symbols-outlined">support_agent</span>Contact</a></li>
+                <li><a class="dropdown-button"><span class="material-symbols-outlined">support_agent</span>Contact</a></li>
             </div>
         </nav>
     </header>
@@ -470,6 +384,86 @@
     
      <!-- FOOTER ENDS HERE-->
 
+     <div class="modal__container" id="modal-container">
+        <section class="contact">
+            <div class="contact-header">
+                <ul>
+                    <li>
+                        <a href="#" class="logo">
+                            <div class="images">
+                                <img src="assets/images/SLV-Tr-Black.png" class="logo-forLight" alt="Company Logo">
+                            </div>
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li> -->
+                    <li>
+                        <span class="nav-link theme-toggle close-modal">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <div class="left">
+                    <div class="form-wrapper">
+                        <div class="contact-heading">
+                            <h1>Let's Work Together<span>.</span></h1>
+                            <p class="text">Or Reach us Via : <a href="https://t.me/timoteukselle" target="_blank"><i class="fa-brands fa-telegram"></i> </a></p>
+                            
+                        </div>
+                        <form action="email.php" method="post" class="contact-forms">
+                            <div class="input-wrap">
+                                <input class="contact-input" autocomplete="off" name="First_Name" type="text" required>
+                                <label>First name</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
+                            <div class="input-wrap">
+                                <input class="contact-input" autocomplete="off" name="Last_Name" type="text" required>
+                                <label>Last name</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
+                            <div class="input-wrap w-100">
+                                <input class="contact-input" autocomplete="off" name="Email" type="text" required>
+                                <label>Email</label>
+                                <i class="icon fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="input-wrap textarea w-100">
+                                <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
+                                <label>Message</label>
+                                <i class="icon fa-solid fa-inbox"></i>
+                            </div>
+                            <div class="contact-buttons">
+                                <!--<button class="btn upload">
+                                    <span>
+                                        <i class="fa-solid fa-paperclip"></i> Add attachment
+                                    </span>
+                                    <input type="file" name="attachment">
+                                </button>-->
+                                <input type="submit" value="Send Message" class="btn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="image-wrapper">
+                        <img src="assets/images/contact-wp.png" class="img">
+                        <div class="wave-wrap">
+                            <svg class="wave" viewBox="0 0 783 1536" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="wave"
+                                d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1 1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z" />
+                            </svg>
+                        </div>
+                        <svg class="dashed-wave" viewBox="0 0 345 877" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="dashed-wave" 
+                            d="M0.5 876C25.6667 836.167 73.2 739.8 62 673C48 589.5 35.5 499.5 125.5 462C215.5 424.5 150 365 87 333.5C24 302 44 237.5 125.5 213.5C207 189.5 307 138.5 246 87C185 35.5 297 1 344.5 1"/>
+                            </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 <!-- HEADER SCRIPT-->
