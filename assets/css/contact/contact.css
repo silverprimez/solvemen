@@ -110,7 +110,7 @@
 }
 
 .text {
-    color: var(--green);
+    color: var(--black);
     line-height: 1.1;
     font-size: 1rem;
 }
@@ -118,6 +118,8 @@
 .text a {
     color: var(--blue-light);
     transition: 0.3s;
+    font-size: 1.5rem;
+
 }
 
 .text a:hover {
@@ -146,7 +148,7 @@
 
 .contact-input {
     width: 100%;
-    background-color: rgb(228, 228, 228);
+    background-color: hsla(208, 50%, 50%, 6.5%); /*input bg*/
     padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
     border: none;
     outline: none;
@@ -156,12 +158,12 @@
     font-weight: 600;
     font-size: 0.95rem;
     border: 2px solid transparent;
-    box-shadow: 0 0 0 0px hsla(var(--green), 92%, 54%, 0.169);
+    box-shadow: 0 0 0 0px hsla(208, 50%, 50%, 14%);
     transition: .3s;
 }
 
 .contact-input:hover {
-    background-color: var(--gold);
+    background-color: hsla(208, 50%, 50%, 14%);
 }
 
 .input-wrap label {
@@ -169,7 +171,7 @@
     top: 50%;
     left: calc(1.35rem + 2px);
     transform: translateY(-50%);
-    color: var(--green);
+    color: #8c9aaf;
     pointer-events: none;
     transition: .25s;
 }
@@ -180,7 +182,7 @@
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
-    color: var(--green);
+    color: #8c9aaf;
     font-size: 1.25rem;
     transition: .3s;
 }
@@ -203,16 +205,16 @@ textarea.contact-input ~ .icon {
 
 .input-wrap.focus .contact-input {
     background-color: var(--white);
-    border: 2px solid pink;
+    border: 2px solid var(--blue-light);
     box-shadow: 0 0 0 5px hsla(var(--green), 91%, 55%, 0.11);
 }
 
 .input-wrap.focus label {
-    color: brown;
+    color: var(--green);
 }
 
 .input-wrap.focus .icon {
-    color: aquamarine;
+    color: var(--black);
 }
 
 .input-wrap.not-empty label {
