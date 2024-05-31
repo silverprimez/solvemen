@@ -1,28 +1,34 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const contactButton = document.getElementById('contact-button');
-    const dropdownButton = document.querySelector('.dropdown-button');
+    const dropdownContactButton = document.querySelector('.dropdown-button');
     const modalContainer = document.getElementById('modal-container');
     const closeButtons = document.querySelectorAll('.close-modal');
-    const dropDownMenu = document.querySelector('.dropdown_menu');
     const toggleButtonIcon = document.querySelector('.toggle_button span');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    function closeModal() {
+        modalContainer.classList.remove('show-modal');
+        dropDownMenu.classList.remove('open');
+        toggleButtonIcon.textContent = 'menu'; // Change icon back to 'menu'
+    }
 
     if (contactButton && modalContainer) {
         contactButton.addEventListener('click', () => {
             modalContainer.classList.add('show-modal');
+            window.scrollTo({ top: window.scrollY, behavior: 'auto' }); // Maintain scroll position
         });
     }
 
-    if (dropdownButton && modalContainer) {
-        dropdownButton.addEventListener('click', () => {
+    if (dropdownContactButton && modalContainer) {
+        dropdownContactButton.addEventListener('click', () => {
             modalContainer.classList.add('show-modal');
             dropDownMenu.classList.remove('open');
-            toggleButtonIcon.textContent = 'menu'; // Sets the text back to 'menu' icon
+            toggleButtonIcon.textContent = 'menu'; // Change icon back to 'menu'
+            window.scrollTo({ top: window.scrollY, behavior: 'auto' }); // Maintain scroll position
         });
     }
 
     closeButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            modalContainer.classList.remove('show-modal');
-        });
+        button.addEventListener('click', closeModal);
     });
 });

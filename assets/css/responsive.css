@@ -180,6 +180,9 @@
         padding: 50px 1.5rem 0;
         grid-template-columns: 1fr;
         justify-items: center;
+        background-color: var(--white);
+        margin-top: 170px;
+        overflow: scroll;
     }
 
     .forms-wrapper {
@@ -202,10 +205,6 @@
 
     .right {
         display: none;
-    }
-
-    .left {
-        background-color: var(--white);
     }
 }
 
@@ -367,8 +366,11 @@
     }
 
     .left {
+        margin-top: 230px;
+        margin-bottom: 20px;
+    }
 }
-}
+
 
 @media (max-width: 439px) {
     .card-section .card-icons {
