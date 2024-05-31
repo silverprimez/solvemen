@@ -3,9 +3,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--black); /* Adjust background color as needed */
+    background: var(--green); /* Adjust background color as needed */
     padding: 20px 0;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 
@@ -13,7 +13,7 @@
     content: ""; 
     display: block;
     height: 230px; 
-    background-color: var(--black); 
+    background-color: var(--green); 
     position: absolute;
     width: 100%; 
     top: -225px; 
@@ -21,6 +21,17 @@
     z-index: 0; 
 } 
 
+.about-us::after {
+    content: ""; 
+    display: block;
+    height: 230px; 
+    background-color: var(--green); 
+    position: absolute;
+    width: 100%; 
+    top: 390px; 
+    left: 0;
+    z-index: 0; 
+}
 
 .about-us-container {
     display: flex;
@@ -79,10 +90,15 @@
 .value-item {
     text-align: center;
     padding: 10px;
+    z-index: 1;
 }
 
 .about-us-content h5 {
     color: var(--gold);
+}
+
+.about-us h4 {
+    font-weight: 400;
 }
 
 /* Responsive adjustments */
