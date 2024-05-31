@@ -44,7 +44,7 @@
     }
 }
 
-@media (max-width: 1101px) {
+@media (max-width: 1301px) {
     .logo {
         margin-right: 1rem;
     }
@@ -162,6 +162,12 @@
 @media (max-width: 992px) {
     .about-us::before {
         display: none;
+    }
+}
+
+@media (max-width: 975px) {
+    .contact-heading h1 {
+        font-size: 2.1rem;
     }
 }
 
@@ -358,6 +364,8 @@
         height: 45px;
         margin-right: 0.7rem;
     }
+
+    .left {
 }
 
 @media (max-width: 439px) {

@@ -1,10 +1,10 @@
 .modal__container{
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 15%;
+  left: 5%;
   background-color: hsla(208, 18%, 75%, .8);
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   display: grid;
   align-items: flex-end;
   overflow: hidden;
@@ -12,6 +12,8 @@
   z-index: var(--z-modal);
   visibility: hidden;
   opacity: 0;
+  border: solid 8px var(--blue-light);
+  border-radius: 20px;
 }
 
 .show-modal{

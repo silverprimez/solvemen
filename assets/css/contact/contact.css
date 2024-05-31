@@ -94,6 +94,7 @@
     align-items: center;
     position: relative;
     z-index: 3;
+    margin-top: 15%;
 }
 
 .contact-heading h1 {
@@ -334,4 +335,4 @@ textarea.contact-input ~ .icon {
     stroke-width: 1px;
     stroke-dasharray: 6.5;
     opacity: 0.8;
-}
+};
