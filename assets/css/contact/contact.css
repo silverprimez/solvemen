@@ -10,7 +10,7 @@
     height: 65px;
     display: flex;
     align-items: flex-end;
-    background-color: var(--white);
+    margin-top: 20px;
 }
 
 .contact-header ul {
@@ -78,6 +78,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    background-color: var(--white);
 }
 
 .contact .contact-form > div {

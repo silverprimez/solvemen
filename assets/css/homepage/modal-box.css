@@ -1,6 +1,6 @@
-.modal__container{
+.modal__container {
   position: fixed;
-  top: 15%;
+  top: 10%;
   left: 5%;
   background-color: hsla(208, 18%, 75%, .8);
   width: 90%;
