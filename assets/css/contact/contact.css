@@ -337,4 +337,17 @@ textarea.contact-input ~ .icon {
     stroke-width: 1px;
     stroke-dasharray: 6.5;
     opacity: 0.8;
-};
+}
+
+.contact-header ul li i {
+    padding: 5px;
+    border: solid 2px var(--blue-light);
+    border-radius: 5px;
+    background-color: var(--blue-light);
+    color: var(--white);
+}
+
+.contact-header ul li i:hover {
+    background-color: var(--white);
+    color: var(--blue-light);
+}
