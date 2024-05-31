@@ -10,6 +10,7 @@
     height: 65px;
     display: flex;
     align-items: flex-end;
+    background-color: var(--white);
 }
 
 .contact-header ul {

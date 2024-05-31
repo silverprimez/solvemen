@@ -251,6 +251,7 @@
     
     .hero {
         height: 75vh;
+        margin-top: 170px;
     }
 
     .top-header img {
@@ -366,6 +367,7 @@
     }
 
     .left {
+}
 }
 
 @media (max-width: 439px) {
