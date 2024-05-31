@@ -1,37 +1,34 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (event) => {
     const contactButton = document.getElementById('contact-button');
-    const dropdownButton = document.querySelector('.dropdown-button');
+    const dropdownContactButton = document.querySelector('.dropdown-button');
     const modalContainer = document.getElementById('modal-container');
-    const closeModalButton = document.querySelector('.close-modal');
-    const toggleButton = document.querySelector('.toggle_button span');
+    const closeButtons = document.querySelectorAll('.close-modal');
+    const toggleButtonIcon = document.querySelector('.toggle_button span');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
 
-    const openModal = () => {
-        modalContainer.classList.add('show-modal');
-        document.body.style.overflow = 'hidden'; // Optional: to prevent background scrolling
-        toggleButton.innerHTML = 'menu'; // Change icon back to hamburger
-    };
-
-    const closeModal = () => {
+    function closeModal() {
         modalContainer.classList.remove('show-modal');
-        document.body.style.overflow = 'auto'; // Restore background scrolling
-    };
+        dropDownMenu.classList.remove('open');
+        toggleButtonIcon.textContent = 'menu'; // Change icon back to 'menu'
+    }
 
-    contactButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        openModal();
-    });
+    if (contactButton && modalContainer) {
+        contactButton.addEventListener('click', () => {
+            modalContainer.classList.add('show-modal');
+            window.scrollTo({ top: window.scrollY, behavior: 'auto' }); // Maintain scroll position
+        });
+    }
 
-    dropdownButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        openModal();
-    });
+    if (dropdownContactButton && modalContainer) {
+        dropdownContactButton.addEventListener('click', () => {
+            modalContainer.classList.add('show-modal');
+            dropDownMenu.classList.remove('open');
+            toggleButtonIcon.textContent = 'menu'; // Change icon back to 'menu'
+            window.scrollTo({ top: window.scrollY, behavior: 'auto' }); // Maintain scroll position
+        });
+    }
 
-    closeModalButton.addEventListener('click', closeModal);
-
-    // Close the dropdown menu if open
-    dropdownButton.addEventListener('click', () => {
-        const dropdownMenu = document.querySelector('.dropdown_menu');
-        dropdownMenu.style.display = 'none';
-        toggleButton.innerHTML = 'menu'; // Change icon back to hamburger
+    closeButtons.forEach(button => {
+        button.addEventListener('click', closeModal);
     });
 });
