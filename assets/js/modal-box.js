@@ -32,3 +32,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         button.addEventListener('click', closeModal);
     });
 });
+
+function toggle() {
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup = document.getElementById('modal-container');
+    popup.classList.toggle('active');
+}

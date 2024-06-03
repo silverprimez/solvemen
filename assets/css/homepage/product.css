@@ -34,7 +34,7 @@
     height: 100%;
     object-fit: cover;
 }
-.slider .list .item .content{
+.slider .list .item .content {
     position: absolute;
     top: 20%;
     width: 1140px;
@@ -43,7 +43,7 @@
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--white);
     text-shadow: 0 5px 10px #0004;
 }
 

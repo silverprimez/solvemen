@@ -69,3 +69,9 @@
   color: var(--first-color);
   font-weight: 500;
 }
+
+.main-body#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}

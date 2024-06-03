@@ -40,6 +40,7 @@
 
 <body>
 <!-- HEADER BEGINS HERE-->
+<section class="main-body" id="blur">
     <header class="top-header">
         <nav>
             <a href="index.html">
@@ -51,7 +52,7 @@
                 <li><a href="#product" title="Product">Product</a></li>
                 <li><a href="#branch" title="Branch">Our Reach</a></li>
             </ul>
-            <a class="button" id="contact-button"><span class="material-symbols-outlined">support_agent</span>Contact</a>    
+            <a class="button" id="contact-button" onclick="toggle()"><span class="material-symbols-outlined">support_agent</span>Contact</a>    
             <div class="toggle_button">
                 <span class="material-symbols-outlined">menu</span>
             </div>
@@ -60,7 +61,7 @@
                 <li><a href="#team" title="Our Team">Team</a></li>
                 <li><a href="#product" title="Product">Product</a></li>
                 <li><a href="#branch" title="Branch">Our Reach</a></li>
-                <li><a class="dropdown-button"><span class="material-symbols-outlined">support_agent</span>Contact</a></li>
+                <li><a class="dropdown-button" onclick="toggle()"><span class="material-symbols-outlined">support_agent</span>Contact</a></li>
             </div>
         </nav>
     </header>
@@ -260,38 +261,12 @@
         <h1 class="slider-title">Our Product</h1>
         <div class="list">
             <div class="item">
-                <img src="assets/images/cocoa-powder.png" alt="">
+                <img src="assets/images/coconut-oil.png" alt="">
                 <div class="content">
-                    <div class="titles">COCOA POWDER</div>
-                    <div class="type">NATURAL | ALKALIZED</div>
+                    <div class="titles">COCONUT OIL</div>
+                    <div class="type">REFINED | DEODORIZED | BLEACHED</div>
                     <div class="description">
-                        Cocoa powder is obtained from cocoa beans, and it has many applications: in baking and cooking, in preparation of drinks, as well as wide applications in confectionery industry, and even in manufacturing of cosmetics.
-                    </div>
-                    <div class="button">
-                        <!--<button>SEE MORE</button>-->
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/images/desiccated-coconut.png" alt="">
-                <div class="content">
-                    <div class="titles">DESICCATED COCONUT</div>
-                    <div class="type">LOW FAT | MEDIUM FAT | HIGH FAT</div>
-                    <div class="description">
-                        Made from grated and dried coconut meat, it enhances flavor and texture in baking, cooking, and confectionery. It’s also used in cereals, granola, and cosmetics like soaps and scrubs.
-                    </div>
-                    <div class="button">
-                        <!--<button>SEE MORE</button>-->
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/images/coconut-water.png" alt="">
-                <div class="content">
-                    <div class="titles">COCONUT WATER</div>
-                    <div class="type">NATURAL WATER</div>
-                    <div class="description">
-                        Coconut water, the clear liquid inside coconuts, is refreshing and hydrating. Often consumed as a beverage, it's also used in smoothies and cocktails. Rich in electrolytes, it offers a low-calorie, nutrient-rich profile.
+                        With a low viscosity and ability to remain liquid at room temperature, this substance is excellent for both food and non-food applications. Its sharp melting point allows it to melt quickly, providing a pleasant mouthfeel.
                     </div>
                     <div class="button">
                         <!--<button>SEE MORE</button>-->
@@ -311,19 +286,45 @@
                     </div>
                 </div>
             </div>
+            <div class="item">
+                <img src="assets/images/desiccated-coconut.png" alt="">
+                <div class="content">
+                    <div class="titles">PALM OIL</div>
+                    <div class="type">SHORTENING</div>
+                    <div class="description">
+                        Designed for the bakery industry, perfect for making bread, cookies, cakes, and other confectionery products, It's suitable for all climates. It's excellent for frying, with reduced smoke and foam emissions, and has good resistance to oxidation and gummosis.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/coconut-water.png" alt="">
+                <div class="content">
+                    <div class="titles">COCONUT WATER</div>
+                    <div class="type">NATURAL WATER</div>
+                    <div class="description">
+                        Coconut water, the clear liquid inside coconuts, is refreshing and hydrating. Often consumed as a beverage, it's also used in smoothies and cocktails. Rich in electrolytes, it offers a low-calorie, nutrient-rich profile.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="thumbnail">
             <div class="item">
-                <img src="assets/images/cocoa-powder.png" alt="">
+                <img src="assets/images/coconut-oil.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/condensed-milk.png" alt="">
             </div>
             <div class="item">
                 <img src="assets/images/desiccated-coconut.png" alt="">
             </div>
             <div class="item">
                 <img src="assets/images/coconut-water.png" alt="">
-            </div>
-            <div class="item">
-                <img src="assets/images/condensed-milk.png" alt="">
             </div>
         </div>
         <div class="nextPrevArrows">
@@ -347,11 +348,32 @@
             <div class="pin africa">
                 <span>African Continent</span>
             </div>
-            <div class="pin europe">
-                <span>Europe</span>
-            </div>
             <div class="pin middle-east">
                 <span>Middle East</span>
+            </div>
+            <div class="pin armenia-azerbaijan">
+                <span>Armenia & Azerbaijan</span>
+            </div>
+            <div class="pin belarus">
+                <span>Belarus</span>
+            </div>
+            <div class="pin kazakhstan">
+                <span>Kazakhstan</span>
+            </div>
+            <div class="pin moldova">
+                <span>Moldova</span>
+            </div>
+            <div class="pin russia">
+                <span>Russia</span>
+            </div>
+            <div class="pin taijikistan-kyrgystan">
+                <span>Taijikistan & Kyrgyzstan</span>
+            </div>
+            <div class="pin turkey">
+                <span>Turkey</span>
+            </div>
+            <div class="pin turkmenistan-uzbekistan">
+                <span>Turkmenistan & Uzbekistan</span>
             </div>
         </div>
     </section>
@@ -384,7 +406,7 @@
     </footer>
     
      <!-- FOOTER ENDS HERE-->
-
+</section>
      <div class="modal__container" id="modal-container">
         <section class="contact">
             <div class="contact-header">
@@ -401,7 +423,7 @@
                     </li> -->
                     <li>
                         <span class="nav-link theme-toggle close-modal">
-                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <a onclick="toggle()"><i class="fa-solid fa-right-from-bracket"></i></a>
                         </span>
                     </li>
                 </ul>

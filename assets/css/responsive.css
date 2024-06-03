@@ -3,21 +3,17 @@
 }
 
 @media (max-width: 1799px) {
-    .about-us::before {
+    /*.about-us::before {
         display: block;
-        top: -200px; /* Position it above the section */
+        top: -200px; 
         left: 0;
-    }
+    }*/
 }
 
 @media (max-width: 1519px) {
     .card-blocks {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .about-us::before {
-        display: none;
     }
 
     .card-section {
@@ -150,6 +146,12 @@
     }
 }
 
+@media (max-width: 1092px) {
+    .about-us::after {
+        display: none;
+    }
+}
+
 @media (max-width: 1019px) {
     .top-header .header-menu,
     .top-header .button {
@@ -162,6 +164,10 @@
 
     .dropdown_menu {
         display: block;
+    }
+
+    .about-us {
+        top: -20px;
     }
 }
 
@@ -316,6 +322,14 @@
         text-align: center;
     }
 
+    .branch-title h2 {
+        font-size: 1.28em;
+    }
+
+    .branch-title h5 {
+        font-size: 0.707em;
+    }
+
     .pin span {
         font-size: 0.6em;
     }
@@ -330,14 +344,6 @@
 @media (max-width: 465px) {
     .branch-title {
         width: 300px;
-    }
-
-    .branch-title h2 {
-        font-size: 1.28em;
-    }
-
-    .branch-title h5 {
-        font-size: 0.707em;
     }
 
     .pin span {
@@ -392,9 +398,9 @@
     }
 }
 
-@media (max-width: 432px) {
+@media (max-width: 442px) {
     .slider .list .item .content .type {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .footer-menu {

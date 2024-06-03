@@ -71,28 +71,68 @@
     background: var(--green);
     border-radius: 3em;
     padding: 0.3em 0.6em;
-    font-size: 0.9em;
+    font-size: 0.7em;
     color: var(--white);
 }
 
 .sea {
-    top: 63%;
-    left: 78%;
+    top: 62.5%;
+    left: 77%;
 }
 
 .africa {
-    top: 60%;
+    top: 65%;
     left: 55%;
 }
 
-.europe {
+/*.europe {
     top: 40%;
     left: 48%;
-}
+}*/
 
 .middle-east {
-    top: 51%;
-    left: 59%;
+    top: 52%;
+    left: 60%;
+}
+
+.turkey {
+    top: 44%;
+    left: 56%;
+}
+
+.belarus {
+    top: 34%;
+    left: 53.5%;
+}
+
+.moldova {
+    top: 39%;
+    left: 55%;
+}
+
+.armenia-azerbaijan {
+    top: 41.5%;
+    left: 56%;
+}
+
+.turkmenistan-uzbekistan {
+    top: 44%;
+    left: 63%;
+}
+
+.kazakhstan {
+    top: 37%;
+    left: 65%;
+}
+
+.taijikistan-kyrgystan {
+    top: 47%;
+    left: 66%;
+}
+
+.russia {
+    top: 28%;
+    left: 68%;
 }
 
 @keyframes pulse {
