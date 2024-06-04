@@ -9,11 +9,14 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: var(--white);
-    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 button {
