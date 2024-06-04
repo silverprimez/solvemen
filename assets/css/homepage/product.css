@@ -1,9 +1,7 @@
 .slider-title {
     position: absolute;
     top: 30px; 
-    left: 50%;
     width: 35%;
-    transform: translateX(-50%);
     z-index: 101;
     font-size: 2rem; 
     color: var(--white);
@@ -17,11 +15,13 @@
     word-wrap: break-word;
 }
 
-.slider{
+.slider {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     position: relative;
+    display: flex; 
+    justify-content: center;
 }
 .slider .list .item{
     width: 100%;
@@ -124,7 +124,7 @@
 
 
 /* nextPrevArrows Section  */
-.nextPrevArrows{
+.nextPrevArrows {
     position: absolute;
     top: 80%;
     right: 52%;
@@ -135,13 +135,13 @@
     gap: 10px;
     align-items: center;
 }
-.nextPrevArrows button{
+.nextPrevArrows button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: var(--blue-light);
     border: none;
-    color: var(--black);
+    color: var(--white);
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
