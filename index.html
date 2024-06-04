@@ -436,7 +436,7 @@
                             <p class="text">and tell us what you need.</p>
                             
                         </div>
-                        <form action="email.php" method="post" class="contact-forms">
+                        <form id="contact-form" class="contact-forms">
                             <div class="input-wrap">
                                 <input class="contact-input" autocomplete="off" name="First_Name" type="text" required>
                                 <label>First name</label>
@@ -448,7 +448,7 @@
                                 <i class="icon fa-solid fa-address-card"></i>
                             </div>
                             <div class="input-wrap w-100">
-                                <input class="contact-input" autocomplete="off" name="Email" type="text" required>
+                                <input class="contact-input" autocomplete="off" name="Email" type="email" required>
                                 <label>Email</label>
                                 <i class="icon fa-solid fa-envelope"></i>
                             </div>
@@ -466,7 +466,7 @@
                                 </button>-->
                                 <input type="submit" value="Send Message" class="btn">
                             </div>
-                        </form>
+                        </form>                        
                     </div>
                 </div>
                 <div class="right">
@@ -497,6 +497,9 @@
 
 <!-- CONTACT FORM SCRIPT-->
 <script src="assets/js/contact-form.js?v=1"></script>
+
+<!-- AJAX FORM SUBMISSION SCRIPT-->
+<script src="assets/js/email.js?v=1"></script>
 
 <!-- MODAL BOX SCRIPT-->
 <script src="assets/js/modal-box.js?v=1"></script>
