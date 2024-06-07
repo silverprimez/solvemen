@@ -27,184 +27,106 @@
 }
 
 .branch svg path {
-    fill: var(--blue-light);
+    fill: grey;
     stroke: var(--black);
     stroke-width: .25;
 }
 
-.branch svg path.armenia {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path.Azerbaijan {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#BY {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#KZ {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#MD {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path.Russian {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#TJ {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#KG {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path.Turkey {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#TM {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#UZ {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path.New_Zealand {
-    fill: red;
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path.Australia {
-    fill: red;
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path.USA {
-    fill: red;
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#BN {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#KH {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#TL {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path.Indonesia {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path.Malaysia {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#MM {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path.Philippines {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#TH {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#VN {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#IQ {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#AE {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#ZW {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#SL {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.branch svg path#KE {
-    fill: var(--green);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
+.branch svg path.armenia,
+.branch svg path.Azerbaijan,
+.branch svg path#BY,
+.branch svg path#KZ,
+.branch svg path#MD,
+.branch svg path.Russian,
+.branch svg path#TJ,
+.branch svg path#KG,
+.branch svg path.Turkey,
+.branch svg path#TM,
+.branch svg path#UZ,
+.branch svg path.New_Zealand,
+.branch svg path.Australia,
+.branch svg path.USA,
+.branch svg path#BN,
+.branch svg path#KH,
+.branch svg path#TL,
+.branch svg path.Indonesia,
+.branch svg path.Malaysia,
+.branch svg path#MM,
+.branch svg path.Philippines,
+.branch svg path#TH,
+.branch svg path#VN,
+.branch svg path#IQ,
+.branch svg path#AE,
+.branch svg path#ZW,
+.branch svg path#SL,
+.branch svg path#KE,
 .branch svg path#ZA {
     fill: var(--green);
     transition: 0.6s;
     cursor: pointer;
 }
+
+.branch svg path.armenia:hover,
+.branch svg path.armenia:active,
+.branch svg path.Azerbaijan:hover,
+.branch svg path.Azerbaijan:active,
+.branch svg path#BY:hover,
+.branch svg path#BY:active,
+.branch svg path#KZ:hover,
+.branch svg path#KZ:active,
+.branch svg path#MD:hover,
+.branch svg path#MD:active,
+.branch svg path.Russian:hover,
+.branch svg path.Russian:active,
+.branch svg path#TJ:hover,
+.branch svg path#TJ:active,
+.branch svg path#KG:hover,
+.branch svg path#KG:active,
+.branch svg path.Turkey:hover,
+.branch svg path.Turkey:active,
+.branch svg path#TM:hover,
+.branch svg path#TM:active,
+.branch svg path#UZ:hover,
+.branch svg path#UZ:active,
+.branch svg path.New_Zealand:hover,
+.branch svg path.New_Zealand:active,
+.branch svg path.Australia:hover,
+.branch svg path.Australia:active,
+.branch svg path.USA:hover,
+.branch svg path.USA:active,
+.branch svg path#BN:hover,
+.branch svg path#BN:active,
+.branch svg path#KH:hover,
+.branch svg path#KH:active,
+.branch svg path#TL:hover,
+.branch svg path#TL:active,
+.branch svg path.Indonesia:hover,
+.branch svg path.Indonesia:active,
+.branch svg path.Malaysia:hover,
+.branch svg path.Malaysia:active,
+.branch svg path#MM:hover,
+.branch svg path#MM:active,
+.branch svg path.Philippines:hover,
+.branch svg path.Philippines:active,
+.branch svg path#TH:hover,
+.branch svg path#TH:active,
+.branch svg path#VN:hover,
+.branch svg path#VN:active,
+.branch svg path#IQ:hover,
+.branch svg path#IQ:active,
+.branch svg path#AE:hover,
+.branch svg path#AE:active,
+.branch svg path#ZW:hover,
+.branch svg path#ZW:active,
+.branch svg path#SL:hover,
+.branch svg path#SL:active,
+.branch svg path#KE:hover,
+.branch svg path#KE:active,
+.branch svg path#ZA:hover,
+.branch svg path#ZA:active {
+    fill: var(--green-dark);
+}
+
 
 .tooltip {
     position: absolute;

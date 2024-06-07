@@ -34,6 +34,7 @@ button {
     --white: #fff;
     --silver: #dbdada;
     --blue-dark: #001B36;
+    --green-dark: rgb(0, 66, 0);
     --z-modal: 1000;
     --z-index: 999;
 
