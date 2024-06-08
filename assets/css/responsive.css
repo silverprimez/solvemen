@@ -10,6 +10,26 @@
     }*/
 }
 
+@media (max-width: 1806px) {
+    .hero-text h1 {
+        padding-right: 1000px;
+    }
+
+    .hero-subtitle {
+        padding-right: 1000px;
+    }
+}
+
+@media (max-width: 1711px) {
+    .hero-text h1 {
+        padding-right: 800px;
+    }
+
+    .hero-subtitle {
+        
+    }
+}
+
 @media (max-width: 1519px) {
     .card-blocks {
         display: flex;
@@ -27,6 +47,25 @@
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 1380px) {
+    .hero-subtitle {
+        padding-right: 700px;
+    }
+}
+
+@media (max-width: 1319px) {
+    .hero-text h1 {
+        padding-right: 700px;
+    }
+}
+
+@media (max-width: 1219px) {
+    .hero-text h1 {
+        padding-right: 550px;
+    }
+}
+
 
 @media (max-width: 1200px) {
     .about-us-image::before {
@@ -250,10 +289,12 @@
     
     .hero-text h1 {
         font-size: 40px;
+        padding-right: 0;
     }
     
     .hero-subtitle {
         font-size: 20px;
+        padding-right: 80px;
     }
     
     .hero-content {

@@ -34,33 +34,33 @@
 
 .branch svg path.armenia,
 .branch svg path.Azerbaijan,
-.branch svg path#BY,
-.branch svg path#KZ,
-.branch svg path#MD,
+.branch svg path#BY, /*Belarus*/
+.branch svg path#KZ, /*Kazakhstan*/
+.branch svg path#MD, /*Moldova*/
 .branch svg path.Russian,
-.branch svg path#TJ,
-.branch svg path#KG,
+.branch svg path#TJ, /*Tajikistan*/
+.branch svg path#KG, /*Kyrgyzstan*/
 .branch svg path.Turkey,
-.branch svg path#TM,
-.branch svg path#UZ,
+.branch svg path#TM, /*Turkmenistan*/
+.branch svg path#UZ, /*Uzbekistan*/
 .branch svg path.New_Zealand,
 .branch svg path.Australia,
 .branch svg path.USA,
-.branch svg path#BN,
-.branch svg path#KH,
-.branch svg path#TL,
+.branch svg path#BN, /*Brunei Darussalam*/
+.branch svg path#KH, /*Cambodia*/
+.branch svg path#TL, /*Timor-Leste*/
 .branch svg path.Indonesia,
 .branch svg path.Malaysia,
-.branch svg path#MM,
+.branch svg path#MM, /*Myanmar*/
 .branch svg path.Philippines,
-.branch svg path#TH,
-.branch svg path#VN,
-.branch svg path#IQ,
-.branch svg path#AE,
-.branch svg path#ZW,
-.branch svg path#SL,
-.branch svg path#KE,
-.branch svg path#ZA {
+.branch svg path#TH, /*Thailand*/
+.branch svg path#VN, /*Vietnam*/
+.branch svg path#IQ, /*Iraq*/
+.branch svg path#AE, /*United Arab Emirates*/
+.branch svg path#ZW, /*Zimbabwe*/
+.branch svg path#SL, /*Sierra Leone*/
+.branch svg path#KE, /*Kenya*/
+.branch svg path#ZA /*South Africa*/ {
     fill: var(--green);
     transition: 0.6s;
     cursor: pointer;
