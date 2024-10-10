@@ -26,6 +26,7 @@ footer .social-icons, .footer-menu {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    cursor: pointer;
 }
 
 footer .social-icons li a {
@@ -38,6 +39,11 @@ footer .social-icons li a {
 
 footer .social-icons li a:hover {
     transform: translateY(-10px);
+}
+
+footer .footer-menu {
+    border-top: solid 2px var(--white);
+    border-bottom: solid 2px var(--white);
 }
 
 footer .footer-menu li a {
@@ -58,6 +64,11 @@ footer p {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.1em;
+}
+
+footer p a {
+    color: var(--gold);
+    font-weight: 500;
 }
 
 footer .wave {
@@ -114,4 +125,71 @@ footer .wave#wave4 {
     100% {
         background-position-x: 1000px;
     }
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Align items at the start */
+    width: 100%;
+    font-size: 15px;
+}
+
+.info-address {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content at the start */
+    gap: 15px;
+    width: 100%; /* Make sure both elements take full width */
+    padding: 10px; /* Add some padding for better spacing */
+    max-width: 800px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.info-email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content at the start */
+    gap: 15px;
+    width: 100%; /* Make sure both elements take full width */
+    padding: 10px; /* Add some padding for better spacing */
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.contact-info i {
+    background-color: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.info-email p, .info-address p {
+    margin: 0;
+    text-align: start;
+    word-wrap: break-word; /* Ensure text wraps inside the container */
+    flex-grow: 1; /* Ensure text takes available space */
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.address-column h3, .contact-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--gold);
 }

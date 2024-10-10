@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const closeButtons = document.querySelectorAll('.close-modal');
     const toggleButtonIcon = document.querySelector('.toggle_button span');
     const dropDownMenu = document.querySelector('.dropdown_menu');
+    const contactFooter = document.getElementById('footer-contact');
 
     function closeModal() {
         modalContainer.classList.remove('show-modal');
@@ -24,6 +25,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
             modalContainer.classList.add('show-modal');
             dropDownMenu.classList.remove('open');
             toggleButtonIcon.textContent = 'menu'; // Change icon back to 'menu'
+            window.scrollTo({ top: window.scrollY, behavior: 'auto' }); // Maintain scroll position
+        });
+    }
+
+    if (contactFooter && modalContainer) {
+        contactFooter.addEventListener('click', () => {
+            modalContainer.classList.add('show-modal');
             window.scrollTo({ top: window.scrollY, behavior: 'auto' }); // Maintain scroll position
         });
     }

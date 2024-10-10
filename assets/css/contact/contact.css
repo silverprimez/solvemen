@@ -230,7 +230,6 @@ textarea.contact-input ~ .icon {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
-    margin-top: 1rem;
     width: 100%;
     grid-column: span 2;
 }
@@ -351,3 +350,47 @@ textarea.contact-input ~ .icon {
     background-color: var(--white);
     color: var(--blue-light);
 }
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    display: none; /* Hide by default */
+}
+
+.input-wrap.error .error-message {
+    display: block;
+}
+
+.file-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.file-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.file-list .file-icon-style {
+    margin-right: 10px;
+    color: var(--blue-light);
+}
+
+.file-list button {
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    padding: 2px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.file-list button:hover {
+    background-color: red;
+    color: var(--white);
+}
+

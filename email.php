@@ -1,35 +1,13 @@
 <?php
-/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $fname = htmlspecialchars($_POST['First_Name']);
-    $lname = htmlspecialchars($_POST['Last_Name']);
-    $email = htmlspecialchars($_POST['Email']);
-    $message = htmlspecialchars($_POST['Message']);
-    
-    $to = "admin@solvemen.com"; // Replace with the primary recipient's email address
-    $subject = "Contact Form Submission from $name";
-    $body = "Name: ".$fname ." ". $lname."\nEmail: ".$email."\nMessage: "/$message."";
-    $headers = "From: ".$email."\r\n";
-    $headers .= "Cc: tima.kvasnikov@solvemen.com\r\n";
-    
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you for your Queries! We will attend to you shortly.";
-    } else {
-        echo "Failed to send email.";
-    }
-} else {
-    echo "Invalid request.";
-}
-?> 
-
-<?php */
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // print_r($_FILES);
     $firstName = $_POST['First_Name'] ?? '';
     $lastName = $_POST['Last_Name'] ?? '';
     $email = $_POST['Email'] ?? '';
     $message = $_POST['Message'] ?? '';
-    $ccEmail = 'tima.kvasnikov@solvemen.com'; // Replace with the actual CC email address
+    $ccEmail = 'tima.kvasnikov@solvemen.com'; // CC email address
 
-    // Validate the input
+    // Input Validation
     if (empty($firstName) || empty($lastName) || empty($email) || empty($message)) {
         echo json_encode(['success' => false, 'message' => 'All fields are required.']);
         exit;
@@ -43,16 +21,67 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Decode HTML entities in the message
     $message = html_entity_decode($message);
 
-    $to = 'admin@solvemen.com'; // Replace with your actual email address
+    // Email details
+    $to = 'admin@solvemen.com'; // Actual email address
     $subject = 'New Contact Form Submission from ' . $firstName . ' ' . $lastName;
-    $body = "First Name: $firstName\nLast Name: $lastName\nEmail: $email\nMessage:\n$message";
-    $headers = "From: $email\r\n";
-    $headers .= "CC: $ccEmail\r\n"; // Add the CC email address
 
+    // Initialize headers
+    $headers = "From: $email\r\n";
+    $headers .= "CC: $ccEmail\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    
+    // Generate a boundary string
+    $boundary = md5(time());
+
+    // Define the headers for the email with multipart/mixed type
+    $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
+
+    // Start the body of the email
+    $body = "--$boundary\r\n";
+    $body .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+    $body .= "First Name: $firstName\nLast Name: $lastName\nEmail: $email\nMessage:\n$message\n\r\n";
+// var_dump($_FILES['attachments']);exit;
+    // Handle File Attachments
+    if (isset($_FILES['attachments']) && count($_FILES['attachments']['tmp_name']) > 0) {
+        foreach ($_FILES['attachments']['tmp_name'] as $key => $tmpName) {
+            if ($_FILES['attachments']['error'][$key] === UPLOAD_ERR_OK) {
+                $fileName = $_FILES['attachments']['name'][$key];
+                $fileType = $_FILES['attachments']['type'][$key];
+
+                // Read the file content and encode it in base64
+                $fileContent = chunk_split(base64_encode(file_get_contents($tmpName)));
+
+                // Append the file content to the email body
+                $body .= "--$boundary\r\n";
+                $body .= "Content-Type: $fileType; name=\"$fileName\"\r\n";
+                $body .= "Content-Disposition: attachment; filename=\"$fileName\"\r\n";
+                $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
+                $body .= "$fileContent\r\n";
+            }
+        }
+    }
+
+    // Close the email body with the boundary
+    $body .= "--$boundary--\r\n";
+
+    // Send the email
     if (mail($to, $subject, $body, $headers)) {
-        echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+        // echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+        // redirect person back to index.html
+        // redirect to index.html, then put success message in session so i can show sweet alert
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if (mail($to, $subject, $body, $headers)) {
+                header("Location: index.html");
+                exit();
+            } else {
+                echo json_encode(['success' => false, 'message' => 'Failed to send message.']);
+            }
+        } else {
+            echo json_encode(['success' => false, 'message' => 'Invalid request method.']);
+        }        
     } else {
-        echo json_encode(['success' => false, 'message' => 'Failed to send message. Please try again.']);
+        echo json_encode(['success' => false, 'message' => 'Failed to send message.']);
     }
 } else {
     echo json_encode(['success' => false, 'message' => 'Invalid request method.']);

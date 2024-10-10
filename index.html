@@ -7,20 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Solvemen | Trading</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css?v=1" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/main-body.css?v=1">
-    <link rel="stylesheet" href="assets/css/header.css?v=1">
-    <link rel="stylesheet" href="assets/css/homepage/hero-section.css?v=1">
-    <link rel="stylesheet" href="assets/css/homepage/card.css?v=1">
-    <link rel="stylesheet" href="assets/css/homepage/about.css?v=1">
-    <link rel="stylesheet" href="assets/css/homepage/team.css?v=1">
-    <link rel="stylesheet" href="assets/css/homepage/product.css?v=1">
-    <link rel="stylesheet" href="assets/css/homepage/branch.css?v=1">
-    <link rel="stylesheet" href="assets/css/contact/contact.css?v=1">
-    <link rel="stylesheet" href="assets/css/footer.css?v=1">
-    <link rel="stylesheet" href="assets/css/homepage/modal-box.css?v=1">
-    <link rel="stylesheet" href="assets/css/responsive.css?v=1">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css?v=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/main-body.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/header.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/pre-loader.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/homepage/hero-section.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/homepage/card.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/homepage/about.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/homepage/team.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/homepage/partner-slider.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/homepage/product.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/homepage/branch.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/contact/contact.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/footer.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/homepage/modal-box.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=1.3">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css?v=1.3">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
@@ -37,14 +39,35 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
+<!-- PRE LOADER BEGINS HERE-->
+<!--<section id="wifi-loader">
+  <svg viewBox="0 0 86 86" class="circle-outer">
+    <circle r="40" cy="43" cx="43" class="back"></circle>
+    <circle r="40" cy="43" cx="43" class="front"></circle>
+    <circle r="40" cy="43" cx="43" class="new"></circle>
+  </svg>
+  <svg viewBox="0 0 60 60" class="circle-middle">
+    <circle r="27" cy="30" cx="30" class="back"></circle>
+    <circle r="27" cy="30" cx="30" class="front"></circle>
+  </svg>
+  <svg viewBox="0 0 34 34" class="circle-inner">
+    <circle r="14" cy="17" cx="17" class="back"></circle>
+    <circle r="14" cy="17" cx="17" class="front"></circle>
+  </svg>
+  <div data-text="Searching" class="text"></div>
+</section>-->
+<!-- PRE LOADER ENDS HERE-->
+
 <!-- HEADER BEGINS HERE-->
 <section class="main-body" id="blur">
     <header class="top-header">
         <nav>
-            <a href="index.html">
+            <a href="#blur">
                 <img src="assets/images/SLV-Tr-Black.png" alt="Solvemen Logo" class="logo">
             </a>
             <ul class="header-menu">
@@ -236,7 +259,7 @@
                 </div>
                 <div class="card" data-aos="fade-up" data-aos-duration="1500">
                     <div class="imbBx"> <!-- Team card-->
-                        <img src="assets/images/tafadzwa-chando.png" alt="">
+                        <img src="assets/images/tafadzwa-img.png" alt="">
                     </div>
                     <div class="content">
                         <div class="contentBx">
@@ -245,10 +268,10 @@
                         <ul class="sci">
                             <!--<li style="--i: 1">
                                 <a href="https://www.facebook.com/silverprimez/"><i class="fa-brands fa-facebook-f"></i></a>
-                            </li>
-                            <li style="--i: 2">
-                                <a href="https://www.linkedin.com/in/aswad95/"><i class="fa-brands fa-linkedin-in"></i></a>
                             </li>-->
+                            <li style="--i: 2">
+                                <a href="https://www.linkedin.com/in/tafadzwachando/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -272,6 +295,23 @@
                 </div>
             </div>
         </div>
+        <div class="wrapper2" data-aos="fade-up" data-aos-duration="600">
+        <div class="title" data-aos="fade-up" data-aos-duration="900">
+          <!--<h5>Team</h5>-->
+          <h2>OUR PARTNERS</h2>
+        </div>
+        <div class="partner-images">
+          <a href="https://adasigroup.com/">
+            <img src="assets/images/partner-adasi-img.png" alt="adasi">
+          </a>
+          <a href="#team">
+            <img src="assets/images/partner-african-climate-img.png" alt="climate">
+          </a>
+          <a href="#team">
+            <img src="assets/images/partner-chando-img.png" alt="chando">
+          </a>
+        </div>
+      </div>
     </section>
     <!-- TEAM SECTION ENDS HERE-->
     
@@ -318,19 +358,227 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="item">
-                <img src="assets/images/coconut-water.png" alt="">
+            <div class="item">
+                <img src="assets/images/product-palm-olein-img.png" alt="">
                 <div class="content">
-                    <div class="titles">COCONUT WATER</div>
-                    <div class="type">NATURAL WATER</div>
+                    <div class="titles">PALM OLEIN</div>
+                    <div class="type">LIQUID FRACTION</div>
                     <div class="description">
-                        Coconut water, the clear liquid inside coconuts, is refreshing and hydrating. Often consumed as a beverage, it's also used in smoothies and cocktails. Rich in electrolytes, it offers a low-calorie, nutrient-rich profile.
+                        Ideal for frying and cooking, palm olein offers excellent heat stability and a high smoke point. Perfect for a variety of culinary applications, it ensures crispy and delicious results. Natural and resistant to oxidation, it extends the shelf life of food products.
                     </div>
                     <div class="button">
                         <!--<button>SEE MORE</button>-->
                     </div>
                 </div>
             </div>
+            <div class="item">
+                <img src="assets/images/product-ketchup-img.png" alt="">
+                <div class="content">
+                    <div class="titles">KETCHUP</div>
+                    <div class="type">SAUCE</div>
+                    <div class="description">
+                        Enhance your dishes with our ketchup sauce, made from ripe tomatoes and a blend of spices. Perfect for burgers, fries, and sandwiches, it offers a balanced sweet and tangy flavor. Free from artificial preservatives and colors, its smooth texture ensures easy pouring and spreading.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/product-chili-img.png" alt="">
+                <div class="content">
+                    <div class="titles">CHILI</div>
+                    <div class="type">SAUCE</div>
+                    <div class="description">
+                        Add a spicy kick to your meals with our chili sauce, crafted from fresh chilies and garlic. Ideal for tacos, grilled meats, and stir-fries, it provides bold, fiery flavor. Versatile and natural, it's perfect as a marinade, dipping sauce, or cooking ingredient.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/product-dessicated-coconut-img.png" alt="">
+                <div class="content">
+                    <div class="titles">DESICCATED COCONUT</div>
+                    <div class="type">LOW FAT | MEDIUM FAT | HIGH FAT</div>
+                    <div class="description">
+                        Ideal for baking and cooking, it adds rich flavor and texture to cakes, cookies, and dishes. Made from fresh coconuts, it is finely shredded and dried for convenience. Natural and free from additives.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/product-milk-fat-replacer-img.png" alt="">
+                <div class="content">
+                    <div class="titles">MILK FAT REPLACER</div>
+                    <div class="type">MFR32 | MFR34</div>
+                    <div class="description">
+                        Perfect for dairy-free recipes, it mimics the creamy texture and richness of milk fat. Excellent for baking, cooking, and confectionery, it enhances flavor and texture without dairy. Natural and free from artificial additives.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/product-sweet-corn-img.png" alt="">
+                <div class="content">
+                    <div class="titles">SWEET CORN</div>
+                    <div class="type">CANNED WHOLE KERNEL</div>
+                    <div class="description">
+                        Perfect for quick and easy meals. It is vacuum packed to maintain freshness and flavor. Ideal for salads, soups, and side dishes, it provides a sweet and crisp taste. Free from artificial preservatives, ensuring a natural and delicious addition to your recipes.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/product-cocoa-powder.png" alt="">
+                <div class="content">
+                    <div class="titles">TOILET BOWL CLEANER</div>
+                    <div class="type"></div>
+                    <div class="description">
+                        A powerful disinfectant specially formulated to tackle stains, odors, and bacteria lurking in the toilet bowl. Its thick formula clings to surfaces, ensuring thorough cleaning and a sparkling fresh result.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/product-flour.png" alt="">
+                <div class="content">
+                    <div class="titles">TOILET BOWL CLEANER</div>
+                    <div class="type"></div>
+                    <div class="description">
+                        A powerful disinfectant specially formulated to tackle stains, odors, and bacteria lurking in the toilet bowl. Its thick formula clings to surfaces, ensuring thorough cleaning and a sparkling fresh result.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/product-bar-soap.png" alt="">
+                <div class="content">
+                    <div class="titles">BAR SOAP</div>
+                    <div class="type"></div>
+                    <div class="description">
+                        A solid block of cleansing delight, transforming into a rich lather upon contact with water. Its compact form offers convenience and longevity, making it a staple for daily hygiene.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/product-shower-cream.png" alt="">
+                <div class="content">
+                    <div class="titles">SHOWER CREAM</div>
+                    <div class="type"></div>
+                    <div class="description">
+                        A luxurious, emollient cleanser, enveloping the skin in a silky veil as it washes away impurities. Its creamy texture leaves skin feeling soft, smooth, and refreshed.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/product-hand-cleaning-soap.png" alt="">
+                <div class="content">
+                    <div class="titles">HAND CLEANING SOAP</div>
+                    <div class="type"></div>
+                    <div class="description">
+                        A gentle yet effective formula designed to eliminate germs and grime from hands without stripping away natural oils. Its mild fragrance and moisturizing properties make it suitable for frequent use.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <!--<div class="item">
+                <img src="assets/images/product-hand-sanitizer.png" alt="">
+                <div class="content">
+                    <div class="titles">HAND SANITIZER</div>
+                    <div class="type">LIQUID | SPRAY</div>
+                    <div class="description">
+                        A portable solution for on-the-go hygiene, swiftly neutralizing a broad spectrum of microbes. Its quick-drying formula leaves hands feeling clean and refreshed without the need for water.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>-->
+            <!--<div class="item">
+                <img src="assets/images/product-anti-bac-wipes.png" alt="">
+                <div class="content">
+                    <div class="titles">ANTI-BACTERIAL WIPES</div>
+                    <div class="type"></div>
+                    <div class="description">
+                        Convenient pre-moistened cloths infused with germ-killing agents, providing a quick and easy way to sanitize surfaces and hands. Their compact packaging makes them ideal for travel and everyday use.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>-->
+            <div class="item">
+                <img src="assets/images/product-toilet-bowl-cleaner.png" alt="">
+                <div class="content">
+                    <div class="titles">TOILET BOWL CLEANER</div>
+                    <div class="type"></div>
+                    <div class="description">
+                        A powerful disinfectant specially formulated to tackle stains, odors, and bacteria lurking in the toilet bowl. Its thick formula clings to surfaces, ensuring thorough cleaning and a sparkling fresh result.
+                    </div>
+                    <div class="button">
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <!--<div class="item">
+                <img src="assets/images/product-cleanser.png" alt="">
+                <div class="content">
+                    <div class="titles">CLEANSER</div>
+                    <div class="type">CREAM | POWDER</div>
+                    <div class="description">
+                        A versatile cleansing duo, offering options for different skin types and preferences. The cream gently removes makeup and impurities, while the powder provides a deeper exfoliation, leaving skin smooth and revitalized.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>-->
+            <div class="item">
+                <img src="assets/images/product-dish-washing.png" alt="">
+                <div class="content">
+                    <div class="titles">DISHWASHING</div>
+                    <div class="type">LIQUID | PASTE</div>
+                    <div class="description">
+                        A concentrated formula designed to cut through grease and grime on dishes and cookware. Its powerful surfactants lift away food particles, while its pleasant fragrance leaves a fresh scent in the kitchen.
+                    </div>
+                    <div class="button"></div>
+                        <!--<button>SEE MORE</button>-->
+                    </div>
+                </div>
+            </div>
+            <!--<div class="item">
+                <img src="assets/images/product-multipurpose-cleaner.png" alt="">
+                <div class="content">
+                    <div class="titles">MULTIPURPOSE CLEANER</div>
+                    <div class="type"></div>
+                    <div class="description">
+                        A versatile cleaning solution capable of tackling a wide range of household surfaces. Its biodegradable formula effectively removes dirt, grime, and grease without harsh chemicals, leaving a clean and sparkling finish.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>-->
         </div>
         <div class="thumbnail">
             <div class="item">
@@ -342,8 +590,56 @@
             <div class="item">
                 <img src="assets/images/palm-oil.png" alt="">
             </div>
+            <div class="item">
+                <img src="assets/images/product-palm-olein-w-img.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-ketchup-img.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-chili-img.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-dessicated-coconut-img.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-milk-fat-replacer-w-img.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-sweet-corn-img.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-cocoa-powder.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-flour.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-bar-soap-blk.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-shower-cream-blk.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/images/product-hand-cleaning-soap-blk.png" alt="">
+            </div>
             <!--<div class="item">
-                <img src="assets/images/coconut-water.png" alt="">
+                <img src="assets/images/product-hand-sanitizer-blk.png" alt="">
+            </div>-->
+            <!--<div class="item">
+                <img src="assets/images/product-anti-bac-wipe-blk.png" alt="">
+            </div>-->
+            <div class="item">
+                <img src="assets/images/product-toilet-bowl-cleaner-blk.png" alt="">
+            </div>
+            <!--<div class="item">
+                <img src="assets/images/product-cleanser-blk.png" alt="">
+            </div>-->
+            <div class="item">
+                <img src="assets/images/product-dish-washing-blk.png" alt="">
+            </div>
+            <!--<div class="item">
+                <img src="assets/images/product-multipurpose-cleaner-blk.png" alt="">
             </div>-->
         </div>
         <div class="nextPrevArrows">
@@ -359,7 +655,8 @@
             <h5 data-aos="fade-up" data-aos-duration="900">Supply and Demand</h5>
             <h2 data-aos="fade-up" data-aos-duration="1200">CONNECTING THE DOTS</h2>
         </div>
-    <svg data-aos="fade-up" data-aos-duration="1500" baseprofile="tiny" stroke-linecap="round" stroke-linejoin="round" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg">
+        <div class="map">
+            <svg id="world-map" data-aos="fade-up" data-aos-duration="1500" baseprofile="tiny" stroke-linecap="round" stroke-linejoin="round" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg">
         <path d="M1383 261.6l1.5 1.8-2.9 0.8-2.4 1.1-5.9 0.8-5.3 1.3-2.4 2.8 1.9 2.7 1.4 3.2-2 2.7 0.8 2.5-0.9 2.3-5.2-0.2 3.1 4.2-3.1 1.7-1.4 3.8 1.1 3.9-1.8 1.8-2.1-0.6-4 0.9-0.2 1.7-4.1 0-2.3 3.7 0.8 5.4-6.6 2.7-3.9-0.6-0.9 1.4-3.4-0.8-5.3 1-9.6-3.3 3.9-5.8-1.1-4.1-4.3-1.1-1.2-4.1-2.7-5.1 1.6-3.5-2.5-1 0.5-4.7 0.6-8 5.9 2.5 3.9-0.9 0.4-2.9 4-0.9 2.6-2-0.2-5.1 4.2-1.3 0.3-2.2 2.9 1.7 1.6 0.2 3 0 4.3 1.4 1.8 0.7 3.4-2 2.1 1.2 0.9-2.9 3.2 0.1 0.6-0.9-0.2-2.6 1.7-2.2 3.3 1.4-0.1 2 1.7 0.3 0.9 5.4 2.7 2.1 1.5-1.4 2.2-0.6 2.5-2.9 3.8 0.5 5.4 0z" id="AF" name="Afghanistan">
         </path>
         <path class="Angola" d="M 1121.2 572 1121.8 574 1121.1 577.1 1122 580.1 1121.1 582.5 1121.5 584.7 1109.8 584.6 1109 605.1 1112.6 610.3 1116.2 614.3 1105.8 616.9 1092.3 616 1088.5 613 1065.8 613.2 1065 613.7 1061.7 610.8 1058.1 610.6 1054.7 611.7 1052 612.9 1051.5 608.9 1052.4 603.2 1054.4 597.3 1054.7 594.6 1056.6 588.8 1058 586.2 1061.3 582 1063.2 579.1 1063.8 574.4 1063.5 570.7 1061.9 568.4 1060.4 564.5 1059.1 560.7 1059.4 559.3 1061.1 556.8 1059.5 550.6 1058.3 546.3 1055.5 542.2 1056.1 541 1058.4 540.1 1060.1 540.2 1062.1 539.5 1078.8 539.6 1080.1 544.3 1081.7 548.2 1083 550.3 1085.1 553.6 1088.9 553.1 1090.7 552.2 1093.8 553.1 1094.7 551.5 1096.2 547.8 1099.7 547.5 1100 546.4 1102.9 546.4 1102.4 548.7 1109.2 548.6 1109.3 552.7 1110.4 555.1 1109.5 559 1109.9 563 1111.7 565.4 1111.3 573 1112.7 572.4 1115.1 572.6 1118.6 571.6 1121.2 572 Z">
@@ -1376,9 +1673,11 @@
         </circle>
         <circle cx="1798.2" cy="719.3" id="2">
         </circle>
-       </svg>
+            </svg>
+      </div>
        </section>
-       <div id="tooltip" class="tooltip"></div>
+       <div id="tooltip" class="tooltip">
+       </div>
     <!--BRANCH SECTION ENDS HERE-->
     <!-- FOOTER BEGINS HERE-->
     <footer>
@@ -1396,18 +1695,40 @@
             <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
         </ul>-->
-        <ul class="footer-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#product">Product</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <p>© since 2020 Solvemen Trading. All right reserved.</p>
+        <div class="contact-box">
+            <div class="contact-info">
+                <div class="contact info-box">
+                    <h3>Reach us!</h3>
+                    <div class="info-email">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <a href="mailto:tima.kvasnikov@solvemen.com"><p>tima.kvasnikov@solvemen.com</p></a>
+                    </div>
+                </div>
+                <div class="address-column">
+                    <h3>Our Locations</h3>
+                    <div class="info-address">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <p>T3-23-20, Menara 3, 296, Jalan Ampang, </br>55000 Kuala Lumpur, Malaysia.</p>
+                    </div>
+                    <div class="info-address">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <p>25 Metcalf Road Greendale Harare, Zimbabwe.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--<ul class="footer-menu">
+            <li><a href="#about">About</a><span> | </span></li>
+            <li><a href="#product">Product</a><span> | </span></li>
+            <li><a href="#team">Team</a><span> | </span></li>
+            <li><a id="footer-contact" onclick="toggle()">Contact</a></li>
+        </ul>-->
+        <p>© since 2020 <a href="index.html">Solvemen Trading.</a> All right reserved.</p>
     </footer>
-    
-     <!-- FOOTER ENDS HERE-->
+    <!-- FOOTER ENDS HERE-->
 </section>
+
+    <!-- MODAL BOX BEGINS HERE-->
      <div class="modal__container" id="modal-container">
         <section class="contact">
             <div class="contact-header">
@@ -1435,39 +1756,45 @@
                         <div class="contact-heading">
                             <h1>Reach out to us<span>!</span></h1>
                             <p class="text">and tell us what you need.</p>
-                            
                         </div>
-                        <form id="contact-form" class="contact-forms">
+                        <form id="contact-form" class="contact-forms" enctype="multipart/form-data" method="POST" action="email.php">
                             <div class="input-wrap">
                                 <input class="contact-input" autocomplete="off" name="First_Name" type="text" required>
                                 <label>First name</label>
                                 <i class="icon fa-solid fa-address-card"></i>
+                                <span class="error-message"></span>
                             </div>
                             <div class="input-wrap">
                                 <input class="contact-input" autocomplete="off" name="Last_Name" type="text" required>
                                 <label>Last name</label>
                                 <i class="icon fa-solid fa-address-card"></i>
+                                <span class="error-message"></span>
                             </div>
                             <div class="input-wrap w-100">
                                 <input class="contact-input" autocomplete="off" name="Email" type="email" required>
                                 <label>Email</label>
                                 <i class="icon fa-solid fa-envelope"></i>
+                                <span class="error-message"></span>
                             </div>
                             <div class="input-wrap textarea w-100">
                                 <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
                                 <label>Message</label>
                                 <i class="icon fa-solid fa-inbox"></i>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="file-upload-container">
+                                <ul id="file-list" class="file-list"></ul>
                             </div>
                             <div class="contact-buttons">
-                                <!--<button class="btn upload">
+                                <button class="btn upload">
                                     <span>
                                         <i class="fa-solid fa-paperclip"></i> Add attachment
                                     </span>
-                                    <input type="file" name="attachment">
-                                </button>-->
-                                <input type="submit" value="Send Message" class="btn">
+                                    <input type="file" id="file-input" name="attachment[]" multiple>
+                                </button>
+                                <button class="btn" id="submit-btn">Send Message</button>
                             </div>
-                        </form>                        
+                        </form>                
                     </div>
                 </div>
                 <div class="right">
@@ -1482,36 +1809,40 @@
                         <svg class="dashed-wave" viewBox="0 0 345 877" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path id="dashed-wave" 
                             d="M0.5 876C25.6667 836.167 73.2 739.8 62 673C48 589.5 35.5 499.5 125.5 462C215.5 424.5 150 365 87 333.5C24 302 44 237.5 125.5 213.5C207 189.5 307 138.5 246 87C185 35.5 297 1 344.5 1"/>
-                            </svg>
+                        </svg>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+    <!--MODAL BOX ENDS HERE-->
 </body>
 
+<!--PRE-LOADER SCRIPT-->
+<script src="assets/js/pre-loader.js?v=1.3"></script>
+
 <!-- HEADER SCRIPT-->
-<script src="assets/js/header.js?v=1"></script>
+<script src="assets/js/header.js?v=1.3"></script>
 
 <!-- PRODUCT SCRIPT-->
-<script src="assets/js/product.js?v=1"></script>
+<script src="assets/js/product.js?v=1.3"></script>
 
 <!-- CONTACT FORM SCRIPT-->
-<script src="assets/js/contact-form.js?v=1"></script>
+<script src="assets/js/contact-form.js?v=1.3"></script>
 
 <!-- AJAX FORM SUBMISSION SCRIPT-->
-<script src="assets/js/email.js?v=1"></script>
+<script src="assets/js/email.js?v=1.3"></script>
 
 <!-- MODAL BOX SCRIPT-->
-<script src="assets/js/modal-box.js?v=1"></script>
+<script src="assets/js/modal-box.js?v=1.3"></script>
 
 <!-- AOS SCRIPT-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?v=1"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?v=1.3"></script>
 
 <!-- HOMEPAGE SCRIPT-->
-<script src="assets/js/homepage.js?v=1"></script>
+<script src="assets/js/homepage.js?v=1.3"></script>
 
 <!-- BRANCH SCRIPT-->
-<script src="assets/js/branch.js?v=1"></script>
+<script src="assets/js/branch.js?v=1.3"></script>
 
 </html>

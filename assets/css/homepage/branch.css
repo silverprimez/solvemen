@@ -26,104 +26,105 @@
     color: var(--black);
 }
 
-.branch svg path {
+#world-map path {
     fill: grey;
     stroke: var(--black);
     stroke-width: .25;
 }
 
-.branch svg path.armenia,
-.branch svg path.Azerbaijan,
-.branch svg path#BY, /*Belarus*/
-.branch svg path#KZ, /*Kazakhstan*/
-.branch svg path#MD, /*Moldova*/
-.branch svg path.Russian,
-.branch svg path#TJ, /*Tajikistan*/
-.branch svg path#KG, /*Kyrgyzstan*/
-.branch svg path.Turkey,
-.branch svg path#TM, /*Turkmenistan*/
-.branch svg path#UZ, /*Uzbekistan*/
-.branch svg path.New_Zealand,
-.branch svg path.Australia,
-.branch svg path.USA,
-.branch svg path#BN, /*Brunei Darussalam*/
-.branch svg path#KH, /*Cambodia*/
-.branch svg path#TL, /*Timor-Leste*/
-.branch svg path.Indonesia,
-.branch svg path.Malaysia,
-.branch svg path#MM, /*Myanmar*/
-.branch svg path.Philippines,
-.branch svg path#TH, /*Thailand*/
-.branch svg path#VN, /*Vietnam*/
-.branch svg path#IQ, /*Iraq*/
-.branch svg path#AE, /*United Arab Emirates*/
-.branch svg path#ZW, /*Zimbabwe*/
-.branch svg path#SL, /*Sierra Leone*/
-.branch svg path#KE, /*Kenya*/
-.branch svg path#ZA /*South Africa*/ {
+#world-map path.armenia,
+#world-map path.Azerbaijan,
+#world-map path#BY, /*Belarus*/
+#world-map path#KZ, /*Kazakhstan*/
+#world-map path#MD, /*Moldova*/
+#world-map path.Russian,
+#world-map path#TJ, /*Tajikistan*/
+#world-map path#KG, /*Kyrgyzstan*/
+#world-map path.Turkey,
+#world-map path#TM, /*Turkmenistan*/
+#world-map path#UZ, /*Uzbekistan*/
+#world-map path.New_Zealand,
+#world-map path.Australia,
+#world-map path.USA,
+#world-map path#BN, /*Brunei Darussalam*/
+#world-map path#KH, /*Cambodia*/
+#world-map path#TL, /*Timor-Leste*/
+#world-map path.Indonesia,
+#world-map path.Malaysia,
+#world-map path#MM, /*Myanmar*/
+#world-map path.Philippines,
+#world-map path#TH, /*Thailand*/
+#world-map path#VN, /*Vietnam*/
+#world-map path#IQ, /*Iraq*/
+#world-map path#AE, /*United Arab Emirates*/
+#world-map path#ZW, /*Zimbabwe*/
+#world-map path#SL, /*Sierra Leone*/
+#world-map path#KE, /*Kenya*/
+#world-map path#ZA /*South Africa*/ {
     fill: var(--green);
     transition: 0.6s;
     cursor: pointer;
 }
 
-.branch svg path.armenia:hover,
-.branch svg path.armenia:active,
-.branch svg path.Azerbaijan:hover,
-.branch svg path.Azerbaijan:active,
-.branch svg path#BY:hover,
-.branch svg path#BY:active,
-.branch svg path#KZ:hover,
-.branch svg path#KZ:active,
-.branch svg path#MD:hover,
-.branch svg path#MD:active,
-.branch svg path.Russian:hover,
-.branch svg path.Russian:active,
-.branch svg path#TJ:hover,
-.branch svg path#TJ:active,
-.branch svg path#KG:hover,
-.branch svg path#KG:active,
-.branch svg path.Turkey:hover,
-.branch svg path.Turkey:active,
-.branch svg path#TM:hover,
-.branch svg path#TM:active,
-.branch svg path#UZ:hover,
-.branch svg path#UZ:active,
-.branch svg path.New_Zealand:hover,
-.branch svg path.New_Zealand:active,
-.branch svg path.Australia:hover,
-.branch svg path.Australia:active,
-.branch svg path.USA:hover,
-.branch svg path.USA:active,
-.branch svg path#BN:hover,
-.branch svg path#BN:active,
-.branch svg path#KH:hover,
-.branch svg path#KH:active,
-.branch svg path#TL:hover,
-.branch svg path#TL:active,
-.branch svg path.Indonesia:hover,
-.branch svg path.Indonesia:active,
-.branch svg path.Malaysia:hover,
-.branch svg path.Malaysia:active,
-.branch svg path#MM:hover,
-.branch svg path#MM:active,
-.branch svg path.Philippines:hover,
-.branch svg path.Philippines:active,
-.branch svg path#TH:hover,
-.branch svg path#TH:active,
-.branch svg path#VN:hover,
-.branch svg path#VN:active,
-.branch svg path#IQ:hover,
-.branch svg path#IQ:active,
-.branch svg path#AE:hover,
-.branch svg path#AE:active,
-.branch svg path#ZW:hover,
-.branch svg path#ZW:active,
-.branch svg path#SL:hover,
-.branch svg path#SL:active,
-.branch svg path#KE:hover,
-.branch svg path#KE:active,
-.branch svg path#ZA:hover,
-.branch svg path#ZA:active {
+#world-map path.armenia:hover,
+#world-map path.armenia:active,
+#world-map path.Azerbaijan:hover,
+#world-map path.Azerbaijan:active,
+#world-map path#BY:hover,
+#world-map path#BY:active,
+#world-map path#KZ:hover,
+#world-map path#KZ:active,
+#world-map path#MD:hover,
+#world-map path#MD:active,
+#world-map path.Russian:hover,
+#world-map path.Russian:active,
+#world-map path#TJ:hover,
+#world-map path#TJ:active,
+#world-map path#KG:hover,
+#world-map path#KG:active,
+#world-map path.Turkey:hover,
+#world-map path.Turkey:active,
+#world-map path#TM:hover,
+#world-map path#TM:active,
+#world-map path#UZ:hover,
+#world-map path#UZ:active,
+#world-map path.New_Zealand:hover,
+#world-map path.New_Zealand:active,
+#world-map path.Australia:hover,
+#world-map path.Australia:active,
+#world-map path.USA:hover,
+#world-map path.USA:active,
+#world-map path#BN:hover,
+#world-map path#BN:active,
+#world-map path#KH:hover,
+#world-map path#KH:active,
+#world-map path#TL:hover,
+#world-map path#TL:active,
+#world-map path.Indonesia:hover,
+#world-map path.Indonesia:active,
+#world-map path.Malaysia:hover,
+#world-map path.Malaysia:active,
+#world-map path#MM:hover,
+#world-map path#MM:active,
+#world-map path.Philippines:hover,
+#world-map path.Philippines:active,
+#world-map path#TH:hover,
+#world-map path#TH:active,
+#world-map path#VN:hover,
+#world-map path#VN:active,
+#world-map path#IQ:hover,
+#world-map path#IQ:active,
+#world-map path#AE:hover,
+#world-map path#AE:active,
+#world-map path#ZW:hover,
+#world-map path#ZW:active,
+#world-map path#SL:hover,
+#world-map path#SL:active,
+#world-map path#KE:hover,
+#world-map path#KE:active,
+#world-map path#ZA:hover,
+#world-map path#ZA:active
+ {
     fill: var(--green-dark);
 }
 
@@ -144,169 +145,21 @@ svg path:focus + .tooltip {
 }
 
 
-/*.world-map {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 1rem;
-    position: relative;
-}
 
-.world-map img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.pin {
+.map .right-ship {
     position: absolute;
-    width: 0.7em;
-    height: 0.7em;
-    border-radius: 50%;
-    background: var(--gold);
-}
-
-.pin::before {
-    content: "";
-    background: var(--gold);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    animation: pulse 1.3s ease-in-out infinite;    
-}
-
-.pin span {
-    display: inline-block;
-    white-space: nowrap;
-    position: absolute;
-    left: 1.5em;
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--green);
-    border-radius: 3em;
-    padding: 0.3em 0.6em;
-    font-size: 0.7em;
-    color: var(--white);
-}
-
-.sea {
-    top: 62.5%;
-    left: 77%;
-}
-
-.africa {
-    top: 65%;
-    left: 55%;
-}
-
-/*.europe {
-    top: 40%;
-    left: 48%;
-}
-
-.middle-east {
-    top: 52%;
-    left: 60%;
-}
-
-.turkey {
-    top: 44%;
-    left: 56%;
-}
-
-.belarus {
-    top: 34%;
+    top: 27%;
     left: 53.5%;
+    width: 40px;
+    height: 40px;
+    z-index: 1001;
+    cursor: pointer;
 }
 
-.moldova {
-    top: 39%;
-    left: 55%;
-}
-
-.armenia-azerbaijan {
-    top: 41.5%;
-    left: 56%;
-}
-
-.turkmenistan-uzbekistan {
-    top: 44%;
-    left: 63%;
-}
-
-.kazakhstan {
-    top: 37%;
-    left: 65%;
-}
-
-.taijikistan-kyrgystan {
-    top: 47%;
-    left: 66%;
-}
-
-.russia {
-    top: 28%;
-    left: 68%;
-}
-
-
-.pins {
-    position: absolute;
-    width: 0.7em;
-    height: 0.7em;
-    border-radius: 50%;
-    background: var(--gold);
-}
-
-.pins::before {
-    content: "";
-    background: var(--gold);
+.left-ship {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    animation: pulse 1.3s ease-in-out infinite;    
+    z-index: 1001;
+    cursor: pointer;
 }
-
-.pins span {
-    display: inline-block;
-    white-space: nowrap;
-    position: absolute;
-    left: 1.5em;
-    top: 50%;
-    transform: translateY(-50%);
-    background: red;
-    border-radius: 3em;
-    padding: 0.3em 0.6em;
-    font-size: 0.7em;
-    color: var(--white);
-}
-
-.new-zealand {
-    top: 91%;
-    left: 96%;
-}
-
-.australia {
-    top: 78%;
-    left: 87%;
-}
-
-.usa {
-    top: 48%;
-    left: 20%;
-}
-
-@keyframes pulse {
-    100% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(-50%) scale(2.5);
-    }
-} */

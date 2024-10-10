@@ -118,8 +118,8 @@
     color: var(--black);
 }
 
-.dropdown_menu li:hover {
-    background: var(--black);
+.dropdown_menu li:active {
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
 }
 

@@ -1,0 +1,27 @@
+.wrapper2 {
+    margin: 200px 0 200px 0;
+}
+
+.partner-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.partner-images a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.partner-images img {
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
+    margin: 20px;
+}
