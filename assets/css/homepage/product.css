@@ -188,7 +188,7 @@
 .slider .list .item:nth-child(1) .content .description{
     animation-delay: 0.8s !important;
 }
-.slider .list .item:nth-child(1) .content .buttons{
+.slider .list .item:nth-child(1) .content .button{
     animation-delay: 1s !important;
 }
 
