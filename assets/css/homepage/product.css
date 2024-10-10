@@ -80,6 +80,7 @@
     transition: 0.4s;
     letter-spacing: 2px;
     border-radius: 10px;
+    padding: 10px 15px;
 }
 
 .slider .list .item .button button:hover{
