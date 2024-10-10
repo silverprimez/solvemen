@@ -79,11 +79,14 @@
     cursor: pointer;
     transition: 0.4s;
     letter-spacing: 2px;
+    border-radius: 10px;
 }
-
 
 .slider .list .item .button button:hover{
     letter-spacing: 3px;
+    background-color: var(--gold);
+    color: var(--black);
+    scale: 1.05;
 }
 
 .slider .list .item .button button:nth-child(2){
@@ -162,7 +165,7 @@
 .slider .list .item:nth-child(1) .content .titles,
 .slider .list .item:nth-child(1) .content .type,
 .slider .list .item:nth-child(1) .content .description,
-.slider .list .item:nth-child(1) .content .buttons
+.slider .list .item:nth-child(1) .content .button
 {
     transform: translateY(50px);
     filter: blur(20px);
