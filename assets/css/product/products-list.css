@@ -1,3 +1,17 @@
+.food-commodities {
+    background-color: var(--white);
+    margin: 100px 0;
+}
+
+.product-list-2, .product-list-3, .product-list-4, .product-list-5 {
+    background-color: var(--gold);
+    padding-top: 20px;
+}
+
+.product-list-6 {
+    padding-top: 20px;
+}
+
 .product-title {
     display: flex;
     justify-content: center;
@@ -7,7 +21,7 @@
     margin: 0 auto;
     padding: 20px;
     font-size: auto;
-    font-weight: 500;
+    font-weight: 500 !important;
     letter-spacing: 1.2px;
     word-spacing: 5px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -16,13 +30,229 @@
     backdrop-filter: blur(15px);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     word-wrap: break-word;
-    margin-top: 100px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: auto !important;
+    background-color: var(--white);
 }
 
 .product-title h5 {
-    color: var(--blue-light);
+    color: var(--blue-light) !important;
 }
 
 .product-title h2 {
     color: var(--black);
+}
+
+.home-shop-area {
+	padding: 0 0 150px;
+}
+.home-shop-item {
+	background: var(--white);
+	box-shadow: 0px 15px 26px rgba(173, 185, 202, 0.17);
+	margin: 106px 0 50px;
+	padding: 0 40px 40px;
+}
+.home-shop-thumb {
+	text-align: center;
+	position: relative;
+	max-width: 205px;
+	margin: 0 auto 45px;
+	z-index: 1;
+}
+.home-shop-thumb > a {
+    text-align: center;
+    width: 100%;
+    min-height: 190px;
+    align-items: flex-start;
+    margin: -106px auto 0;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+}
+.home-shop-thumb img {
+	display: inline-block;
+	height: 190px;
+	object-fit: contain;
+	max-width: 126px;
+	object-position: top;
+}
+
+.home-shop-content .title {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.home-shop-price {
+	font-size: 20px;
+	display: block;
+	letter-spacing: 0.02em;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	color: #222;
+	line-height: 1;
+	margin: 0 0 30px;
+    text-align: center;
+}
+
+.shop-content-bottom {
+	display: flex;
+	align-items: center;
+	margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.shop-content-bottom .btn-one {
+	padding: 15px 38px;
+	font-size: 14px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.home-shop-item:hover .shop-content-bottom .btn-one {
+	opacity: 1;
+	visibility: visible;
+}
+.home-shop-thumb .discount {
+	position: absolute;
+	top: 0;
+	right: -40px;
+	z-index: 1;
+	background: #FD4B4B;
+	border-radius: 3px;
+	color: var(--silver);
+	font-weight: 500;
+	font-size: 12px;
+	padding: 4px 11px;
+	line-height: 1;
+}
+
+.inner-shop-area {
+	padding: 120px 0 120px;
+}
+
+.inner-shop-item {
+    margin-bottom: 30px;
+}
+
+.inner-shop-thumb img {
+    width: 100%;
+}
+
+.inner-shop-item.home-shop-item {
+	margin: 0 0 50px;
+	padding: 30px;
+}
+
+.inner-shop-item .home-shop-thumb > a {
+    margin: 0 auto 0;
+}
+
+.inner-shop-item .home-shop-thumb {
+	margin: 0 auto 25px;
+}
+
+.inner-shop-item .shop-item-cat {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 9px;
+	line-height: 1;
+    justify-content: center;
+}
+
+.inner-shop-item .shop-item-cat a {
+	display: block;
+	font-weight: 500;
+	color: var(--black);
+    text-align: center;
+}
+
+/*.inner-shop-item .shop-item-cat a:hover {
+	color: var(--blue-light);
+}*/
+
+.inner-shop-item .home-shop-content .item-title {
+	margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-shop-item .home-shop-content .item-title a {
+    color: var(--blue-light);
+    text-align: center;
+}
+
+/*.inner-shop-item .home-shop-content .item-title a:hover {
+    color: var(--gold);
+} */
+
+.inner-shop-item .shop-content-bottom {
+	margin-top: 30px;
+}
+
+.inner-shop-item .home-shop-price {
+	margin: 0 0 25px;
+}
+
+.inner-shop-item .home-shop-thumb .discount {
+	top: -20px;
+	right: -20px;
+}
+
+.btn-one {
+	user-select: none;
+	-moz-user-select: none;
+	background: var(--blue-light) none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 50px;
+	color: var(--white);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: 1.4;
+	margin-bottom: 0;
+	padding: 19px 50px;
+	text-align: center;
+	text-transform: capitalize;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.btn-one::before {
+	content: "";
+	position: absolute;
+	-webkit-transition-duration: 800ms;
+	transition-duration: 800ms;
+	width: 200%;
+	height: 200%;
+	top: 110%;
+	left: 50%;
+	background: var(--green);
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-radius: 50%;
+	z-index: -1;
+}
+.btn-one:hover {
+	color: var(--black);
+}
+.btn-two {
+	background: var(--green) none repeat scroll 0 0;
+}
+.btn-two::before {
+	background: var(--gold);
+}
+.btn-one:hover:before {
+	top: -40%;
+}
+.breadcrumb > .active {
+	color: var(--green);
 }

@@ -24,6 +24,7 @@
 .top-header nav ul {
     width: 100%;
     text-align: center;
+    margin-bottom: 0 !important;
 }
 
 .top-header nav ul li {
@@ -31,8 +32,16 @@
     margin: 10px 20px;
 }
 
+.top-header nav ul li:hover {
+    scale: 1.05;
+}
+
 .top-header nav ul li a {
     color: var(--black);
+}
+
+.top-header nav ul li a:hover {
+    color: var(--blue-light);
 }
 
 .top-header .button, .dropdown-button {

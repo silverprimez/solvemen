@@ -6,23 +6,23 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--white);
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--white) !important;
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 button {
-    cursor: pointer;
-    border: none;
-    outline: none;
+    cursor: pointer !important;
+    border: none !important;
+    outline: none !important;
     font-size: 1rem;
 }
 
@@ -41,9 +41,9 @@ button {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important; 
 }
 
 li {
-    list-style: none; /*To remove the bullet points */
+    list-style: none !important; /*To remove the bullet points */
 }
