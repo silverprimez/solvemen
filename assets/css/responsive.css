@@ -152,7 +152,7 @@
         margin-top: 0.45rem;
     }
 
-    .btn {
+    .contact-btn {
         padding: 1rem 1.5rem;
         font-size: 0.87rem;
     }
@@ -296,7 +296,7 @@
     }
     
     .hero-content {
-        background-image: url(../../assets/images/hero-section-img2.png), linear-gradient(to bottom, var(--silver), var(--white));
+        background-image: url(../../../assets/images/hero-section-img2.png), linear-gradient(to bottom, var(--silver), var(--white));
     }
     
     .hero {

@@ -33,6 +33,7 @@ button {
     --green: green;
     --white: #fff;
     --silver: #dbdada;
+    --silver-dark: #222222;
     --blue-dark: #001B36;
     --green-dark: rgb(0, 66, 0);
     --z-modal: 1000;
@@ -45,5 +46,5 @@ a {
 }
 
 li {
-    list-style: none !important; /*To remove the bullet points */
+    list-style: none ; /*To remove the bullet points */
 }
