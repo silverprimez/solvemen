@@ -212,6 +212,13 @@
     .about-us::before {
         display: none;
     }
+    .inner-shop-details-content .prd-detail-title {
+        margin-top: 50px;
+    }
+
+    .inner-shop-details-content {
+        padding-left: 0 !important;
+    }
 }
 
 @media (max-width: 975px) {
@@ -377,6 +384,9 @@
 @media (max-width: 527px) {
     .title {
         width: 300px;
+    }
+    .breadcrumb-content .titles {
+        font-size: 40px !important;
     }
 }
 
