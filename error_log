@@ -1,3 +1,82 @@
 [28-Jun-2024 14:54:50 Asia/Kuala_Lumpur] PHP Notice:  Undefined index: attachments in /home2/solveme1/solvementrading.com/email.php on line 43
 [28-Jun-2024 14:56:08 Asia/Kuala_Lumpur] PHP Notice:  Undefined index: attachments in /home2/solveme1/solvementrading.com/email.php on line 43
 [28-Jun-2024 14:56:29 Asia/Kuala_Lumpur] PHP Notice:  Undefined index: attachments in /home2/solveme1/solvementrading.com/email.php on line 43
+[15-Oct-2024 11:37:27 Asia/Kuala_Lumpur] No files uploaded
+[15-Oct-2024 11:37:27 Asia/Kuala_Lumpur] Mail result: Success
+[15-Oct-2024 11:37:27 Asia/Kuala_Lumpur] Mail headers: From: ben@debugged.com.my
+CC: tima.kvasnikov@solvemen.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="2f61108e09d8ba366e92ccc8119cd1b0"
+
+[15-Oct-2024 11:37:27 Asia/Kuala_Lumpur] Mail body length: 226
+[15-Oct-2024 11:39:10 Asia/Kuala_Lumpur] Mail result: Success
+[15-Oct-2024 11:39:10 Asia/Kuala_Lumpur] Mail headers: From: ben@debugged.com.my
+CC: tima.kvasnikov@solvemen.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="7525d41708b13a2aa8396f13783b93ac"
+
+[15-Oct-2024 11:39:10 Asia/Kuala_Lumpur] Mail body length: 226
+[15-Oct-2024 11:39:27 Asia/Kuala_Lumpur] PHP Notice:  Undefined index: attachments in /home2/solveme1/test.solvementrading.com/email.php on line 44
+[15-Oct-2024 11:39:31 Asia/Kuala_Lumpur] PHP Notice:  Undefined index: attachments in /home2/solveme1/test.solvementrading.com/email.php on line 44
+[15-Oct-2024 11:44:54 Asia/Kuala_Lumpur] PHP Notice:  Undefined index: attachments in /home2/solveme1/test.solvementrading.com/email.php on line 44
+[15-Oct-2024 11:45:01 Asia/Kuala_Lumpur] PHP Notice:  Undefined index: attachments in /home2/solveme1/test.solvementrading.com/email.php on line 44
+[15-Oct-2024 11:45:50 Asia/Kuala_Lumpur] Error uploading file: , Error code: 4
+[15-Oct-2024 11:45:50 Asia/Kuala_Lumpur] Mail result: Success
+[15-Oct-2024 11:45:50 Asia/Kuala_Lumpur] Mail headers: From: ben@debugged.com.my
+CC: tima.kvasnikov@solvemen.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="9d56fa26bc3653c4794ab8b3fa092fc4"
+
+[15-Oct-2024 11:45:50 Asia/Kuala_Lumpur] Mail body length: 226
+[15-Oct-2024 11:45:57 Asia/Kuala_Lumpur] Processing attachment: Screenshot 2024-10-15 at 11.17.53 AM.png
+[15-Oct-2024 11:45:57 Asia/Kuala_Lumpur] Processing attachment: Screenshot 2024-10-15 at 9.35.00 AM.png
+[15-Oct-2024 11:45:57 Asia/Kuala_Lumpur] Mail result: Success
+[15-Oct-2024 11:45:57 Asia/Kuala_Lumpur] Mail headers: From: ben@debugged.com.my
+CC: tima.kvasnikov@solvemen.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="53e833abf149c631b1ba2d14890a1bce"
+
+[15-Oct-2024 11:45:57 Asia/Kuala_Lumpur] Mail body length: 3725704
+[15-Oct-2024 11:47:22 Asia/Kuala_Lumpur] Processing attachment: Screenshot 2024-10-15 at 11.17.53 AM.png
+[15-Oct-2024 11:47:22 Asia/Kuala_Lumpur] Processing attachment: Screenshot 2024-10-15 at 9.35.00 AM.png
+[15-Oct-2024 11:47:44 Asia/Kuala_Lumpur] Processing attachment: Screenshot 2024-10-15 at 11.17.53 AM.png
+[15-Oct-2024 11:47:44 Asia/Kuala_Lumpur] Processing attachment: Screenshot 2024-10-15 at 9.35.00 AM.png
+[15-Oct-2024 11:49:30 Asia/Kuala_Lumpur] Processing attachment: Screenshot 2024-10-15 at 11.17.53 AM.png, Size: 10174 bytes
+[15-Oct-2024 11:49:30 Asia/Kuala_Lumpur] Processing attachment: Screenshot 2024-10-15 at 9.35.00 AM.png, Size: 2711938 bytes
+[15-Oct-2024 11:49:30 Asia/Kuala_Lumpur] Mail result: Success
+[15-Oct-2024 11:49:30 Asia/Kuala_Lumpur] Mail headers: From: ben@debugged.com.my
+CC: tima.kvasnikov@solvemen.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="506017267a84889c45010376c6b88619"
+
+[15-Oct-2024 11:49:30 Asia/Kuala_Lumpur] Mail body length: 3725734
+[15-Oct-2024 11:49:59 Asia/Kuala_Lumpur] Error uploading file: , Error code: 4
+[15-Oct-2024 11:49:59 Asia/Kuala_Lumpur] Mail result: Success
+[15-Oct-2024 11:49:59 Asia/Kuala_Lumpur] Mail headers: From: ben@debugged.com.my
+CC: tima.kvasnikov@solvemen.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="25b109a77f521f9c9081a1d275310378"
+
+[15-Oct-2024 11:49:59 Asia/Kuala_Lumpur] Mail body length: 226
+[15-Oct-2024 11:51:04 Asia/Kuala_Lumpur] PHP Warning:  file_get_contents(): Filename cannot be empty in /home2/solveme1/test.solvementrading.com/email.php on line 51
+[15-Oct-2024 11:51:04 Asia/Kuala_Lumpur] Mail result: Success
+[15-Oct-2024 11:51:04 Asia/Kuala_Lumpur] Mail headers: From: ben@debugged.com.my
+CC: tima.kvasnikov@solvemen.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="cf5147da1bbb7c5619368f668271babe"
+
+[15-Oct-2024 11:51:04 Asia/Kuala_Lumpur] Mail body length: 398
+[15-Oct-2024 11:52:47 Asia/Kuala_Lumpur] Mail result: Success
+[15-Oct-2024 11:52:47 Asia/Kuala_Lumpur] Mail headers: From: ben@debugged.com.my
+CC: tima.kvasnikov@solvemen.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="e3935d2ad510a3451d4069c4dd3e0c01"
+
+[15-Oct-2024 11:52:47 Asia/Kuala_Lumpur] Mail body length: 3725734
+[15-Oct-2024 11:54:24 Asia/Kuala_Lumpur] Mail result: Success
+[15-Oct-2024 11:54:24 Asia/Kuala_Lumpur] Mail headers: From: ben@debugged.com.my
+CC: tima.kvasnikov@solvemen.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="08b72f55eae689676e71fe1d93e044d8"
+
+[15-Oct-2024 11:54:24 Asia/Kuala_Lumpur] Mail body length: 14406

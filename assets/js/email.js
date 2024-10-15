@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const contactForm = document.getElementById('contact-form');
 
+    if (!contactForm) {
+        console.error('Contact form not found');
+        return;
+    }
+
     contactForm.addEventListener('submit', function(event) {
         event.preventDefault();
-        const formData = new FormData(contactForm);
+        
+        const formData = new FormData(this);
 
         fetch('email.php', {
             method: 'POST',
@@ -13,9 +19,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         .then(data => {
             if (data.success) {
                 alert('Message sent successfully!');
-                contactForm.reset();
+                // Clear all form inputs, including file inputs
+                clearForm(contactForm);
             } else {
-                alert('Failed to send message. Please try again.');
+                alert('Failed to send message: ' + data.message);
             }
         })
         .catch(error => {
@@ -23,4 +30,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             alert('An error occurred. Please try again.');
         });
     });
+
+    // Function to clear all form inputs
+    function clearForm(form) {
+        form.reset(); // This clears most input types
+        // Clear file inputs
+        const fileInputs = form.querySelectorAll('input[type="file"]');
+        fileInputs.forEach(input => {
+            input.value = '';
+        });
+    }
 });

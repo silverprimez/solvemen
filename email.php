@@ -1,6 +1,5 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // print_r($_FILES);
     $firstName = $_POST['First_Name'] ?? '';
     $lastName = $_POST['Last_Name'] ?? '';
     $email = $_POST['Email'] ?? '';
@@ -41,24 +40,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $body .= "Content-Type: text/plain; charset=UTF-8\r\n";
     $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
     $body .= "First Name: $firstName\nLast Name: $lastName\nEmail: $email\nMessage:\n$message\n\r\n";
-// var_dump($_FILES['attachments']);exit;
-    // Handle File Attachments
-    if (isset($_FILES['attachments']) && count($_FILES['attachments']['tmp_name']) > 0) {
-        foreach ($_FILES['attachments']['tmp_name'] as $key => $tmpName) {
-            if ($_FILES['attachments']['error'][$key] === UPLOAD_ERR_OK) {
-                $fileName = $_FILES['attachments']['name'][$key];
-                $fileType = $_FILES['attachments']['type'][$key];
+    // Handle File attachment
+    if (isset($_FILES['attachment']) && count($_FILES['attachment']['tmp_name']) > 0) {
+        foreach ($_FILES['attachment']['tmp_name'] as $key => $tmpName) {
+            if ($_FILES['attachment']['error'][$key] === UPLOAD_ERR_OK) {
+                $fileName = $_FILES['attachment']['name'][$key];
+                $fileType = $_FILES['attachment']['type'][$key];
 
                 // Read the file content and encode it in base64
                 $fileContent = chunk_split(base64_encode(file_get_contents($tmpName)));
 
                 // Append the file content to the email body
                 $body .= "--$boundary\r\n";
-                $body .= "Content-Type: $fileType; name=\"$fileName\"\r\n";
+                $body .= "Content-Type: application/octet-stream; name=\"$fileName\"\r\n";
                 $body .= "Content-Disposition: attachment; filename=\"$fileName\"\r\n";
                 $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
                 $body .= "$fileContent\r\n";
-            }
+
+            }  
         }
     }
 
@@ -66,20 +65,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $body .= "--$boundary--\r\n";
 
     // Send the email
-    if (mail($to, $subject, $body, $headers)) {
-        // echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
-        // redirect person back to index.html
-        // redirect to index.html, then put success message in session so i can show sweet alert
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            if (mail($to, $subject, $body, $headers)) {
-                header("Location: index.html");
-                exit();
-            } else {
-                echo json_encode(['success' => false, 'message' => 'Failed to send message.']);
-            }
-        } else {
-            echo json_encode(['success' => false, 'message' => 'Invalid request method.']);
-        }        
+    $mailResult = mail($to, $subject, $body, $headers);
+    error_log("Mail result: " . ($mailResult ? "Success" : "Failure"));
+    error_log("Mail headers: " . $headers);
+    error_log("Mail body length: " . strlen($body));
+
+    if ($mailResult) {
+        echo json_encode(['success' => true, 'message' => 'Message sent successfully!','body'=>$body]);
     } else {
         echo json_encode(['success' => false, 'message' => 'Failed to send message.']);
     }
