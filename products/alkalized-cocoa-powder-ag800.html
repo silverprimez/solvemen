@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solvemen | Trading</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css?v=2.0" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/css/main-body.css?v=2.0">
+    <link rel="stylesheet" href="../../assets/css/header.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/pre-loader.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/homepage/hero-section.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/homepage/card.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/homepage/about.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/homepage/team.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/homepage/partner-slider.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/homepage/branch.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/contact/contact.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/footer.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/homepage/modal-box.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=2.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/product/breadcrumb.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/product/products-list.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/jquery-ui.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/product/product-specs.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/slick.css?v=2.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+<section class="main-body" id="blur">
+<section class="product">
+    <header class="top-header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/images/SLV-Tr-Black.png" alt="Solvemen Logo" class="logo">
+            </a>
+            <ul class="header-menu">
+                <li><a href="../index.html#about" title="About Us">About</a></li>
+                <li><a href="../index.html#team" title="Our Team">Team</a></li>
+                <li><a href="product.html" title="Product">Product</a></li>
+                <li><a href="../index.html#branch" title="Branch">Our Reach</a></li>
+            </ul>
+            <a class="button" id="contact-button" onclick="toggle()"><span class="material-symbols-outlined">support_agent</span>Contact</a>    
+            <div class="toggle_button">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="../index.html#about" title="About Us">About</a></li>
+                <li><a href="../index.html#team" title="Our Team">Team</a></li>
+                <li><a href="../products/product.html" title="Product">Product</a></li>
+                <li><a href="../index.html#branch" title="Branch">Our Reach</a></li>
+                <li><a class="dropdown-button" onclick="toggle()"><span class="material-symbols-outlined">support_agent</span>Contact</a></li>
+            </div>
+        </nav>
+    </header>
+
+<!-- BREADCRUMB BEGINS HERE-->
+<section class="breadcrumbs-area breadcrumbs-bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="breadcrumbs-content text-center">
+                    <h1 class="titles">Product Specification</h1>
+                    <nav aria-label="breadcrumbss" class="breadcrumbs-trail">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs-item trail-item trail-begin">
+                                <a href="index.html"><span>Home</span></a>
+                            </li>
+                            <li class="breadcrumbs-item trail-item trail-end">
+                                <a href="../products/product.html"><span>Product</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- BREADCRUMB ENDS HERE -->
+
+<!-- PRODUCT SPECIFICS SECTION BEGINS HERE -->
+<section class="inner-shop-details-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="inner-shop-details-flex-wrap">
+                    <div class="inner-shop-details-img-wrap">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane show active" id="item-one" role="tabpanel" aria-labelledby="item-one-tab">
+                                <div class="inner-shop-details-img">
+                                    <img src="../assets/images/product-spec-1/cocoa-powder-inner-1.svg" alt="img">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="item-two" role="tabpanel" aria-labelledby="item-two-tab">
+                                <div class="inner-shop-details-img">
+                                    <img src="../assets/images/product-spec-1/cocoa-powder-inner-1.svg" alt="img">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="item-three" role="tabpanel" aria-labelledby="item-three-tab">
+                                <div class="inner-shop-details-img">
+                                    <img src="../assets/images/product-spec-1/cocoa-powder-inner-1.svg" alt="img">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="item-four" role="tabpanel" aria-labelledby="item-four-tab">
+                                <div class="inner-shop-details-img">
+                                    <img src="../assets/images/product-spec-1/cocoa-powder-inner-1.svg" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-shop-details-nav-wrap">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a href="#" class="desc-link active" id="item-one-tab" data-bs-toggle="tab" data-bs-target="#item-one" role="tab" aria-controls="item-one" aria-selected="true"><img src="../assets/images/product-spec-1/cocoa-powder-inner-1.svg" alt=""></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#" class="desc-link" id="item-two-tab" data-bs-toggle="tab" data-bs-target="#item-two" role="tab"
+                                aria-controls="item-two" aria-selected="false"><img src="../assets/images/product-spec-1/cocoa-powder-inner-1.svg" alt=""></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#" class="desc-link" id="item-three-tab" data-bs-toggle="tab" data-bs-target="#item-three" role="tab"
+                                aria-controls="item-three" aria-selected="false"><img src="../assets/images/product-spec-1/cocoa-powder-inner-1.svg" alt=""></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#" class="desc-link" id="item-four-tab" data-bs-toggle="tab" data-bs-target="#item-four" role="tab" aria-controls="item-four" aria-selected="false"><img src="../assets/images/product-spec-1/cocoa-powder-inner-1.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="inner-shop-details-content">
+                    <h4 class="prd-detail-title">AG800 COCOA POWDER</h4>
+                    <div class="inner-shop-details-meta">
+                        <ul class="list-wrap">
+                            <li>Country : <a href="#">Cambodia</a></li>
+                            <li>Brands : <a href="#">NA</a></li>
+                            <!--<li class="inner-shop-details-review">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.5)</span>
+                            </li>-->
+                            <li>ID : <span>QZX8VGH</span></li>
+                        </ul>
+                    </div>
+                    <div class="inner-shop-details-price">
+                        <h2 class="price">Price upon request</h2>
+                        <!-- <h5 class="stock-status">- Actual price upon request</h5> -->
+                    </div>
+                    <p>Known for its robust, deep chocolate flavor, this powder is perfect for recipes that require a strong cocoa presence. With a darker color and intense taste, it’s ideal for crafting rich chocolates, dark-colored cakes, and premium confections. Its alkalized nature ensures a smooth, balanced flavor, making it a go-to choice for gourmet baking and beverages.</p>
+                    <!--<div class="inner-shop-details-list">
+                        <ul class="list-wrap">
+                            <li>Type : <span>Supplement</span></li>
+                            <li>XPD : <span>19 Dec 2024</span></li>
+                            <li>CO : <span>Suxnix</span></li>
+                        </ul>
+                    </div>
+                    <div class="inner-shop-perched-info">
+                        <div class="sd-cart-wrap">
+                            <form action="#">
+                                <div class="quickview-cart-plus-minus">
+                                    <input type="text" value="1">
+                                </div>
+                            </form>
+                        </div>
+                        <a href="cart.html" class="cart-btn">add to cart</a>
+                        <a href="#" class="wishlist-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                    </div>
+                    <div class="inner-shop-details-bottom">
+                        <span><span>Tag : <a href="#">Natural Vitamin</a></span></span>
+                        <span>
+                            <span>Categories :
+                            <a href="#">Vitamin</a>
+                            <a href="#">Protein</a>
+                            <a href="#">Capsule</a>
+                            <a href="#">Powder</a></span>
+                        </span>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="product-desc-wrap">
+                    <ul class="nav nav-tabs" id="myTabTwo" role="tablist">
+                        <li class="nav-item">
+                            <a href="#" class="desc-link active" id="information-tab" data-bs-toggle="tab" data-bs-target="#information" role="tab" aria-controls="information" aria-selected="true">Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="desc-link" id="properties-tab" data-bs-toggle="tab" data-bs-target="#properties" role="tab" aria-controls="properties" aria-selected="false">Microbiological Index</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="desc-link" id="allergen-tab" data-bs-toggle="tab" data-bs-target="#allergen" role="tab" aria-controls="allergen" aria-selected="false">Chemical Index</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContentTwo">
+                        <div class="tab-pane fade show active" id="information" role="tabpanel"
+                            aria-labelledby="information-tab">
+                            <div class="product-desc-content">
+                                <h4 class="prd-title">Product name</h4>
+                                <p>Alkalized Cocoa Powder (AG800)</p>
+                                <h4 class="prd-title">Appearance</h4>
+                                <p>Fine, free flowing dark brown powder.</p>
+                                <h4 class="prd-title">Flavour and Colour</h4>
+                                <p>Flavour: Characteristic cocoa flavour. <br>Colour: Dark Brown</p>
+                                <h4 class="prd-title">Fineness</h4>
+                                <p>Min. 97% (Through 200 mesh)</p>
+                                <h4 class="prd-title">Packaging</h4>
+                                <p>In 25KGs multilayer craft paper bags with inner polyethylene liner. <br>N. W.: 25 KG /bag <br>N. W.: 25.25 KG /bag</p>
+                                <h4 class="prd-title">Shelf-life</h4>
+                                <p>24 months from date of production when stored in cool, dry conditions.</p>
+                                <h4 class="prd-title">Storage Conditions</h4>
+                                <p>Store in a pest-free, well-ventilated environment at ambient temperature (18 – 22 °C) and relative humidity 50% - 60% away from source of heat and water and free from foreign odours.</p>
+                                <h4 class="prd-title">Quantity</h4>
+                                <p>Without pallet: <br>Per 20'FCL: 600 bags x 25 KG = 15 metric tons. <br>Per 40' FCL: 1,000 bags X 25 KG = 25 metric tons.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="properties" role="tabpanel" aria-labelledby="properties-tab">
+                            <div class="product-desc-content">
+                                <table class="table table-sm">
+                                    <tbody>
+                                        <tr>
+                                            <td class="th1">Total Plate Count</td>
+                                            <td class="td2">Max. 5,000 cfu/g</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th1">Coliform</td>
+                                            <td class="td2">Max. 0.3 MPN/g</td>
+                                            <td class="td3"></td>
+                                            <td class="td3"></td>
+                                            <td class="td3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th1">Yeast & Mould</td>
+                                            <td class="td2">Max. 50 cfu/g</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th1">Salmonella, <br>Shigella, <br>Staphylococcus Aureusa</td>
+                                            <td class="td2">Negative</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="allergen" role="tabpanel" aria-labelledby="allergen-tab">
+                            <div class="product-desc-content">
+                                <table class="table table-sm">
+                                    <tbody>
+                                        <tr>
+                                            <td class="th1">Fat Content</td>
+                                            <td class="td2">10 - 12 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th1">Moisture</td>
+                                            <td class="td2">Max. 5.0 %</td>
+                                            <td class="td3"></td>
+                                            <td class="td3"></td>
+                                            <td class="td3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th1">pH Value</td>
+                                            <td class="td2">7.0 - 7.8</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th1">Ash</td>
+                                            <td class="td2">Max. 14%</td>
+                                        </tr>
+                                    </tbody>                                    
+                                </table>
+                            </div>
+                        </div>
+                        <!--<div class="tab-pane fade" id="allergen" role="tabpanel" aria-labelledby="allergen-tab">
+                            <div class="product-desc-content">
+                                <div class="reviews-comment">
+                                    <div class="review-info">
+                                        <div class="review-img">
+                                            <img src="assets/img/others/p_review_img01.jpg" alt="">
+                                        </div>
+                                        <div class="review-content">
+                                            <ul class="review-rating list-wrap">
+                                                <li>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </li>
+                                            </ul>
+                                            <div class="review-meta">
+                                                <h6>Chenai Simon <span>-May 12, 2024</span></h6>
+                                            </div>
+                                            <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of lorem ipsum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="review-info">
+                                        <div class="review-img">
+                                            <img src="assets/img/others/p_review_img02.jpg" alt="">
+                                        </div>
+                                        <div class="review-content">
+                                            <ul class="review-rating list-wrap">
+                                                <li>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </li>
+                                            </ul>
+                                            <div class="review-meta">
+                                                <h6>Finn Castaneda <span>-June 17, 2024</span></h6>
+                                            </div>
+                                            <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of lorem ipsum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="review-info">
+                                        <div class="review-img">
+                                            <img src="assets/img/others/p_review_img03.jpg" alt="">
+                                        </div>
+                                        <div class="review-content">
+                                            <ul class="review-rating list-wrap">
+                                                <li>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </li>
+                                            </ul>
+                                            <div class="review-meta">
+                                                <h6>Bayley Robertson <span>-May 28, 2024</span></h6>
+                                            </div>
+                                            <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of lorem ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-review">
+                                    <h4 class="title">Add a review</h4>
+                                    <form action="#">
+                                        <p>Your email address will not be published.Required fields are marked <span>*</span></p>
+                                        <div class="from-grp">
+                                            <label for="name">Your name <span>*</span></label>
+                                            <input type="text" id="name">
+                                        </div>
+                                        <div class="from-grp">
+                                            <label for="email">Your email <span>*</span></label>
+                                            <input type="text" id="email">
+                                        </div>
+                                        <div class="from-grp checkbox-grp">
+                                            <input type="checkbox" id="checkbox">
+                                            <label for="checkbox">Don’t show your email address</label>
+                                        </div>
+                                        <div class="form-rating">
+                                            <label>your rating</label>
+                                            <ul class="list-wrap">
+                                                <li>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="from-grp">
+                                            <label for="comment">Write Your review <span>*</span></label>
+                                            <textarea id="comment" cols="30" rows="10"></textarea>
+                                        </div>
+                                        <button class="btn-one">Submit Now</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PRODUCT SPECIFICS SECTION ENDS HERE -->
+
+<!-- RELATED PRODUCTS BEGINS HERE -->
+<div class="related-products-area pb-120">
+    <div class="container">
+        <div class="related-products-wrap">
+            <h2 class="product-title">Related Products</h2>
+            <div class="row related-product-active">
+                <div class="col-xl-3">
+                    <div class="home-shop-item">
+                        <div class="home-shop-thumb">
+                            <a href="../products/palm-olein.html">
+                                <img src="../assets/images/product-item-prd/product-item-palm-olein.svg" alt="img">
+                                <!--<span class="discount"> -15%</span>-->
+                            </a>
+                            <!-- <div class="shop-thumb-shape"></div> -->
+                        </div>
+                        <div class="home-shop-content">
+                            <div class="shop-item-cat"><a href="../products/palm-olein.html">Malaysia | Indonesia</a></div>
+                            <h4 class="prd-related-title"><a href="../products/palm-olein.html">Palm Olein</a></h4>
+                            <!-- <span class="home-shop-price">$85.99</span> -->
+                            <!--<div class="home-shop-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="total-rating">(30)</span>
+                            </div>-->
+                            <div class="shop-content-bottom">
+                                <!-- <a href="cart.html" class="cart"><i class="flaticon-shopping-cart-1"></i></a> -->
+                                <a href="../products/palm-olein.html" class="btn-one btn-two">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="home-shop-item">
+                        <div class="home-shop-thumb">
+                            <a href="../products/ketchup.html">
+                                <img src="../assets/images/product-item-prd/product-item-ketchup.svg" alt="img">
+                                <!--<span class="discount"> -15%</span>-->
+                            </a>
+                            <!-- <div class="shop-thumb-shape"></div> -->
+                        </div>
+                        <div class="home-shop-content">
+                            <div class="shop-item-cat"><a href="../products/ketchup.html">Malaysia</a></div>
+                            <h4 class="prd-related-title"><a href="../products/ketchup.html">Ketchup</a></h4>
+                            <!-- <span class="home-shop-price">$85.99</span> -->
+                            <!--<div class="home-shop-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="total-rating">(30)</span>
+                            </div>-->
+                            <div class="shop-content-bottom">
+                                <!-- <a href="cart.html" class="cart"><i class="flaticon-shopping-cart-1"></i></a> -->
+                                <a href="../products/ketchup.html" class="btn-one btn-two">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="home-shop-item">
+                        <div class="home-shop-thumb">
+                            <a href="../products/chili-sauce.html">
+                                <img src="../assets/images/product-item-prd/product-item-chili.svg" alt="img">
+                                <!--<span class="discount"> -15%</span>-->
+                            </a>
+                            <!-- <div class="shop-thumb-shape"></div> -->
+                        </div>
+                        <div class="home-shop-content">
+                            <div class="shop-item-cat"><a href="../products/chili-sauce.html">Malaysia</a></div>
+                            <h4 class="prd-related-title"><a href="../products/chili-sauce.html">Chili Sauce</a></h4>
+                            <!-- <span class="home-shop-price">$85.99</span> -->
+                            <!--<div class="home-shop-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="total-rating">(30)</span>
+                            </div>-->
+                            <div class="shop-content-bottom">
+                                <!-- <a href="cart.html" class="cart"><i class="flaticon-shopping-cart-1"></i></a> -->
+                                <a href="../products/chili-sauce.html" class="btn-one btn-two">More details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="home-shop-item">
+                        <div class="home-shop-thumb">
+                            <a href="#">
+                                <img src="../assets/images/product-item-prd/product-item-flour.svg" alt="img">
+                                <!--<span class="discount"> -15%</span>-->
+                            </a>
+                            <!-- <div class="shop-thumb-shape"></div> -->
+                        </div>
+                        <div class="home-shop-content">
+                            <div class="shop-item-cat"><a href="#">Russia</a></div>
+                            <h4 class="prd-related-title"><a href="#">Wheat Flour</a></h4>
+                            <!-- <span class="home-shop-price">$85.99</span> -->
+                            <!--<div class="home-shop-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="total-rating">(30)</span>
+                            </div>-->
+                            <div class="shop-content-bottom">
+                                <!-- <a href="cart.html" class="cart"><i class="flaticon-shopping-cart-1"></i></a> -->
+                                <a href="#" class="btn-one btn-two">More details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- RELATED PRODUCTS ENDS HERE -->
+
+<!-- FOOTER BEGINS HERE-->
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <div class="footer-logo">
+        <img src="../assets/images/bww-logo.png" alt="Company Logo">
+    </div>
+    <!--<ul class="social-icons">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+    </ul>-->
+    <div class="contact-box">
+        <div class="contact-info">
+            <div class="contact info-box">
+                <h3>Reach us!</h3>
+                <div class="info-email">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <a href="mailto:tima.kvasnikov@solvemen.com"><p>tima.kvasnikov@solvemen.com</p></a>
+                </div>
+            </div>
+            <div class="address-column">
+                <h3>Our Locations</h3>
+                <div class="info-address">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p>T3-23-20, Menara 3, 296, Jalan Ampang, </br>55000 Kuala Lumpur, Malaysia.</p>
+                </div>
+                <div class="info-address">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p>25 Metcalf Road Greendale Harare, Zimbabwe.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!--<ul class="footer-menu">
+        <li><a href="#about">About</a><span> | </span></li>
+        <li><a href="#product">Product</a><span> | </span></li>
+        <li><a href="#team">Team</a><span> | </span></li>
+        <li><a id="footer-contact" onclick="toggle()">Contact</a></li>
+    </ul>-->
+    <p>© since 2020 <a href="index.html">Solvemen Trading.</a> All right reserved.</p>
+</footer>
+<!-- FOOTER ENDS HERE-->
+</section>  
+</section>
+<!-- MODAL BOX BEGINS HERE-->
+    <div class="modal__container" id="modal-container">
+    <section class="contact">
+        <div class="contact-header">
+            <ul>
+                <li>
+                    <a href="#" class="logo">
+                        <div class="images">
+                            <img src="../assets/images/SLV-Tr-Black.png" class="logo-forLight" alt="Company Logo">
+                        </div>
+                    </a>
+                </li>
+                <!--<li>
+                    <a href="index.html" class="desc-link">Home</a>
+                </li> -->
+                <li>
+                    <span class="desc-link theme-toggle close-modal">
+                        <a onclick="toggle()"><i class="fa-solid fa-right-from-bracket"></i></a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <div class="left">
+                <div class="form-wrapper">
+                    <div class="contact-heading">
+                        <h1>Reach out to us<span>!</span></h1>
+                        <p class="text">and tell us what you need.</p>
+                    </div>
+                    <form id="contact-form" class="contact-forms" enctype="multipart/form-data" method="POST" action="email.php">
+                        <div class="input-wraps">
+                            <input class="contact-input" autocomplete="off" name="First_Name" type="text" required>
+                            <label>First name</label>
+                            <i class="icon fa-solid fa-address-card"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="input-wraps">
+                            <input class="contact-input" autocomplete="off" name="Last_Name" type="text" required>
+                            <label>Last name</label>
+                            <i class="icon fa-solid fa-address-card"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="input-wraps w-100">
+                            <input class="contact-input" autocomplete="off" name="Email" type="email" required>
+                            <label>Email</label>
+                            <i class="icon fa-solid fa-envelope"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="input-wraps textarea w-100">
+                            <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
+                            <label>Message</label>
+                            <i class="icon fa-solid fa-inbox"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="file-upload-container">
+                            <ul id="file-list" class="file-list"></ul>
+                        </div>
+                        <div class="contact-buttons">
+                            <button class="contact-btn upload">
+                                <span>
+                                    <i class="fa-solid fa-paperclip"></i> Add attachment
+                                </span>
+                                <input type="file" id="file-input" name="attachment[]" multiple>
+                            </button>
+                            <button class="contact-btn" id="submit-btn-one">Send Message</button>
+                        </div>
+                    </form>                
+                </div>
+            </div>
+            <div class="right">
+                <div class="image-wrapper">
+                    <img src="../assets/images/contact-wp.png" class="img">
+                    <div class="wave-wrap">
+                        <svg class="wave" viewBox="0 0 783 1536" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="wave"
+                            d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1 1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z" />
+                        </svg>
+                    </div>
+                    <svg class="dashed-wave" viewBox="0 0 345 877" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="dashed-wave" 
+                        d="M0.5 876C25.6667 836.167 73.2 739.8 62 673C48 589.5 35.5 499.5 125.5 462C215.5 424.5 150 365 87 333.5C24 302 44 237.5 125.5 213.5C207 189.5 307 138.5 246 87C185 35.5 297 1 344.5 1"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--MODAL BOX ENDS HERE-->
+</body>
+
+<!--PRE-LOADER SCRIPT-->
+<script src="../assets/js/pre-loader.js?v=2.0"></script>
+
+<!-- HEADER SCRIPT-->
+<script src="../assets/js/header.js?v=2.0"></script>
+
+<!-- EMAIL SCRIPT-->
+<script src="../assets/js/email.js?v=2.0"></script>
+
+<!-- MODAL BOX SCRIPT-->
+<script src="../assets/js/modal-box.js?v=2.0"></script>
+
+<!-- AOS SCRIPT-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?v=2.0"></script>
+
+<!-- HOMEPAGE SCRIPT-->
+<script src="../assets/js/homepage.js?v=2.0"></script>
+
+<!-- BRANCH SCRIPT-->
+<script src="../assets/js/branch.js?v=2.0"></script>
+
+<!-- BOOTSTRAP SCRIPT-->
+<script src="../assets/js/bootstrap.min.js?v=2.0"></script>
+
+</html>

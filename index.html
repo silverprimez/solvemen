@@ -39,7 +39,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://cdn.js?v=2.0delivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
@@ -1462,7 +1462,7 @@
 </section>
 
     <!-- MODAL BOX BEGINS HERE-->
-     <div class="modal__container" id="modal-container">
+    <div class="modal__container" id="modal-container">
         <section class="contact">
             <div class="contact-header">
                 <ul>
@@ -1492,26 +1492,26 @@
                         </div>
                         <form id="contact-form" class="contact-forms" enctype="multipart/form-data" method="POST" action="email.php">
                             <div class="input-wraps">
-                                <input class="contact-input" autocomplete="off" name="First_Name" type="text" required>
-                                <label>First name</label>
+                                <input class="contact-input" id="first-name" autocomplete="off" name="First_Name" type="text" required>
+                                <label for="first-name">First name</label>
                                 <i class="icon fa-solid fa-address-card"></i>
                                 <span class="error-message"></span>
                             </div>
                             <div class="input-wraps">
-                                <input class="contact-input" autocomplete="off" name="Last_Name" type="text" required>
-                                <label>Last name</label>
+                                <input class="contact-input" id="last-name" autocomplete="off" name="Last_Name" type="text" required>
+                                <label for="last-name">Last name</label>
                                 <i class="icon fa-solid fa-address-card"></i>
                                 <span class="error-message"></span>
                             </div>
                             <div class="input-wraps w-100">
-                                <input class="contact-input" autocomplete="off" name="Email" type="email" required>
-                                <label>Email</label>
+                                <input class="contact-input" id="email" autocomplete="off" name="Email" type="email" required>
+                                <label for="email">Email</label>
                                 <i class="icon fa-solid fa-envelope"></i>
                                 <span class="error-message"></span>
                             </div>
                             <div class="input-wraps textarea w-100">
-                                <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
-                                <label>Message</label>
+                                <textarea name="Message" id="message" auto-complete="off" class="contact-input" required></textarea>
+                                <label for="message">Message</label>
                                 <i class="icon fa-solid fa-inbox"></i>
                                 <span class="error-message"></span>
                             </div>
@@ -1558,7 +1558,7 @@
 <script src="../assets/js/header.js?v=2.0"></script>
 
 <!-- PRODUCT SCRIPT-->
-<script src="../solvemen/assets/js/product.js"></script>
+<script src="../assets/js/product.js?v=2.0"></script>
 
 <!-- EMAIL SCRIPT-->
 <script src="../assets/js/email.js?v=2.0"></script>
@@ -1574,16 +1574,4 @@
 
 <!-- BRANCH SCRIPT-->
 <script src="../assets/js/branch.js?v=2.0"></script>
-
-<!-- JQUERY SCRIPT-->
-<script src="../assets/js/jquery-ui.min.js?v=2.0"></script>
-<script src="../assets/js/jarallax.min.js?v=2.0"></script>
-<script src="../assets/js/jquery.appear.js?v=2.0"></script>
-<script src="../assets/js/jquery.easing.js?v=2.0"></script>
-<script src="../assets/js/jquery.easypiechart.min.js?v=2.0"></script>
-<script src="../assets/js/jquery.inview.min.js?v=2.0"></script>
-<script src="../assets/js/jquery.magnific-popup.min.js?v=2.0"></script>
-<script src="../assets/js/jquery.odometer.min.js?v=2.0"></script>
-<script src="../assets/js/jquery.paroller.min.js?v=2.0"></script>
-
 </html>
