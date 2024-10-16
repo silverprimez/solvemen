@@ -141,11 +141,11 @@
     row-gap: 1rem;
 }
 
-.input-wrap {
+.input-wraps {
     position: relative;
 }
 
-.input-wrap.w-100 {
+.input-wraps.w-100 {
     grid-column: span 2;
 }
 
@@ -169,7 +169,7 @@
     background-color: hsla(208, 50%, 50%, 14%);
 }
 
-.input-wrap label {
+.input-wraps label {
     position: absolute;
     top: 50%;
     left: calc(1.35rem + 2px);
@@ -179,7 +179,7 @@
     transition: .25s;
 }
 
-.input-wrap .icon {
+.input-wraps .icon {
     position: absolute;
     right: calc(1.35rem + 2px);
     top: 50%;
@@ -206,21 +206,21 @@ textarea.contact-input ~ .icon {
     transform: none;
 }
 
-.input-wrap.focus .contact-input {
+.input-wraps.focus .contact-input {
     background-color: var(--white);
     border: 2px solid var(--blue-light);
     box-shadow: 0 0 0 5px hsla(var(--green), 91%, 55%, 0.11);
 }
 
-.input-wrap.focus label {
+.input-wraps.focus label {
     color: var(--green);
 }
 
-.input-wrap.focus .icon {
+.input-wraps.focus .icon {
     color: var(--black);
 }
 
-.input-wrap.not-empty label {
+.input-wraps.not-empty label {
     font-size: 0.66rem;
     top: 0.75rem;
     transform: translateY(0);
@@ -357,7 +357,7 @@ textarea.contact-input ~ .icon {
     display: none; /* Hide by default */
 }
 
-.input-wrap.error .error-message {
+.input-wraps.error .error-message {
     display: block;
 }
 

@@ -1,4 +1,4 @@
-.breadcrumb-bg {
+.breadcrumbs-bg {
     background-image: url(../../images/hero-section-img.png);
     background-position: center;
     background-size: cover;
@@ -7,7 +7,7 @@
     z-index: 2; /* Adjusted to ensure it is above the black background */
 }
 
-.breadcrumb-bg::before {
+.breadcrumbs-bg::before {
     content: "";
     position: absolute;
     left: 0;
@@ -19,12 +19,12 @@
     z-index: 1; /* Lower z-index to place behind the background image */
 }
 
-.breadcrumb-content {
+.breadcrumbs-content {
     position: relative;
     z-index: 4; /* Increased to make sure it's at the very front */
 }
 
-.breadcrumb {
+.breadcrumbs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -38,7 +38,7 @@
     justify-content: center;
 }
 
-.breadcrumb-content .titles {
+.breadcrumbs-content .titles {
     font-size: 60px;
     line-height: 1.2;
     color: var(--white);
@@ -49,24 +49,24 @@
     font-weight: bold;
 }
 
-.breadcrumb li {
+.breadcrumbs li {
     display: block;
     font-size: 20px;
     color: var(--white);
     line-height: 1.4;
 }
 
-.breadcrumb li a {
+.breadcrumbs li a {
     color: var(--white);
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumbs-item + .breadcrumbs-item::before {
     padding-right: 15px;
     padding-left: 15px;
     color: var(--white);
     content: "|";
 }
 
-.breadcrumb-item + .breadcrumb-item {
+.breadcrumbs-item + .breadcrumbs-item {
     padding-left: 0;
 }

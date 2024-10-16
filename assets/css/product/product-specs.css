@@ -8,9 +8,9 @@
 }
 
 .home-shop-item {
-	background: var(--silver);
+	background: var(--white);
 	box-shadow: 0px 15px 26px rgba(173, 185, 202, 0.17);
-	margin: 106px 0 50px;
+	margin: 50px 0 50px;
 	padding: 0 40px 40px;
 }
 
@@ -27,7 +27,7 @@
     width: 100%;
     min-height: 190px;
     align-items: flex-start;
-    margin: -106px auto 0;
+    margin: 50px auto 0;
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -84,6 +84,11 @@
 	background: #25A1D0;
 }
 
+.home-shop-item:hover {
+    background-color: var(--white-dark);
+    scale: 1.05;
+}
+
 .home-shop-content .prd-related-title {
 	font-size: 20px;
 	margin-bottom: 20px;
@@ -91,12 +96,12 @@
 }
 
 .home-shop-content .prd-related-title a {
-    color: var(--silver-dark);
-}
-
-.home-shop-content .prd-related-title a:hover {
     color: var(--green);
 }
+
+/* .home-shop-content .prd-related-title a:hover {
+    color: var(--green);
+} */
 
 .home-shop-price {
 	font-size: 20px;
@@ -325,7 +330,7 @@
 
 .inner-shop-details-meta ul li {
     font-size: 16px;
-    color: var(--gold);
+    color: var(--green);
     padding-right: 15px;
     margin-right: 15px;
     position: relative;
@@ -396,7 +401,7 @@
     font-weight: 900;
     margin-left: 15px;
     text-transform: uppercase;
-    color: var(--blue-light);
+    color: var(--green);
 }
 
 .inner-shop-details-content p {
@@ -599,6 +604,15 @@
     text-align: justify;
 }
 
+.product-desc-content.desc-table .table thead {
+    border-top: none;
+    
+}
+
+.product-desc-content.desc-table table{
+    margin-top: 0 !important;
+    border-collapse: unset;
+}
 .product-desc-content .table-sm th {
     padding: 13px 25px;
     border-style: 2px outset var(--black);
@@ -610,7 +624,7 @@
 }
 
 .product-desc-content .table-sm th {
-    color: var(--blue-light);
+    color: var(--green);
     font-size: 15px;
     font-weight: 700;
     text-transform: capitalize;
@@ -623,6 +637,14 @@
     font-weight: 500;
     font-style: italic;
     text-align: center;
+    font-size: 12px;
+}
+
+.product-desc-content .table-sm td.th1, .product-desc-content .table-sm td.th2 {
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid var(--silver);
+    color: var(--green);
 }
 
 .product-desc-content .table-sm td.td1 {
@@ -779,4 +801,19 @@
 
 .related-products-area {
 	margin: -10px 0 0;
+}
+
+.home-shop-content .shop-item-cat {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 9px;
+	line-height: 1;
+    justify-content: center;
+}
+
+.home-shop-content .shop-item-cat a {
+	display: block;
+	font-weight: 500;
+	color: var(--black);
+    text-align: center;
 }

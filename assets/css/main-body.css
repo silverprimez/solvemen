@@ -30,8 +30,10 @@ button {
     --black:#000000;
     --blue-light: #066AE5;
     --gold: gold;
-    --green: green;
+    --green: #008000;
+    --green-light: #80C080;
     --white: #fff;
+    --white-dark: #ededed;
     --silver: #dbdada;
     --silver-dark: #222222;
     --blue-dark: #001B36;
