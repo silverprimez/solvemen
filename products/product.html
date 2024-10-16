@@ -322,16 +322,16 @@
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="home-shop-item inner-shop-item" data-aos="fade-up" data-aos-duration="1500">
                                     <div class="home-shop-thumb">
-                                        <a href="#">
+                                        <a href="../products/wheat-flour.html">
                                             <img src="../assets/images/product-item-prd/product-item-flour.svg" alt="img">
                                         </a>
                                     </div>
                                     <div class="home-shop-content">
-                                        <div class="shop-item-cat"><a href="#">Russia</a></div>
-                                        <h4 class="item-title"><a href="#">Wheat Flour</a></h4>
+                                        <div class="shop-item-cat"><a href="../products/wheat-flour.html">Russia</a></div>
+                                        <h4 class="item-title"><a href="../products/wheat-flour.html">Wheat Flour</a></h4>
                                         <!-- <span class="home-shop-price">AG800</span> -->
                                         <div class="shop-content-bottom">
-                                            <a href="#" class="btn-one btn-two">More Details</a>
+                                            <a href="../products/wheat-flour.html" class="btn-one btn-two">More Details</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1580,26 +1580,26 @@
                     </div>
                     <form id="contact-form" class="contact-forms" enctype="multipart/form-data" method="POST" action="email.php">
                         <div class="input-wraps">
-                            <input class="contact-input" autocomplete="off" name="First_Name" type="text" required>
-                            <label>First name</label>
+                            <input class="contact-input" id="first-name" autocomplete="off" name="First_Name" type="text" required>
+                            <label for="first-name">First name</label>
                             <i class="icon fa-solid fa-address-card"></i>
                             <span class="error-message"></span>
                         </div>
                         <div class="input-wraps">
-                            <input class="contact-input" autocomplete="off" name="Last_Name" type="text" required>
-                            <label>Last name</label>
+                            <input class="contact-input" id="last-name" autocomplete="off" name="Last_Name" type="text" required>
+                            <label for="last-name">Last name</label>
                             <i class="icon fa-solid fa-address-card"></i>
                             <span class="error-message"></span>
                         </div>
                         <div class="input-wraps w-100">
-                            <input class="contact-input" autocomplete="off" name="Email" type="email" required>
-                            <label>Email</label>
+                            <input class="contact-input" id="email" autocomplete="off" name="Email" type="email" required>
+                            <label for="email">Email</label>
                             <i class="icon fa-solid fa-envelope"></i>
                             <span class="error-message"></span>
                         </div>
                         <div class="input-wraps textarea w-100">
-                            <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
-                            <label>Message</label>
+                            <textarea name="Message" id="message" auto-complete="off" class="contact-input" required></textarea>
+                            <label for="message">Message</label>
                             <i class="icon fa-solid fa-inbox"></i>
                             <span class="error-message"></span>
                         </div>
@@ -1613,7 +1613,7 @@
                                 </span>
                                 <input type="file" id="file-input" name="attachment[]" multiple>
                             </button>
-                            <button class="contact-btn" id="submit-btn">Send Message</button>
+                            <button class="contact-btn" id="submit-contact-btn">Send Message</button>
                         </div>
                     </form>                
                 </div>

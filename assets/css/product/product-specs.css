@@ -598,11 +598,11 @@
     margin-top: 70px;
 }
 
-.product-desc-content p {
-    font-size: 16px;
-    margin-bottom: 25px;
-    text-align: justify;
+.product-desc-content p.p-special {
+    margin-bottom: 0 !important;
 }
+
+.
 
 .product-desc-content.desc-table .table thead {
     border-top: none;
