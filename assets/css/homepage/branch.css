@@ -34,33 +34,54 @@
 
 #world-map path.armenia,
 #world-map path.Azerbaijan,
-#world-map path#BY, /*Belarus*/
-#world-map path#KZ, /*Kazakhstan*/
-#world-map path#MD, /*Moldova*/
+#world-map path#BY,
+/*Belarus*/
+#world-map path#KZ,
+/*Kazakhstan*/
+#world-map path#MD,
+/*Moldova*/
 #world-map path.Russian,
-#world-map path#TJ, /*Tajikistan*/
-#world-map path#KG, /*Kyrgyzstan*/
+#world-map path#TJ,
+/*Tajikistan*/
+#world-map path#KG,
+/*Kyrgyzstan*/
 #world-map path.Turkey,
-#world-map path#TM, /*Turkmenistan*/
-#world-map path#UZ, /*Uzbekistan*/
+#world-map path#TM,
+/*Turkmenistan*/
+#world-map path#UZ,
+/*Uzbekistan*/
 #world-map path.New_Zealand,
 #world-map path.Australia,
 #world-map path.USA,
-#world-map path#BN, /*Brunei Darussalam*/
-#world-map path#KH, /*Cambodia*/
-#world-map path#TL, /*Timor-Leste*/
+#world-map path#BN,
+/*Brunei Darussalam*/
+#world-map path#KH,
+/*Cambodia*/
+#world-map path#TL,
+/*Timor-Leste*/
 #world-map path.Indonesia,
 #world-map path.Malaysia,
-#world-map path#MM, /*Myanmar*/
+#world-map path#MM,
+/*Myanmar*/
 #world-map path.Philippines,
-#world-map path#TH, /*Thailand*/
-#world-map path#VN, /*Vietnam*/
-#world-map path#IQ, /*Iraq*/
-#world-map path#AE, /*United Arab Emirates*/
-#world-map path#ZW, /*Zimbabwe*/
-#world-map path#SL, /*Sierra Leone*/
-#world-map path#KE, /*Kenya*/
-#world-map path#ZA /*South Africa*/ {
+#world-map path#TH,
+/*Thailand*/
+#world-map path#VN,
+/*Vietnam*/
+#world-map path#IQ,
+/*Iraq*/
+#world-map path#AE,
+/*United Arab Emirates*/
+#world-map path#ZW,
+/*Zimbabwe*/
+#world-map path#SL,
+/*Sierra Leone*/
+#world-map path#KE,
+/*Kenya*/
+#world-map path#ZA
+
+/*South Africa*/
+    {
     fill: var(--green);
     transition: 0.6s;
     cursor: pointer;
@@ -123,8 +144,7 @@
 #world-map path#KE:hover,
 #world-map path#KE:active,
 #world-map path#ZA:hover,
-#world-map path#ZA:active
- {
+#world-map path#ZA:active {
     fill: var(--green-dark);
 }
 
@@ -140,7 +160,7 @@
     z-index: 1000;
 }
 
-svg path:focus + .tooltip {
+svg path:focus+.tooltip {
     display: block;
 }
 

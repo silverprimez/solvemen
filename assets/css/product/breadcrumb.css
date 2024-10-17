@@ -1,10 +1,11 @@
 .breadcrumbs-bg {
-    background-image: url(../../images/hero-section-img.png);
+    background-image: url(../../images/hero-section-items/hero-bg-pc.webp);
     background-position: center;
     background-size: cover;
     position: relative;
     padding: 230px 0 150px;
-    z-index: 2; /* Adjusted to ensure it is above the black background */
+    z-index: 2;
+    /* Adjusted to ensure it is above the black background */
 }
 
 .breadcrumbs-bg::before {
@@ -16,12 +17,14 @@
     width: 100%;
     background: var(--blue-dark);
     opacity: .85;
-    z-index: 1; /* Lower z-index to place behind the background image */
+    z-index: 1;
+    /* Lower z-index to place behind the background image */
 }
 
 .breadcrumbs-content {
     position: relative;
-    z-index: 4; /* Increased to make sure it's at the very front */
+    z-index: 4;
+    /* Increased to make sure it's at the very front */
 }
 
 .breadcrumbs {
@@ -60,13 +63,13 @@
     color: var(--white);
 }
 
-.breadcrumbs-item + .breadcrumbs-item::before {
+.breadcrumbs-item+.breadcrumbs-item::before {
     padding-right: 15px;
     padding-left: 15px;
     color: var(--white);
     content: "|";
 }
 
-.breadcrumbs-item + .breadcrumbs-item {
+.breadcrumbs-item+.breadcrumbs-item {
     padding-left: 0;
 }

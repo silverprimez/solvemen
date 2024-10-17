@@ -3,41 +3,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--green); /* Adjust background color as needed */
+    background: var(--green);
+    /* Adjust background color as needed */
     padding: 20px 0;
     margin-bottom: 120px;
 }
 
 
 .about-us::before {
-    content: ""; 
+    content: "";
     display: block;
-    height: 230px; 
-    background-color: var(--green); 
+    height: 230px;
+    background-color: var(--green);
     position: absolute;
-    width: 100%; 
-    top: -225px; 
+    width: 100%;
+    top: -225px;
     left: 0;
-    z-index: 0; 
-} 
+    z-index: 0;
+}
 
 .about-us::after {
-    content: ""; 
+    content: "";
     display: block;
-    height: 230px; 
-    background-color: var(--green); 
+    height: 230px;
+    background-color: var(--green);
     position: absolute;
-    width: 100%; 
-    top: 390px; 
+    width: 100%;
+    top: 390px;
     left: 0;
-    z-index: 0; 
+    z-index: 0;
 }
 
 .about-us-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px; /* Max width for the content */
+    max-width: 1200px;
+    /* Max width for the content */
     margin: auto;
     padding: 20px;
 }
@@ -45,7 +47,8 @@
 .about-us-image img {
     width: 100%;
     position: relative;
-    max-width: 700px; /* Adjust based on your design */
+    max-width: 700px;
+    /* Adjust based on your design */
     z-index: 2;
 }
 
@@ -57,19 +60,25 @@
     width: 100%;
     max-width: 500px;
     margin: calc(var(--img-width, 700px) - 750px) 0 0 calc(var(--img-width, 700px) - 1000px);
-    height: 100%; /* Cover the entire container */
-    background-image: url('../../images/about-border.png'); /* Set your background image here */
-    background-size: contain; /* Cover the full area of the element */
+    height: 100%;
+    /* Cover the entire container */
+    background-image: url('../../images/about-section-items/about-border.webp');
+    /* Set your background image here */
+    background-size: contain;
+    /* Cover the full area of the element */
     background-repeat: no-repeat;
-    background-position: center; /* Center the background image */
-    z-index: 1; /* Behind the primary image */
+    background-position: center;
+    /* Center the background image */
+    z-index: 1;
+    /* Behind the primary image */
     transform: translateX(calc((100vw - var(--img-width, 700px)) / 2));
     transform-origin: 0 0;
 }
 
 .about-us-content {
     width: 100%;
-    max-width: 600px; /* Adjust based on your design */
+    max-width: 600px;
+    /* Adjust based on your design */
     margin-left: 100px;
     color: var(--white);
 }
@@ -84,7 +93,8 @@
 }
 
 .value-item img {
-    width: 50px; /* Adjust based on your actual icons */
+    width: 50px;
+    /* Adjust based on your actual icons */
 }
 
 .value-item {

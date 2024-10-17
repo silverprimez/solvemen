@@ -5,7 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+html,
+body {
     margin: 0 !important;
     padding: 0 !important;
     background-color: var(--white) !important;
@@ -27,7 +28,7 @@ button {
 }
 
 :root {
-    --black:#000000;
+    --black: #000000;
     --blue-light: #066AE5;
     --gold: gold;
     --green: #008000;
@@ -44,9 +45,10 @@ button {
 }
 
 a {
-    text-decoration: none !important; 
+    text-decoration: none !important;
 }
 
 li {
-    list-style: none ; /*To remove the bullet points */
+    list-style: none;
+    /*To remove the bullet points */
 }

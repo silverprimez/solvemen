@@ -44,7 +44,8 @@
     color: var(--blue-light);
 }
 
-.top-header .button, .dropdown-button {
+.top-header .button,
+.dropdown-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,11 +74,13 @@
     width: 100%;
 }
 
-.top-header .button span, .dropdown-button span {
+.top-header .button span,
+.dropdown-button span {
     margin-right: 10px;
 }
 
-.top-header .button:hover, .dropdown-button:hover {
+.top-header .button:hover,
+.dropdown-button:hover {
     background: var(--black);
     color: var(--gold);
     scale: 1.05;
@@ -94,7 +97,8 @@
     display: none;
 }
 
-.top-header .button:active, .dropdown-button:active {
+.top-header .button:active,
+.dropdown-button:active {
     scale: 0.95;
 }
 

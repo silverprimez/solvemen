@@ -120,7 +120,7 @@
         font-size: 0.87rem;
         padding: 1.5rem 1.2rem calc(0.75rem - 2px) 1.2rem;
     }
-     
+
     .input-wraps label {
         font-size: 0.91rem;
         left: calc(1.2rem + 2px);
@@ -131,11 +131,11 @@
         right: calc(1.2rem + 2px);
     }
 
-    textarea.contact-input ~ label {
+    textarea.contact-input~label {
         top: 1.2rem;
     }
 
-    textarea.contact-input ~ .icon {
+    textarea.contact-input~.icon {
         top: 1.33rem;
     }
 
@@ -190,6 +190,7 @@
 }
 
 @media (max-width: 1019px) {
+
     .top-header .header-menu,
     .top-header .button {
         display: none;
@@ -222,7 +223,7 @@
 
     .list-wrap {
         justify-content: center;
-    }    
+    }
 
     .inner-shop-details-content .prd-detail-title {
         margin-bottom: 0 !important;
@@ -232,7 +233,9 @@
         padding-left: 0 !important;
     }
 
-    .prd-detail-title, .inner-shop-details-meta, .inner-shop-details-price {
+    .prd-detail-title,
+    .inner-shop-details-meta,
+    .inner-shop-details-price {
         padding-bottom: 20px;
     }
 
@@ -323,21 +326,21 @@
     .hero-phrase {
         font-size: 13px;
     }
-    
+
     .hero-text h1 {
         font-size: 40px;
         padding-right: 0;
     }
-    
+
     .hero-subtitle {
         font-size: 20px;
         padding-right: 80px;
     }
-    
+
     .hero-content {
-        background-image: url(../../../assets/images/hero-section-img2.png), linear-gradient(to bottom, var(--silver), var(--white));
+        background-image: url(../../assets/images/hero-section-items/hero-bg-mobile.webp), linear-gradient(to bottom, var(--silver), var(--white));
     }
-    
+
     .hero {
         height: 75vh;
         margin-top: 170px;
@@ -488,11 +491,11 @@
     .card-section .card-icons {
         font-size: 33.25px;
     }
-    
+
     .card-section h3 {
         font-size: 23.75px;
     }
-    
+
     .card-section p {
         font-size: 13.3px;
     }
@@ -518,11 +521,11 @@
     .card-section .card-icons {
         font-size: 31.5px;
     }
-    
+
     .card-section h3 {
         font-size: 22.5px;
     }
-    
+
     .card-section p {
         font-size: 12.6px;
     }
@@ -532,11 +535,11 @@
     .card-section .card-icons {
         font-size: 29.75px;
     }
-    
+
     .card-section h3 {
         font-size: 21.25px;
     }
-    
+
     .card-section p {
         font-size: 11.9px;
     }
@@ -546,14 +549,12 @@
     .card-section .card-icons {
         font-size: 26.25px;
     }
-    
+
     .card-section h3 {
         font-size: 18.75px;
     }
-    
+
     .card-section p {
         font-size: 10.5px;
     }
 }
-
-

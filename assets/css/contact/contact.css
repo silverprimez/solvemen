@@ -81,7 +81,7 @@
     background-color: var(--white);
 }
 
-.contact .contact-form > div {
+.contact .contact-form>div {
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -104,7 +104,7 @@
     color: var(--black);
     font-size: 3.5rem;
     line-height: 0.9;
-    white-space: nowrap; 
+    white-space: nowrap;
     margin-bottom: 1.2rem;
 }
 
@@ -151,7 +151,8 @@
 
 .contact-input {
     width: 100%;
-    background-color: hsla(208, 50%, 50%, 6.5%); /*input bg*/
+    background-color: hsla(208, 50%, 50%, 6.5%);
+    /*input bg*/
     padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
     border: none;
     outline: none;
@@ -196,12 +197,12 @@ textarea.contact-input {
     min-height: 150px;
 }
 
-textarea.contact-input ~ label {
+textarea.contact-input~label {
     top: 1.2rem;
     transform: none;
 }
 
-textarea.contact-input ~ .icon {
+textarea.contact-input~.icon {
     top: 1.3rem;
     transform: none;
 }
@@ -354,7 +355,8 @@ textarea.contact-input ~ .icon {
 .error-message {
     color: red;
     font-size: 0.8rem;
-    display: none; /* Hide by default */
+    display: none;
+    /* Hide by default */
 }
 
 .input-wraps.error .error-message {
@@ -393,4 +395,3 @@ textarea.contact-input ~ .icon {
     background-color: red;
     color: var(--white);
 }
-

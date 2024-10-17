@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         return;
     }
 
-    contactForm.addEventListener('submit', function(event) {
+    contactForm.addEventListener('submit', function (event) {
         event.preventDefault();
-        
+
         const formData = new FormData(this);
 
         // Add selected files to formData
@@ -23,38 +23,38 @@ document.addEventListener('DOMContentLoaded', (event) => {
             method: 'POST',
             body: formData
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                // Use Swal.fire for success message
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'Message sent successfully!',
-                    icon: 'success',
-                    confirmButtonColor: "#066AE5"
-                });
-                // Clear all form inputs, including file inputs
-                clearForm(contactForm);
-                clearFiles();
-            } else {
-                // Use Swal.fire for error message
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Use Swal.fire for success message
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Message sent successfully!',
+                        icon: 'success',
+                        confirmButtonColor: "#066AE5"
+                    });
+                    // Clear all form inputs, including file inputs
+                    clearForm(contactForm);
+                    clearFiles();
+                } else {
+                    // Use Swal.fire for error message
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Failed to send message: ' + data.message,
+                        icon: 'error',
+                        confirmButtonColor: "#066AE5"
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
                 Swal.fire({
                     title: 'Error!',
-                    text: 'Failed to send message: ' + data.message,
+                    text: 'An error occurred. Please try again.',
                     icon: 'error',
                     confirmButtonColor: "#066AE5"
                 });
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            Swal.fire({
-                title: 'Error!',
-                text: 'An error occurred. Please try again.',
-                icon: 'error',
-                confirmButtonColor: "#066AE5"
             });
-        });
     });
 
     // Function to clear all form inputs
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             deleteButton.textContent = 'X';
             deleteButton.style.marginLeft = '10px';
             deleteButton.addEventListener('click', () => removeFile(index));
-            
+
             listItem.appendChild(fileIcon);
             listItem.appendChild(fileName);
             listItem.appendChild(deleteButton);

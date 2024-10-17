@@ -2,7 +2,7 @@ const toggleButton = document.querySelector('.toggle_button');
 const toggleButtonIcon = toggleButton.querySelector('span');
 const dropDownMenu = document.querySelector('.dropdown_menu');
 
-toggleButton.addEventListener('click', function() {
+toggleButton.addEventListener('click', function () {
     dropDownMenu.classList.toggle('open');
     // Check if the dropdown menu is open and change the icon accordingly
     if (dropDownMenu.classList.contains('open')) {
@@ -15,7 +15,7 @@ toggleButton.addEventListener('click', function() {
 var lastScrollTop = 0;
 var navbar = document.querySelector('.top-header'); // Correct selector
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         if (dropDownMenu.classList.contains('open')) {

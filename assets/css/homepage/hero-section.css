@@ -17,19 +17,22 @@
     border-radius: 25px;
     margin: 50px 50px;
     font-weight: bold;
-    font-size: 16px; /*clamp(0.34rem, 0.68vw, 16px)*/
+    font-size: 16px;
+    /*clamp(0.34rem, 0.68vw, 16px)*/
     word-spacing: 5px;
 }
 
 .hero-text h1 {
-    font-size: 70px; /*clamp(1.5rem, 3vw, 70px)*/
+    font-size: 70px;
+    /*clamp(1.5rem, 3vw, 70px)*/
     max-width: 100%;
     margin: 0 50px 20px;
 }
 
 .hero-subtitle {
     margin: 0 50px 50px;
-    font-size: 25px; /*clamp(0.34rem, 0.68vw, 32px)*/
+    font-size: 25px;
+    /*clamp(0.34rem, 0.68vw, 32px)*/
 }
 
 .hero-content {
@@ -37,7 +40,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(../../images/hero-section-img.png), linear-gradient(to bottom, var(--silver), var(--white));
+    background-image: url(../../images/hero-section-items/hero-bg-pc.webp), linear-gradient(to bottom, var(--silver), var(--white));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

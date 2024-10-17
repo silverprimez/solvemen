@@ -1,13 +1,13 @@
-document.querySelectorAll('.clickable').forEach(function(path) {
-    path.addEventListener('click', function(event) {
+document.querySelectorAll('.clickable').forEach(function (path) {
+    path.addEventListener('click', function (event) {
         const tooltip = document.getElementById('tooltip');
         tooltip.textContent = path.querySelector('title').textContent;
         tooltip.style.display = 'block';
-        
+
         // Get the dimensions of the tooltip and the screen
         const tooltipWidth = tooltip.offsetWidth;
         const screenWidth = window.innerWidth;
-        
+
         // Default position (to the right)
         let left = event.pageX + 10;
         let top = event.pageY + 10;
@@ -24,7 +24,7 @@ document.querySelectorAll('.clickable').forEach(function(path) {
 });
 
 // Hide tooltip when clicking outside the SVG paths
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     if (!event.target.closest('path')) {
         document.getElementById('tooltip').style.display = 'none';
     }

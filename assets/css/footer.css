@@ -16,11 +16,13 @@ footer {
 }
 
 .footer-logo img {
-    max-width: 150px; /* Adjust size as needed */
+    max-width: 150px;
+    /* Adjust size as needed */
     height: auto;
 }
 
-footer .social-icons, .footer-menu {
+footer .social-icons,
+.footer-menu {
     position: relative;
     display: flex;
     justify-content: center;
@@ -77,7 +79,7 @@ footer .wave {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../../../assets/images/wave.png);
+    background: url(../../assets/images/footer-items/wave.webp);
     background-size: 1000px 100px;
 }
 
@@ -113,6 +115,7 @@ footer .wave#wave4 {
     0% {
         background-position-x: 1000px;
     }
+
     100% {
         background-position-x: 0px;
     }
@@ -122,6 +125,7 @@ footer .wave#wave4 {
     0% {
         background-position-x: 0px;
     }
+
     100% {
         background-position-x: 1000px;
     }
@@ -131,7 +135,8 @@ footer .wave#wave4 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center; /* Align items at the start */
+    align-items: center;
+    /* Align items at the start */
     width: 100%;
     font-size: 15px;
 }
@@ -139,10 +144,13 @@ footer .wave#wave4 {
 .info-address {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content at the start */
+    justify-content: flex-start;
+    /* Align content at the start */
     gap: 15px;
-    width: 100%; /* Make sure both elements take full width */
-    padding: 10px; /* Add some padding for better spacing */
+    width: 100%;
+    /* Make sure both elements take full width */
+    padding: 10px;
+    /* Add some padding for better spacing */
     max-width: 800px;
     box-sizing: border-box;
     flex-direction: row;
@@ -151,10 +159,13 @@ footer .wave#wave4 {
 .info-email {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content at the start */
+    justify-content: flex-start;
+    /* Align content at the start */
     gap: 15px;
-    width: 100%; /* Make sure both elements take full width */
-    padding: 10px; /* Add some padding for better spacing */
+    width: 100%;
+    /* Make sure both elements take full width */
+    padding: 10px;
+    /* Add some padding for better spacing */
     box-sizing: border-box;
     flex-direction: row;
 }
@@ -165,16 +176,22 @@ footer .wave#wave4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Fixed width */
-    height: 40px; /* Fixed height */
-    flex-shrink: 0; /* Prevent shrinking */
+    width: 40px;
+    /* Fixed width */
+    height: 40px;
+    /* Fixed height */
+    flex-shrink: 0;
+    /* Prevent shrinking */
 }
 
-.info-email p, .info-address p {
+.info-email p,
+.info-address p {
     margin: 0;
     text-align: start;
-    word-wrap: break-word; /* Ensure text wraps inside the container */
-    flex-grow: 1; /* Ensure text takes available space */
+    word-wrap: break-word;
+    /* Ensure text wraps inside the container */
+    flex-grow: 1;
+    /* Ensure text takes available space */
 }
 
 .contact-box {
@@ -185,7 +202,8 @@ footer .wave#wave4 {
     overflow: hidden;
 }
 
-.address-column h3, .contact-info h3 {
+.address-column h3,
+.contact-info h3 {
     margin: 0;
     font-size: 20px;
     font-weight: 500;
