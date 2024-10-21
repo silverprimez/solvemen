@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             formData.append('attachment[]', file);
         });
 
-        fetch('email.php', {
+        fetch('https://solvementrading.com/email.php', {
             method: 'POST',
             body: formData
         })
