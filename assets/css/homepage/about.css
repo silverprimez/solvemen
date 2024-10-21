@@ -62,7 +62,7 @@
     margin: calc(var(--img-width, 700px) - 750px) 0 0 calc(var(--img-width, 700px) - 1000px);
     height: 100%;
     /* Cover the entire container */
-    background-image: url('../../images/about-section-items/about-border.webp');
+    background-image: url('../../images/about-section-items/about-border.webp?v=2.3');
     /* Set your background image here */
     background-size: contain;
     /* Cover the full area of the element */

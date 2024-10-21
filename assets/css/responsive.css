@@ -338,7 +338,7 @@
     }
 
     .hero-content {
-        background-image: url(../../assets/images/hero-section-items/hero-bg-mobile.webp), linear-gradient(to bottom, var(--silver), var(--white));
+        background-image: url(../../assets/images/hero-section-items/hero-bg-mobile.webp?v=2.3), linear-gradient(to bottom, var(--silver), var(--white));
     }
 
     .hero {
