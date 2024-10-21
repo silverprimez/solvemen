@@ -345,6 +345,7 @@ textarea.contact-input~.icon {
     border-radius: 5px;
     background-color: var(--blue-light);
     color: var(--white);
+    cursor: pointer;
 }
 
 .contact-header ul li i:hover {

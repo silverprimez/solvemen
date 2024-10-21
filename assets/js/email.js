@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 if (data.success) {
                     // Use Swal.fire for success message
                     Swal.fire({
-                        title: 'Success!',
-                        text: 'Message sent successfully!',
+                        title: 'Submitted!',
+                        text: 'Your inquiry will be processed as soon as possible!',
                         icon: 'success',
                         confirmButtonColor: "#066AE5"
                     });
