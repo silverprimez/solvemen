@@ -68,22 +68,20 @@
 
 .slider .list .item .button {
     display: grid;
-    grid-template-columns: repeat(2, 130px);
+    grid-template-columns: 1fr;
     grid-template-rows: 40px;
-    gap: 5px;
+    gap: 30px;
     margin-top: 20px;
 }
 
 .slider .list .item .button button {
-    border: none;
-    background-color: #eee;
-    font-family: Poppins;
+    background-color:var(--white);
     font-weight: 500;
-    cursor: pointer;
     transition: 0.4s;
     letter-spacing: 2px;
     border-radius: 10px;
     padding: 10px 15px;
+    text-wrap: nowrap;
 }
 
 .slider .list .item .button button:hover {
@@ -303,4 +301,34 @@
         filter: blur(20px);
         opacity: 0;
     }
+}
+
+.product-button {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.product-button button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--blue-light);
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+}
+
+.product-button button:hover {
+    background-color: var(--gold);
+    color: var(--black);
 }

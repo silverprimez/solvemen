@@ -78,9 +78,20 @@
 /*Sierra Leone*/
 #world-map path#KE,
 /*Kenya*/
-#world-map path#ZA
-
+#world-map path#ZA,
 /*South Africa*/
+#world-map path#BR,
+/*Brazil*/
+#world-map path#NG,
+/*Nigeria*/
+#world-map path#MG,
+/*Madagascar*/
+#world-map path#RW,
+/*Rwanda*/
+#world-map path#UG,
+/*Uganda*/
+#world-map path#ET
+/*Ethiopia*/
     {
     fill: var(--green);
     transition: 0.6s;
@@ -144,7 +155,20 @@
 #world-map path#KE:hover,
 #world-map path#KE:active,
 #world-map path#ZA:hover,
-#world-map path#ZA:active {
+#world-map path#ZA:active, 
+#world-map path#BR:hover,
+#world-map path#BR:active,
+#world-map path#NG:hover,
+#world-map path#NG:active,
+#world-map path#MG:hover,
+#world-map path#MG:active,
+#world-map path#RW:hover,
+#world-map path#RW:active,
+#world-map path#UG:hover,
+#world-map path#UG:active,
+#world-map path#ET:hover,
+#world-map path#ET:active
+{
     fill: var(--green-dark);
 }
 
