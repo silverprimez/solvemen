@@ -68,7 +68,7 @@
 
 .slider .list .item .button {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
     gap: 30px;
     margin-top: 20px;
