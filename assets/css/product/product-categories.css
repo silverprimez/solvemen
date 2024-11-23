@@ -13,7 +13,8 @@ img {
   display: grid;
   place-items: center;
   margin-inline: 1.5rem;
-  padding-block: 5rem;
+  padding-block: 10rem;
+  padding-bottom: 15rem;
 }
 
 .card__container {
@@ -193,7 +194,7 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .product-container {
-    height: 50vh;
+    height: 100%;
   }
 
   .card__container {
