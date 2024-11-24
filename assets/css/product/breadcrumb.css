@@ -50,6 +50,7 @@
     display: flex;
     justify-content: center;
     font-weight: bold;
+    text-align: center;
 }
 
 .breadcrumbs li {

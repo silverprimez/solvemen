@@ -2,7 +2,7 @@
 
 /*=============== BASE ===============*/
 
-img {
+.card__article img {
   display: block;
   max-width: 100%;
   height: auto;
