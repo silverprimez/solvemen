@@ -40,7 +40,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(../../images/hero-section-items/hero-bg-pc.webp?v=2.4), linear-gradient(to bottom, var(--silver), var(--white));
+    background-image: url(../../images/hero-section-items/hero-bg-pc.webp?v=2.5), linear-gradient(to bottom, var(--silver), var(--white));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
